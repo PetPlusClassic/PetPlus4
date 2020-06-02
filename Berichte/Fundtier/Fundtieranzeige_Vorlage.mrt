@@ -1,0 +1,1067 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <vw_rep_statistik_findeltiere Ref="2" type="DataTableSource" isKey="true">
+        <Alias>vw_rep_statistik_findeltiere</Alias>
+        <Columns isList="true" count="13">
+          <value>ID_findeltier,System.String</value>
+          <value>ID_Pension,System.String</value>
+          <value>ID_Tier,System.String</value>
+          <value>ID_Person,System.String</value>
+          <value>Tierbezeichnung,System.String</value>
+          <value>Gattungsname,System.String</value>
+          <value>Pension_von,System.DateTime</value>
+          <value>Pension_bis,System.DateTime</value>
+          <value>Platzierungsdatum,System.DateTime</value>
+          <value>Funddatum,System.DateTime</value>
+          <value>Pensionsstart,System.DateTime</value>
+          <value>Erstelltam,System.DateTime</value>
+          <value>Erstelltvon,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>vw_rep_statistik_findeltiere</Name>
+        <NameInSource>StatFindeltier.vw_rep_statistik_findeltiere</NameInSource>
+      </vw_rep_statistik_findeltiere>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="48">
+      <value>,Gebuehr,Gebuehr,System.String,,False,False</value>
+      <value>,v_vorname,v_vorname,System.String,,False,False</value>
+      <value>,v_nachname,v_nachname,System.String,,False,False</value>
+      <value>,v_strasse,v_strasse,System.String,,False,False</value>
+      <value>,v_ort,v_ort,System.String,,False,False</value>
+      <value>,v_rufname,v_rufname,System.String,,False,False</value>
+      <value>,v_geburtsdatum,v_geburtsdatum,System.String,,False,False</value>
+      <value>,v_geschlecht,v_geschlecht,System.String,,False,False</value>
+      <value>,vf_firma,vf_firma,System.String,,False,False</value>
+      <value>,vf_postfach,vf_postfach,System.String,,False,False</value>
+      <value>,vf_ort,vf_ort,System.String,,False,False</value>
+      <value>,vf_telefon,vf_telefon,System.String,,False,False</value>
+      <value>,vf_fax,vf_fax,System.String,,False,False</value>
+      <value>,vf_mail,vf_mail,System.String,,False,False</value>
+      <value>,vf_bank1,vf_bank1,System.String,,False,False</value>
+      <value>,vf_konto1,vf_konto1,System.String,,False,False</value>
+      <value>,vf_bank2,vf_bank2,System.String,,False,False</value>
+      <value>,vf_konto2,vf_konto2,System.String,,False,False</value>
+      <value>,vf_strasse,vf_strasse,System.String,,False,False</value>
+      <value>,v_gattung,v_gattung,System.String,,False,False</value>
+      <value>,v_rasse,v_rasse,System.String,,False,False</value>
+      <value>,vb_vorname,vb_vorname,System.String,,False,False</value>
+      <value>,vb_nachname,vb_nachname,System.String,,False,False</value>
+      <value>,vb_strasse,vb_strasse,System.String,,False,False</value>
+      <value>,vb_ort,vb_ort,System.String,,False,False</value>
+      <value>,v_fundort,v_fundort,System.String,,False,False</value>
+      <value>,v_farbe,v_farbe,System.String,,False,False</value>
+      <value>,v_chip,v_chip,System.String,,False,False</value>
+      <value>,v_bemerkungen_tier,v_bemerkungen_tier,System.String,,False,False</value>
+      <value>,v_besitzer_vorname,v_besitzer_vorname,System.String,,False,False</value>
+      <value>,v_besitzer_nachname,v_besitzer_nachname,System.String,,False,False</value>
+      <value>,v_besitzer_strasse,v_besitzer_strasse,System.String,,False,False</value>
+      <value>,v_besitzer_ort,v_besitzer_ort,System.String,,False,False</value>
+      <value>,v_tel1,v_tel1,System.String,,False,False</value>
+      <value>,v_tel2,v_tel2,System.String,,False,False</value>
+      <value>,v_besitzer_tel1,v_besitzer_tel1,System.String,,False,False</value>
+      <value>,v_besitzer_tel2,v_besitzer_tel2,System.String,,False,False</value>
+      <value>,v_logo,v_logo,System.Drawing.Image,,False,False</value>
+      <value>,vt_firma_neutral,vt_firma_neutral,System.String,,False,False</value>
+      <value>,v_portrait,v_portrait,System.Drawing.Image,,False,False</value>
+      <value>,v_fusszeile1,v_fusszeile1,System.String,,False,False</value>
+      <value>,v_fusszeile2,v_fusszeile2,System.String,,False,False</value>
+      <value>,v_fusszeile3,v_fusszeile3,System.String,,False,False</value>
+      <value>,v_fusszeile4,v_fusszeile4,System.String,,False,False</value>
+      <value>,v_kosten,v_kosten,System.Double,,False,False</value>
+      <value>,v_bemerkungen_pension,v_bemerkungen_pension,System.String,,False,False</value>
+      <value>,v_besitzer_bemerkung,v_besitzer_bemerkung,System.String,,False,False</value>
+      <value>,v_fundzeit,v_fundzeit,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="62">
+        <Text2 Ref="4" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,3.6,8.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_gattung}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text2>
+        <Text3 Ref="5" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,3.6,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Gattung:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text3>
+        <Text4 Ref="6" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,5.4,8.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text4</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_geschlecht}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text4>
+        <Text5 Ref="7" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,5.4,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text5</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Geschlecht:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text5>
+        <Text6 Ref="8" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,12,5.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text6</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{vb_vorname}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text6>
+        <Text7 Ref="9" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,12,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text7</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Vorname:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text7>
+        <Text8 Ref="10" type="Text" isKey="true">
+          <Border>All;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>[214:224:236]</Brush>
+          <ClientRectangle>0.2,3,18.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text8</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Details zum Fundtier:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text8>
+        <Text9 Ref="11" type="Text" isKey="true">
+          <Border>All;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>[214:224:236]</Brush>
+          <ClientRectangle>0.2,11.4,18.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Guid>7c8005e3c552407fabbc3fc81d8d58a8</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text9</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Finder/-in:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text9>
+        <Text10 Ref="12" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.2,12,6.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text10</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{vb_nachname}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text10>
+        <Text11 Ref="13" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.8,12,2.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text11</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Nachname:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text11>
+        <Text12 Ref="14" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,12.6,5.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text12</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{vb_strasse}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text12>
+        <Text13 Ref="15" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,12.6,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text13</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Strasse:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text13>
+        <Text14 Ref="16" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.2,12.6,6.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text14</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{vb_ort}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text14>
+        <Text15 Ref="17" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.8,12.6,2.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text15</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Plz/Ort:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text15>
+        <Text16 Ref="18" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,14.4,14.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text16</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_fundort}, {v_fundzeit}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text16>
+        <Text17 Ref="19" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,14.4,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text17</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Fundort/-datum:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text17>
+        <Text18 Ref="20" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,4.2,8.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text18</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_rasse}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text18>
+        <Text19 Ref="21" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,4.2,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text19</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Rasse:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text19>
+        <Text20 Ref="22" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,6,8.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text20</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_farbe}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text20>
+        <Text21 Ref="23" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,6,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text21</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Farbe:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text21>
+        <Text22 Ref="24" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,4.8,8.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text22</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_chip}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text22>
+        <Text23 Ref="25" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,4.8,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text23</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Mikrochip:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text23>
+        <Text24 Ref="26" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,7.2,14.6,2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>69b854692b834de08ce0d554c7981cbe</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text24</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_bemerkungen_tier}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <Type>Expression</Type>
+        </Text24>
+        <Text25 Ref="27" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,7.2,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>eebf39457cf24845a0c0d242b8b4cf31</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text25</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Bemerkung:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text25>
+        <Text26 Ref="28" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,6.6,8.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text26</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_rufname}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text26>
+        <Text27 Ref="29" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,6.6,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text27</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Rufname:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text27>
+        <Text28 Ref="30" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,15.2,18.6,1.2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text28</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Der/die obgenannte Finder/Finderin übergibt das Findeltier dem {vt_firma_neutral} und tritt die Fundrechte zugunsten des Tierschutzvereins ab.</Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <Type>Expression</Type>
+        </Text28>
+        <Text29 Ref="31" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,16.8,3.8,1.2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text29</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Ort, Datum:
+
+Unterschrift Finder/-in:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text29>
+        <Text30 Ref="32" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,19.4,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text30</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Kosten: </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text30>
+        <Text32 Ref="33" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,26,18.6,1.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>6b194728cfab4aac840c5ef5adb7ecbe</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text32</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_fusszeile1}
+{v_fusszeile2}
+{v_fusszeile3}
+{v_fusszeile4}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text32>
+        <Text46 Ref="34" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,13.2,5.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text46</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_tel1}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text46>
+        <Text47 Ref="35" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,13.2,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text47</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Kontakt 1:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text47>
+        <Text48 Ref="36" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.2,13.2,6.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text48</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_tel2}</Text>
+          <TextBrush>Black</TextBrush>
+        </Text48>
+        <Text49 Ref="37" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.8,13.2,2.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text49</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Kontakt 2:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text49>
+        <Image2 Ref="38" type="Image" isKey="true">
+          <AspectRatio>True</AspectRatio>
+          <Border>None;Black;1;Dot;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.4,3.6,6.4,3.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <HorAlignment>Right</HorAlignment>
+          <ImageData>{v_portrait}</ImageData>
+          <Name>Image2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Stretch>True</Stretch>
+        </Image2>
+        <Text50 Ref="39" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,19.4,14.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text50</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_kosten}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextFormat Ref="40" type="CurrencyFormat" isKey="true">
+            <GroupSeparator>'</GroupSeparator>
+            <NegativePattern>2</NegativePattern>
+            <PositivePattern>2</PositivePattern>
+            <Symbol>Fr.</Symbol>
+          </TextFormat>
+        </Text50>
+        <Text51 Ref="41" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,10,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>6f0a3917f5694ca2bc1cd9472cb891f2</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text51</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Bemerkung:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text51>
+        <Text52 Ref="42" type="Text" isKey="true">
+          <Border>All;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>[214:224:236]</Brush>
+          <ClientRectangle>0.2,9.4,18.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Guid>6a6510cfac48484298c0d3527fa13ff9</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text52</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Details zur Pension:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text52>
+        <Text31 Ref="43" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,10,14.6,1.2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>2792153ca98a4279aad8b50c1977b77e</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text31</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_bemerkungen_pension}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <Type>Expression</Type>
+        </Text31>
+        <Text53 Ref="44" type="Text" isKey="true">
+          <Border>Bottom;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,21,5.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>65111c0de3f94f919a6c91f74a0c8988</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text53</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_besitzer_vorname}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text53>
+        <Text54 Ref="45" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,21,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>07f8ead1ee044d90a68fa6f9b1dbf5eb</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text54</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Vorname:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text54>
+        <Text55 Ref="46" type="Text" isKey="true">
+          <Border>All;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>[214:224:236]</Brush>
+          <ClientRectangle>0.2,20.4,18.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Guid>ddcab4784c7b4822a1616ae5052cf9a2</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text55</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Besitzer:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text55>
+        <Text56 Ref="47" type="Text" isKey="true">
+          <Border>Bottom;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.2,21,6.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>6db5289e69c845e4b7b6c17847500111</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text56</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_besitzer_nachname}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text56>
+        <Text57 Ref="48" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.8,21,2.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>9702f2de552741a28dc396bcc99e07ca</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text57</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Nachname:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text57>
+        <Text58 Ref="49" type="Text" isKey="true">
+          <Border>Bottom;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,21.6,5.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>2d84be482dca45efb3e4dd730e0f5082</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text58</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_besitzer_strasse}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text58>
+        <Text59 Ref="50" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,21.6,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>a6cc251956834ef1bfa856eb2c4a4604</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text59</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Strasse:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text59>
+        <Text60 Ref="51" type="Text" isKey="true">
+          <Border>Bottom;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.2,21.6,6.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>11534720f0fe4ea7a2176acc29ddfba3</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text60</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_besitzer_ort}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text60>
+        <Text61 Ref="52" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.8,21.6,2.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>ed51b76e352344baaac2ec5d1c009c86</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text61</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Plz/Ort:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text61>
+        <Text62 Ref="53" type="Text" isKey="true">
+          <Border>Bottom;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,22.2,5.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>474451991cfc4d09acefececbbb60cde</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text62</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_besitzer_tel1}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text62>
+        <Text63 Ref="54" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,22.2,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>b6053b10d2084871887f8cb398f49dba</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text63</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Tel.1 / Mobil:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text63>
+        <Text64 Ref="55" type="Text" isKey="true">
+          <Border>Bottom;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.2,22.2,6.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>8aa3ce54acec492bb073aeba81d1cc33</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text64</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_besitzer_tel2}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text64>
+        <Text65 Ref="56" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.8,22.2,2.4,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>afcee3fcfa604bd79bc55fb3e1cac9dd</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text65</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Tel.2 / Mail:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text65>
+        <Text66 Ref="57" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.2,22.8,14.6,1.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>e8ef3f4e74a64c06b3a2a5514313c170</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text66</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{v_besitzer_bemerkung}</Text>
+          <TextBrush>Black</TextBrush>
+          <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+          <Type>Expression</Type>
+        </Text66>
+        <Text67 Ref="58" type="Text" isKey="true">
+          <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,22.8,3.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Guid>02c9a7fc2c984a9ba150cb505df13893</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text67</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Bemerkung:</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text67>
+        <ReportTitleBand1 Ref="59" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,2.4</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text1 Ref="60" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Double;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.2,9.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="59" />
+              <Text>Fundtier-Anzeige</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Image1 Ref="61" type="Image" isKey="true">
+              <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>12.8,0,6,2.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <HorAlignment>Right</HorAlignment>
+              <ImageData>{v_logo}</ImageData>
+              <Name>Image1</Name>
+              <Page isRef="3" />
+              <Parent isRef="59" />
+            </Image1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </ReportTitleBand1>
+        <HorizontalLinePrimitive1 Ref="62" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>4.2,17.2,14.6,0.0254</ClientRectangle>
+          <Color>DimGray</Color>
+          <EndCap Ref="63" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Name>HorizontalLinePrimitive1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <StartCap Ref="64" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+          <Style>Dot</Style>
+        </HorizontalLinePrimitive1>
+        <HorizontalLinePrimitive2 Ref="65" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>4.2,18,14.6,0.0254</ClientRectangle>
+          <Color>DimGray</Color>
+          <EndCap Ref="66" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Name>HorizontalLinePrimitive2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <StartCap Ref="67" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+          <Style>Dot</Style>
+        </HorizontalLinePrimitive2>
+        <HorizontalLinePrimitive3 Ref="68" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0.2,25.8,18.6,0.0254</ClientRectangle>
+          <Color>DimGray</Color>
+          <EndCap Ref="69" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>5bab2d0bf4b1476aaf3d2b3a9f8a5879</Guid>
+          <Name>HorizontalLinePrimitive3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <StartCap Ref="70" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive3>
+        <HorizontalLinePrimitive4 Ref="71" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>0.2,18.8,18.6,0.0254</ClientRectangle>
+          <Color>DimGray</Color>
+          <EndCap Ref="72" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Name>HorizontalLinePrimitive4</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <StartCap Ref="73" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive4>
+        <HorizontalLinePrimitive6 Ref="74" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>4.2,23.4,14.6,0.0254</ClientRectangle>
+          <Color>DimGray</Color>
+          <EndCap Ref="75" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>f8056c1688384a0bb9934525a6f1a396</Guid>
+          <Name>HorizontalLinePrimitive6</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <StartCap Ref="76" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+          <Style>Dot</Style>
+        </HorizontalLinePrimitive6>
+        <HorizontalLinePrimitive9 Ref="77" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>4.2,24,14.6,0.0254</ClientRectangle>
+          <Color>DimGray</Color>
+          <EndCap Ref="78" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>f0a8e48fb4524266ae4cae992d23639f</Guid>
+          <Name>HorizontalLinePrimitive9</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <StartCap Ref="79" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+          <Style>Dot</Style>
+        </HorizontalLinePrimitive9>
+        <HorizontalLinePrimitive10 Ref="80" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>4.2,24.6,14.6,0.0254</ClientRectangle>
+          <Color>DimGray</Color>
+          <EndCap Ref="81" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>e32996d49a5c4c2fa7db176312fcce1a</Guid>
+          <Name>HorizontalLinePrimitive10</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <StartCap Ref="82" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+          <Style>Dot</Style>
+        </HorizontalLinePrimitive10>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>093b14d3c03b4e1a95ba4a1f9d89edfd</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="83" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="84" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>7/23/2015 9:46:13 PM</ReportChanged>
+  <ReportCreated>2/16/2011 6:42:28 PM</ReportCreated>
+  <ReportFile>C:\Projekte\PetPlus_V4\trunk\PetPlusWinForms\Berichte\Fundtier\Fundtieranzeige_Vorlage.mrt</ReportFile>
+  <ReportGuid>45aabcc822954b0cbd590fa6c5c13716</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2014.3.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

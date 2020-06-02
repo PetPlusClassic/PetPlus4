@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <Spenden Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Spenden</Alias>
+        <Columns isList="true" count="31">
+          <value>id_spenden,System.String</value>
+          <value>spendenzweck,System.String</value>
+          <value>kontobezeichnung,System.String</value>
+          <value>kontonummer,System.String</value>
+          <value>inhaber_firma,System.String</value>
+          <value>iban,System.String</value>
+          <value>Firma,System.String</value>
+          <value>Vornamen,System.String</value>
+          <value>Nachname,System.String</value>
+          <value>Strasse,System.String</value>
+          <value>PLZ,System.String</value>
+          <value>Ort,System.String</value>
+          <value>Eintrittsdatum,System.DateTime</value>
+          <value>Todestag,System.DateTime</value>
+          <value>Austrittsdatum,System.DateTime</value>
+          <value>waehrungskuerzel,System.String</value>
+          <value>spendenbeitrag,System.Double</value>
+          <value>verdankt,System.DateTime</value>
+          <value>einbezahltam,System.DateTime</value>
+          <value>einzahlung_gesendet,System.DateTime</value>
+          <value>referenz_intern,System.String</value>
+          <value>referenz_spender,System.String</value>
+          <value>bemerkungen,System.String</value>
+          <value>verdankungstext,System.String</value>
+          <value>erstelltam,System.DateTime</value>
+          <value>erstelltvon,System.String</value>
+          <value>ESRCodiernummer,System.String</value>
+          <value>ESRBelegart,System.String</value>
+          <value>ESRZahlungsart,System.String</value>
+          <value>Spendenbescheinigung_gesendet,System.DateTime</value>
+          <value>archiv,System.Boolean</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>Spenden</Name>
+        <NameInSource>Spenden</NameInSource>
+      </Spenden>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="45">
+      <value>,Gebuehr,Gebuehr,System.String,,False,False</value>
+      <value>,v_vorname,v_vorname,System.String,,False,False</value>
+      <value>,v_nachname,v_nachname,System.String,,False,False</value>
+      <value>,v_strasse,v_strasse,System.String,,False,False</value>
+      <value>,v_ort,v_ort,System.String,,False,False</value>
+      <value>,v_rufname,v_rufname,System.String,,False,False</value>
+      <value>,v_geburtsdatum,v_geburtsdatum,System.String,,False,False</value>
+      <value>,v_rasse,v_rasse,System.String,,False,False</value>
+      <value>,v_geschlecht,v_geschlecht,System.String,,False,False</value>
+      <value>,vf_firma,vf_firma,System.String,,False,False</value>
+      <value>,vf_postfach,vf_postfach,System.String,,False,False</value>
+      <value>,vf_ort,vf_ort,System.String,,False,False</value>
+      <value>,vf_telefon,vf_telefon,System.String,,False,False</value>
+      <value>,vf_fax,vf_fax,System.String,,False,False</value>
+      <value>,vf_mail,vf_mail,System.String,,False,False</value>
+      <value>,vf_bank1,vf_bank1,System.String,,False,False</value>
+      <value>,vf_konto1,vf_konto1,System.String,,False,False</value>
+      <value>,vf_bank2,vf_bank2,System.String,,False,False</value>
+      <value>,vf_konto2,vf_konto2,System.String,,False,False</value>
+      <value>,vf_strasse,vf_strasse,System.String,,False,False</value>
+      <value>,v_rabatt,v_rabatt,System.String,,False,False</value>
+      <value>,v_pensionsstart,v_pensionsstart,System.String,,False,False</value>
+      <value>,v_pensionsende,v_pensionsende,System.String,,False,False</value>
+      <value>,v_kontakt1,v_kontakt1,System.String,,False,False</value>
+      <value>,v_kontakt2,v_kontakt2,System.String,,False,False</value>
+      <value>,v_kontakt3,v_kontakt3,System.String,,False,False</value>
+      <value>,v_gesamttotal,v_gesamttotal,System.String,,False,False</value>
+      <value>,v_logo,v_logo,System.Drawing.Image,,False,False</value>
+      <value>,v_kontakt1_bem,v_kontakt1_bem,System.String,,False,False</value>
+      <value>,v_kontakt2_bem,v_kontakt2_bem,System.String,,False,False</value>
+      <value>,v_kontakt3_bem,v_kontakt3_bem,System.String,,False,False</value>
+      <value>,v_fusszeile1,v_fusszeile1,System.String,,False,False</value>
+      <value>,v_fusszeile2,v_fusszeile2,System.String,,False,False</value>
+      <value>,v_fusszeile3,v_fusszeile3,System.String,,False,False</value>
+      <value>,v_fusszeile4,v_fusszeile4,System.String,,False,False</value>
+      <value>Tierheim,Name_Genitiv,Name_Genitiv,System.String,Tierschutz,False,False</value>
+      <value>Tierheim,Name,Name,System.String,Tierschutz,False,False</value>
+      <value>Tierheim,Strasse,Strasse,System.String,rstrasse_x0020_5,False,False</value>
+      <value>Tierheim,PlzOrt,PlzOrt,System.String,_x0037_000_x0020_Chur,False,False</value>
+      <value>Tierheim,Nummer,Nummer,System.String,Tierschutz,False,False</value>
+      <value>Tierheim,Fusszeile1,Fusszeile1,System.String,Zürcher_x0020_Tierschutz_x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020_Telefon_x0020_044_x0020_261_x0020_97_x0020_14_x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020_Mitglied_x0020_der_x0020_WSPA,False,False</value>
+      <value>Tierheim,Fusszeile2,Fusszeile2,System.String,rstrasse_x0020_5_x002C__x0020_7000_x0020_Chur,False,False</value>
+      <value>Tierheim,Fusszeile3,Fusszeile3,System.String,T._x0020_061_x0020_331_x0020_32_x0020_33_x0020__x007C__x0020_info_x0040_tierschutz.ch,False,False</value>
+      <value>Tierheim,Fusszeile4,Fusszeile4,System.String,,False,False</value>
+      <value>Tierheim,Gerichtsstand,Gerichtsstand,System.String,Zivilkreisgericht_x0020_Chur,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="9">
+        <PageFooterBand1 Ref="4" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,25.8,27.7,0.8</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text18 Ref="5" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>19.8,0.2,7.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{PageNofM}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text18>
+            <Text16 Ref="6" type="Text" isKey="true">
+              <Border>None;[216:216:216];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.2,5,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Today}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="7" type="DateFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </PageFooterBand1>
+        <ReportTitleBand1 Ref="8" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,27.7,2.8</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text1 Ref="9" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Guid>826524b8bc544c65a38662ce29dd8a4d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>Spendenliste</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <logoImage Ref="10" type="Image" isKey="true">
+              <Border>All;DimGray;1;None;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>21.6,0,6,2.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <HorAlignment>Right</HorAlignment>
+              <ImageData>{v_logo}</ImageData>
+              <Name>logoImage</Name>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+            </logoImage>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </ReportTitleBand1>
+        <GroupHeaderBand2 Ref="11" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4,27.7,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </GroupHeaderBand2>
+        <GroupHeaderBand1 Ref="12" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.8,27.7,2</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text2 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.2,9.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="3" />
+              <Parent isRef="12" />
+              <Text>Spendenzweck:  {Spenden.spendenzweck}</Text>
+              <TextBrush>[23:54:93]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+          </Components>
+          <Condition>{Spenden.spendenzweck}</Condition>
+          <Conditions isList="true" count="0" />
+          <KeepGroupTogether>True</KeepGroupTogether>
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </GroupHeaderBand1>
+        <GroupHeaderBand3 Ref="14" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,7.6,27.7,1.6</ClientRectangle>
+          <Components isList="true" count="10">
+            <Text4 Ref="15" type="Text" isKey="true">
+              <Border>Bottom;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6,0,17,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="3" />
+              <Parent isRef="14" />
+              <Text>{Spenden.kontobezeichnung}</Text>
+              <TextBrush>[0:32:96]</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text13 Ref="16" type="Text" isKey="true">
+              <Border>Bottom;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.8,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>faadeff3da2d4497ac121211474d9156</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="3" />
+              <Parent isRef="14" />
+              <Text>{Spenden.kontonummer}</Text>
+              <TextBrush>[0:32:96]</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text12 Ref="17" type="Text" isKey="true">
+              <Border>Bottom;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>4f6182cb8a5041aab3261974ddbcac3b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="3" />
+              <Parent isRef="14" />
+              <Text>Konto-Nr</Text>
+              <TextBrush>[0:32:96]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text3 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1,14.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="3" />
+              <Parent isRef="14" />
+              <Text>Spender</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text5 Ref="19" type="Text" isKey="true">
+              <Border>Bottom;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,0,2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="3" />
+              <Parent isRef="14" />
+              <Text>Kontoname</Text>
+              <TextBrush>[0:32:96]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text7 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>25.4,1,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="3" />
+              <Parent isRef="14" />
+              <Text>Beitrag</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text9 Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>23,1,2.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="3" />
+              <Parent isRef="14" />
+              <Text>Einbezahlt am</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text11 Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.2,1,8.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="3" />
+              <Parent isRef="14" />
+              <Text>Bemerkung</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text23 Ref="23" type="Text" isKey="true">
+              <Border>Bottom;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>24,0,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>5eda8dd4eca841b982fa4d46b0517904</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="3" />
+              <Parent isRef="14" />
+              <Text>{Sum(GroupHeaderBand3,Spenden.spendenbeitrag)}</Text>
+              <TextBrush>[0:32:96]</TextBrush>
+              <TextFormat Ref="24" type="CurrencyFormat" isKey="true">
+                <GroupSeparator>'</GroupSeparator>
+                <NegativePattern>2</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>Fr.</Symbol>
+              </TextFormat>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+            <Text24 Ref="25" type="Text" isKey="true">
+              <Border>Bottom;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>23,0,1,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>1b23d32dc2a0436c84205b682eb1bb54</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="3" />
+              <Parent isRef="14" />
+              <Text>Total:</Text>
+              <TextBrush>[0:32:96]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+          </Components>
+          <Condition>{Spenden.kontonummer}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </GroupHeaderBand3>
+        <DataBand1 Ref="26" type="DataBand" isKey="true">
+          <Border>Bottom;[127:127:127];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,10,27.7,0.6</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text6 Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>25.4,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="3" />
+              <Parent isRef="26" />
+              <Text>{Spenden.spendenbeitrag}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="28" type="CurrencyFormat" isKey="true">
+                <GroupSeparator>'</GroupSeparator>
+                <NegativePattern>2</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>Fr.</Symbol>
+              </TextFormat>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text8 Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>23,0,2.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="3" />
+              <Parent isRef="26" />
+              <Text>{Spenden.einbezahltam}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="30" type="DateFormat" isKey="true" />
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text10 Ref="31" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.2,0,8.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="3" />
+              <Parent isRef="26" />
+              <Text>{Spenden.bemerkungen}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="32" type="DateFormat" isKey="true" />
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text17 Ref="33" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>90a4dae5e8bf470db100c319e1b7178e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="3" />
+              <Parent isRef="26" />
+              <Text>{Spenden.Nachname}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text14 Ref="34" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,0,4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>6f43782b705f4d12a592a56b42a2c0f4</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="3" />
+              <Parent isRef="26" />
+              <Text>{Spenden.Vornamen}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text15 Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8,0,6.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>780d2296fcab4e79a02a854db8257f40</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="3" />
+              <Parent isRef="26" />
+              <Text>{Spenden.Firma}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Spenden</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="2">
+            <value>ASC</value>
+            <value>einbezahltam</value>
+          </Sort>
+        </DataBand1>
+        <GroupFooterBand3 Ref="36" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,11.4,27.7,0.8</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </GroupFooterBand3>
+        <GroupFooterBand1 Ref="37" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,13,27.7,2</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text19 Ref="38" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22.4,0.6,5.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>9bf33c0561be45d39a8cdfc037229a27</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="3" />
+              <Parent isRef="37" />
+              <Text>{Sum(DataBand1,Spenden.spendenbeitrag)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="39" type="CurrencyFormat" isKey="true">
+                <GroupSeparator>'</GroupSeparator>
+                <NegativePattern>2</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>Fr.</Symbol>
+              </TextFormat>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text20 Ref="40" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.6,17,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>cda005e1d5b9402fb0a265dc605955de</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="3" />
+              <Parent isRef="37" />
+              <Text>Spendentotal von "{Spenden.spendenzweck}"</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </GroupFooterBand1>
+        <GroupFooterBand2 Ref="41" type="GroupFooterBand" isKey="true">
+          <Border>Top;[127:127:127];1;Solid;False;4;Black</Border>
+          <Brush>[233:233:233]</Brush>
+          <ClientRectangle>0,15.8,27.7,2.4</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text21 Ref="42" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22.4,1.6,5.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Guid>ab11576bff4f4fc8bd2355c44087b574</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="3" />
+              <Parent isRef="41" />
+              <Text>{Sum(DataBand1,Spenden.spendenbeitrag)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="43" type="CurrencyFormat" isKey="true">
+                <GroupSeparator>'</GroupSeparator>
+                <NegativePattern>2</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>Fr.</Symbol>
+              </TextFormat>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+            <Text22 Ref="44" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.6,5.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>72e243f5710f4d2ab4d4c41b6f29718b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="3" />
+              <Parent isRef="41" />
+              <Text>Gesamt-Spendentotal</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </GroupFooterBand2>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>3b173a0778014237b2212e335c112a87</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21</PageHeight>
+      <PageWidth>29.7</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="45" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,9,Bold</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="46" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>8/30/2015 10:37:27 PM</ReportChanged>
+  <ReportCreated>2/15/2011 8:45:16 PM</ReportCreated>
+  <ReportFile>C:\Projekte\PetPlus_V4\trunk\PetPlusWinForms\bin\Debug\Berichte\Spenden\Spendenübersicht.mrt</ReportFile>
+  <ReportGuid>68ad37337234456d90eecca31c1df523</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2014.3.17</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

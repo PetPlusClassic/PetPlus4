@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <CalculationMode>Interpretation</CalculationMode>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="2">
+      <Zeitraum Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Zeitraum</Alias>
+        <Columns isList="true" count="1">
+          <value>Wert,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Zeitraum</Name>
+        <NameInSource>Zeitraum</NameInSource>
+      </Zeitraum>
+      <Aufgabenliste Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Aufgabenliste</Alias>
+        <Columns isList="true" count="24">
+          <value>ID_Aufgabe,System.String</value>
+          <value>Rufname,System.String</value>
+          <value>Gattung,System.String</value>
+          <value>Farbenname,System.String</value>
+          <value>Aufnahme-Nr,System.String</value>
+          <value>Aufgabenbezeichnung,System.String</value>
+          <value>Fälligkeit,System.DateTime</value>
+          <value>Status,System.String</value>
+          <value>Statuswert,System.Int32</value>
+          <value>IDFS_Aufgabendefinition,System.String</value>
+          <value>SerieTyp,System.String</value>
+          <value>IDFS_Tier,System.String</value>
+          <value>Beschreibung,System.String</value>
+          <value>Kommentar,System.String</value>
+          <value>Typ,System.String</value>
+          <value>Archiv,System.Boolean</value>
+          <value>IDFS_Ausfuehrender,System.String</value>
+          <value>IDFS_Person,System.String</value>
+          <value>Nachname,System.String</value>
+          <value>Vornamen,System.String</value>
+          <value>TaskId,System.String</value>
+          <value>AnimalId,System.String</value>
+          <value>Fellfarbe,System.String</value>
+          <value>Lauf-Nr,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Aufgabenliste</Name>
+        <NameInSource>Aufgaben.Aufgabenliste</NameInSource>
+      </Aufgabenliste>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="1">
+      <value>,SubTitel,SubTitel,,System.String,,False,False,False,True</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>[255:255:255]</Brush>
+      <Components isList="true" count="7">
+        <PageHeaderBand1 Ref="5" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,1.6</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text1 Ref="6" type="Text" isKey="true">
+              <Border>None;[216:216:216];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,13,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,13,Bold</Font>
+              <Guid>4fd38850db0748b0abb2a0bfa921f494</Guid>
+              <Margins>5,5,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>Aufgabenmanagement</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text3 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.8,13,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,10</Font>
+              <Margins>5,5,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{Zeitraum.Wert}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </PageHeaderBand1>
+        <PageFooterBand1 Ref="8" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,26.9,19,0.8</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text17 Ref="9" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0,0.2,5,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{Format("{0:dd.MM.yyyy}", Today)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text10 Ref="10" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>15.2,0.2,3.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="8" />
+              <Text>{PageNofM}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </PageFooterBand1>
+        <GroupHeaderBand1 Ref="11" type="GroupHeaderBand" isKey="true">
+          <Border>None;[54:96:146];1;Solid;False;4;Black</Border>
+          <Brush>[0:255:255:255]</Brush>
+          <ClientRectangle>0,2.8,19,0.6</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text8 Ref="12" type="Text" isKey="true">
+              <Border>None;[216:216:216];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,10,Bold</Font>
+              <Guid>7165ca5098e944f58b3bdc722e9d9b9f</Guid>
+              <Margins>5,0,0,5</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="11" />
+              <Text>Status:</Text>
+              <TextBrush>[227:108:9]</TextBrush>
+              <Type>Expression</Type>
+            </Text8>
+            <Text15 Ref="13" type="Text" isKey="true">
+              <Border>None;[216:216:216];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,0,11.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,10,Bold</Font>
+              <Margins>5,0,0,5</Margins>
+              <Name>Text15</Name>
+              <Page isRef="4" />
+              <Parent isRef="11" />
+              <Text>{Aufgabenliste.Status}</Text>
+              <TextBrush>[227:108:9]</TextBrush>
+              <Type>DataColumn</Type>
+            </Text15>
+          </Components>
+          <Condition>{Aufgabenliste.Status}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </GroupHeaderBand1>
+        <GroupHeaderBand2 Ref="14" type="GroupHeaderBand" isKey="true">
+          <Border>None;[0:255:255:255];1;Solid;False;4;Black</Border>
+          <Brush>[253:234:218]</Brush>
+          <ClientRectangle>0,4.2,19,0.6</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text4 Ref="15" type="Text" isKey="true">
+              <Border>None;[216:216:216];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0,0,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,10</Font>
+              <Margins>5,5,2,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="14" />
+              <Text>Rufname</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+            <Text11 Ref="16" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <CanBreak>True</CanBreak>
+              <ClientRectangle>1.8,0,12.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,10,Bold</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>5,5,2,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="4" />
+              <Parent isRef="14" />
+              <Text>{Aufgabenliste.Rufname} [{Aufgabenliste.Lauf_Nr}] ({Aufgabenliste.Fellfarbe})</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text11>
+            <Text5 Ref="17" type="Text" isKey="true">
+              <Border>None;[216:216:216];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>14.2,0,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,10</Font>
+              <Guid>f96c2e5ed0cc40f8b3029dd93aec334f</Guid>
+              <Margins>5,5,2,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="14" />
+              <Text>Gattung</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text5>
+            <Text12 Ref="18" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <CanBreak>True</CanBreak>
+              <ClientRectangle>16,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,10,Bold</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>5,5,2,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="4" />
+              <Parent isRef="14" />
+              <Text>{Aufgabenliste.Gattung}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+            </Text12>
+          </Components>
+          <Condition>{Aufgabenliste.AnimalId}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </GroupHeaderBand2>
+        <DataBand1 Ref="19" type="DataBand" isKey="true">
+          <Border>None;[149:179:215];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,5.6,19,1.4</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text13 Ref="20" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <CanBreak>True</CanBreak>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,14.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,10,Bold</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>5,5,3,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="4" />
+              <Parent isRef="19" />
+              <Text>{Aufgabenliste.Aufgabenbezeichnung}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+            </Text13>
+            <Text18 Ref="21" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <CanBreak>True</CanBreak>
+              <CanGrow>True</CanGrow>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>0,0.6,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,10</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>5,5,3,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="4" />
+              <Parent isRef="19" />
+              <Text>Beschreibung: {Aufgabenliste.Beschreibung}
+Kommentare:   {Aufgabenliste.Kommentar}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text18>
+            <Text9 Ref="22" type="Text" isKey="true">
+              <Border>None;[216:216:216];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>14.2,0,2.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,10,Bold</Font>
+              <Guid>b06b88af27f049b3ba2628cb2118ed71</Guid>
+              <Margins>5,5,3,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="4" />
+              <Parent isRef="19" />
+              <Text>Fälligkeit</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text9>
+            <Text14 Ref="23" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <CanBreak>True</CanBreak>
+              <ClientRectangle>16,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,10</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>5,5,3,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="4" />
+              <Parent isRef="19" />
+              <Text>{Aufgabenliste.Fälligkeit}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="24" type="DateFormat" isKey="true" />
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+            </Text14>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Aufgabenliste</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="4">
+            <value>ASC</value>
+            <value>Fälligkeit</value>
+            <value>ASC</value>
+            <value>Rufname</value>
+          </Sort>
+        </DataBand1>
+        <GroupFooterBand2 Ref="25" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,7.8,19,0.2</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </GroupFooterBand2>
+        <GroupFooterBand1 Ref="26" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,8.8,19,0.2</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </GroupFooterBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>1d4a86f4e40c46e183704e6de6ffac2a</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="27" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="28" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>5/6/2020 10:10:49 AM</ReportChanged>
+  <ReportCreated>8/14/2014 9:28:15 PM</ReportCreated>
+  <ReportFile>C:\Users\jonas\source\repos\petplus\Projects\Version 4\Desktop\bin\Debug\Berichte\Aufgaben\Aufgabenliste.mrt</ReportFile>
+  <ReportGuid>77197417a9f4416baf37c5eb750fa9ec</ReportGuid>
+  <ReportImage isNull="true" />
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2016.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

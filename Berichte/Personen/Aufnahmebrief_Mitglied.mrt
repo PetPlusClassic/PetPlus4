@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <Table Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Table</Alias>
+        <Columns isList="true" count="40">
+          <value>ID_Person,System.String</value>
+          <value>Name,System.String</value>
+          <value>ID_Person1,System.String</value>
+          <value>Firma,System.String</value>
+          <value>Vornamen,System.String</value>
+          <value>Nachname,System.String</value>
+          <value>Strasse,System.String</value>
+          <value>IDFS_Ort,System.String</value>
+          <value>Mitglied,System.Boolean</value>
+          <value>Eintrittsdatum,System.DateTime</value>
+          <value>Bemerkungen,System.String</value>
+          <value>IDFS_Funktion,System.String</value>
+          <value>IDFS_Anrede,System.String</value>
+          <value>IDFS_Kanton,System.String</value>
+          <value>IDFS_Land,System.String</value>
+          <value>Geburtsdatum,System.DateTime</value>
+          <value>archiv,System.Boolean</value>
+          <value>Erstelltam,System.DateTime</value>
+          <value>ESRNummer,System.String</value>
+          <value>IDFSM_Werbekategorien,System.String</value>
+          <value>Sonderrabatt_definiert,System.Double</value>
+          <value>IDFS_Mitgliedart,System.String</value>
+          <value>Todestag,System.DateTime</value>
+          <value>Austrittsdatum,System.DateTime</value>
+          <value>AlteAdressenID,System.String</value>
+          <value>Mitgliedjahr,System.String</value>
+          <value>Beitrag,System.String</value>
+          <value>Expr1,System.String</value>
+          <value>Anrede,System.String</value>
+          <value>PLZ,System.String</value>
+          <value>Ort,System.String</value>
+          <value>Kanton,System.String</value>
+          <value>Land,System.String</value>
+          <value>Mitgliederart,System.String</value>
+          <value>Kontonummer,System.String</value>
+          <value>Kontonamen,System.String</value>
+          <value>ESR,System.String</value>
+          <value>Rappen,System.String</value>
+          <value>Codierzeile,System.String</value>
+          <value>Referenznummer,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <IsCloud>False</IsCloud>
+        <Name>Table</Name>
+        <NameInSource>Mitglieder</NameInSource>
+      </Table>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="35">
+      <value>,Gebuehr,Gebuehr,System.String,,False,False</value>
+      <value>,v_vorname,v_vorname,System.String,,False,False</value>
+      <value>,v_nachname,v_nachname,System.String,,False,False</value>
+      <value>,v_strasse,v_strasse,System.String,,False,False</value>
+      <value>,v_ort,v_ort,System.String,,False,False</value>
+      <value>,v_rufname,v_rufname,System.String,,False,False</value>
+      <value>,v_geburtsdatum,v_geburtsdatum,System.String,,False,False</value>
+      <value>,v_rasse,v_rasse,System.String,,False,False</value>
+      <value>,v_geschlecht,v_geschlecht,System.String,,False,False</value>
+      <value>,vf_firma,vf_firma,System.String,,False,False</value>
+      <value>,vf_postfach,vf_postfach,System.String,,False,False</value>
+      <value>,vf_ort,vf_ort,System.String,,False,False</value>
+      <value>,vf_telefon,vf_telefon,System.String,,False,False</value>
+      <value>,vf_fax,vf_fax,System.String,,False,False</value>
+      <value>,vf_mail,vf_mail,System.String,,False,False</value>
+      <value>,vf_bank1,vf_bank1,System.String,,False,False</value>
+      <value>,vf_konto1,vf_konto1,System.String,,False,False</value>
+      <value>,vf_bank2,vf_bank2,System.String,,False,False</value>
+      <value>,vf_konto2,vf_konto2,System.String,,False,False</value>
+      <value>,vf_strasse,vf_strasse,System.String,,False,False</value>
+      <value>,v_rabatt,v_rabatt,System.String,,False,False</value>
+      <value>,v_pensionsstart,v_pensionsstart,System.String,,False,False</value>
+      <value>,v_pensionsende,v_pensionsende,System.String,,False,False</value>
+      <value>,v_kontakt1,v_kontakt1,System.String,,False,False</value>
+      <value>,v_kontakt2,v_kontakt2,System.String,,False,False</value>
+      <value>,v_kontakt3,v_kontakt3,System.String,,False,False</value>
+      <value>,v_gesamttotal,v_gesamttotal,System.String,,False,False</value>
+      <value>,v_logo,v_logo,System.Drawing.Image,,False,False</value>
+      <value>,v_kontakt1_bem,v_kontakt1_bem,System.String,,False,False</value>
+      <value>,v_kontakt2_bem,v_kontakt2_bem,System.String,,False,False</value>
+      <value>,v_kontakt3_bem,v_kontakt3_bem,System.String,,False,False</value>
+      <value>,v_fusszeile1,v_fusszeile1,System.String,,False,False</value>
+      <value>,v_fusszeile2,v_fusszeile2,System.String,,False,False</value>
+      <value>,v_fusszeile3,v_fusszeile3,System.String,,False,False</value>
+      <value>,v_fusszeile4,v_fusszeile4,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <DataBand1 Ref="4" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <CanGrow>False</CanGrow>
+          <ClientRectangle>0,4,180,260</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text1 Ref="5" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,31,64,24</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Table.Anrede}
+{Table.Vornamen} {Table.Nachname}
+{Table.Strasse}
+{Table.PLZ} {Table.Ort}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Text2 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,63,116,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Muttenz, den {Format("{0:dd.MM.yyyy}", Today)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+            <Text3 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,72,116,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,10,Bold</Font>
+              <Guid>3b5b92ef15904ad3b4bfbd62f301d0a0</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Aufnahme als {Table.Mitgliederart}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+            <Text4 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,82,180,84</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Switch(Table.Anrede.Contains("Frau"),"Sehr geehrte",Table.Anrede.Contains("Herr"),"Sehr geehrter", Table.Anrede.Contains("Familie"),"Sehr geehrte")} {Table.Anrede} {Table.Nachname}
+
+Mit Freude haben wir vor einiger Zeit Ihre Zahlung von CHF 45.— für den Mitgliederbeitrag 2015 erhalten. 
+Anlässlich der letzten Vorstandssitzung hat der Vorstand Ihre Mitgliedschaft bestätigt.
+Wir begrüssen Sie herzlich in unserem Kreis.
+
+Sie erhalten in Zukunft 2-mal jährlich unser „Tierschutz News“, welches Sie über unsere Vereinsaktivitäten und vieles mehr aus dem Bereich des Tierschutzes informiert. 
+Die neuste Ausgabe liegt bei.
+
+Wir danken Ihnen für Ihre Unterstützung, mit der Sie uns helfen, unsere vielseitige Arbeit zum Wohl der Tiere wahrzunehmen.
+
+
+Mit freundlichen Grüssen
+
+Tierschutz Musterhausen
+
+Julia Muster
+Geschäftsführerin
+
+
+</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+            </Text4>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Table</DataSourceName>
+          <Filters isList="true" count="0" />
+          <MaxHeight>260</MaxHeight>
+          <MinHeight>260</MinHeight>
+          <Name>DataBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>3b173a0778014237b2212e335c112a87</Guid>
+      <Margins>20,10,20,10</Margins>
+      <Name>Page1</Name>
+      <PageHeight>297</PageHeight>
+      <PageWidth>210</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="9" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,9,Bold</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="10" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>6/11/2015 8:25:24 AM</ReportChanged>
+  <ReportCreated>2/15/2011 8:45:16 PM</ReportCreated>
+  <ReportFile>C:\Projekte\PetPlus_V4\trunk\PetPlusWinForms\Berichte\Personen\Aufnahmebrief_Mitglied.mrt</ReportFile>
+  <ReportGuid>7f4c70b8d6e745af91b72020e1955203</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Millimeters</ReportUnit>
+  <ReportVersion>2014.3.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

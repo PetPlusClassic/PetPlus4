@@ -1,0 +1,2060 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <CacheAllData>True</CacheAllData>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="9">
+      <Leistungskosten Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Leistungskosten</Alias>
+        <Columns isList="true" count="4">
+          <value>Leistungstext,System.String</value>
+          <value>Leistungskosten,System.String</value>
+          <value>Leistungszeit,System.String</value>
+          <value>Leistungstotal,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Leistungskosten</Name>
+        <NameInSource>Leistungen</NameInSource>
+      </Leistungskosten>
+      <Zusatzleistungskosten Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Zusatzleistungskosten</Alias>
+        <Columns isList="true" count="3">
+          <value>Leistungsbezeichnung,System.String</value>
+          <value>Leistungsbeschreibung,System.String</value>
+          <value>Kosten,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Zusatzleistungskosten</Name>
+        <NameInSource>Zusatzleistungen</NameInSource>
+      </Zusatzleistungskosten>
+      <Bezahlungen Ref="4" type="DataTableSource" isKey="true">
+        <Alias>Bezahlungen</Alias>
+        <Columns isList="true" count="10">
+          <value>Zahlart,System.String</value>
+          <value>Betrag,System.String</value>
+          <value>Zahldatum,System.String</value>
+          <value>ID_Ferientier_bezahlung,System.String</value>
+          <value>IDFS_Zahlungsart,System.String</value>
+          <value>Anzahlung,System.Double</value>
+          <value>IDFS_Ferientier,System.String</value>
+          <value>Archiv,System.Boolean</value>
+          <value>Erstelltam,System.DateTime</value>
+          <value>Erstelltvon,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Bezahlungen</Name>
+        <NameInSource>Bezahlungen</NameInSource>
+      </Bezahlungen>
+      <Tierdaten2 Ref="5" type="DataTableSource" isKey="true">
+        <Alias>Tierdaten</Alias>
+        <Columns isList="true" count="17">
+          <value>Rufname,System.String</value>
+          <value>Rasse,System.String</value>
+          <value>Geburtsdatum,System.String</value>
+          <value>Farbe,System.String</value>
+          <value>Geschlecht,System.String</value>
+          <value>Kastriert,System.String</value>
+          <value>Tierarzt,System.String</value>
+          <value>Gattung,System.String</value>
+          <value>Chip-Nr,System.String</value>
+          <value>Bemerkungen,System.String</value>
+          <value>Gewicht,System.String</value>
+          <value>ID,System.String</value>
+          <value>Gattungsgroesse,System.String</value>
+          <value>Eintritt,System.String</value>
+          <value>Austritt,System.String</value>
+          <value>Laufnummer,System.String</value>
+          <value>Fütterung,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Tierdaten2</Name>
+        <NameInSource>Tiere</NameInSource>
+      </Tierdaten2>
+      <Anzahlungen Ref="6" type="DataTableSource" isKey="true">
+        <Alias>Anzahlungen</Alias>
+        <Columns isList="true" count="4">
+          <value>Zahlart,System.String</value>
+          <value>Betrag,System.String</value>
+          <value>Anzahlung,System.String</value>
+          <value>Zahldatum,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Anzahlungen</Name>
+        <NameInSource>Anzahlungen</NameInSource>
+      </Anzahlungen>
+      <Zeiten Ref="7" type="DataTableSource" isKey="true">
+        <Alias>Zeiten</Alias>
+        <Columns isList="true" count="9">
+          <value>ID_Ferientier_zeiten,System.String</value>
+          <value>Von,System.DateTime</value>
+          <value>Bis,System.DateTime</value>
+          <value>Fixdatum,System.DateTime</value>
+          <value>Ausnahmedatum,System.DateTime</value>
+          <value>IDFS_Ferientier,System.String</value>
+          <value>Archiv,System.Boolean</value>
+          <value>Erstelltvon,System.String</value>
+          <value>Erstelltam,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Zeiten</Name>
+        <NameInSource>Zeiten</NameInSource>
+      </Zeiten>
+      <Impfungshistory Ref="8" type="DataTableSource" isKey="true">
+        <Alias>Impfungshistory</Alias>
+        <Columns isList="true" count="8">
+          <value>ID_Impfungen,System.String</value>
+          <value>Impfungsbezeichnung,System.String</value>
+          <value>Impfungsdatum,System.DateTime</value>
+          <value>Bemerkung,System.String</value>
+          <value>IDFS_Tier,System.String</value>
+          <value>Archiv,System.Boolean</value>
+          <value>Impfungerneuerungsdatum,System.DateTime</value>
+          <value>Erinnerungsdatum,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Impfungshistory</Name>
+        <NameInSource>Impfungen.Impfungshistory</NameInSource>
+      </Impfungshistory>
+      <Tierdaten Ref="9" type="DataTableSource" isKey="true">
+        <Alias>Tierdaten</Alias>
+        <Columns isList="true" count="17">
+          <value>Rufname,System.String</value>
+          <value>Rasse,System.String</value>
+          <value>Geburtsdatum,System.String</value>
+          <value>Farbe,System.String</value>
+          <value>Geschlecht,System.String</value>
+          <value>Kastriert,System.String</value>
+          <value>Tierarzt,System.String</value>
+          <value>Gattung,System.String</value>
+          <value>Chip-Nr,System.String</value>
+          <value>Bemerkungen,System.String</value>
+          <value>Gewicht,System.String</value>
+          <value>ID,System.String</value>
+          <value>Gattungsgroesse,System.String</value>
+          <value>Eintritt,System.String</value>
+          <value>Austritt,System.String</value>
+          <value>Laufnummer,System.String</value>
+          <value>Fütterung,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Tierdaten</Name>
+        <NameInSource>Ferientiere.Tierdaten</NameInSource>
+      </Tierdaten>
+      <Impfungshistory2 Ref="10" type="DataTableSource" isKey="true">
+        <Alias>Impfungshistory</Alias>
+        <Columns isList="true" count="8">
+          <value>ID_Impfungen,System.String</value>
+          <value>Impfungsbezeichnung,System.String</value>
+          <value>Impfungsdatum,System.DateTime</value>
+          <value>Bemerkung,System.String</value>
+          <value>IDFS_Tier,System.String</value>
+          <value>Archiv,System.Boolean</value>
+          <value>Impfungerneuerungsdatum,System.DateTime</value>
+          <value>Erinnerungsdatum,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Impfungshistory2</Name>
+        <NameInSource>Ferientiere.Impfungshistory</NameInSource>
+      </Impfungshistory2>
+    </DataSources>
+    <Relations isList="true" count="1">
+      <Tier Ref="11" type="DataRelation" isKey="true">
+        <Alias>Tier</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>IDFS_Tier</value>
+        </ChildColumns>
+        <ChildSource isRef="10" />
+        <Dictionary isRef="1" />
+        <Name>Tier</Name>
+        <NameInSource>Tier2Impfungen</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>ID</value>
+        </ParentColumns>
+        <ParentSource isRef="5" />
+      </Tier>
+    </Relations>
+    <Report isRef="0" />
+    <Variables isList="true" count="81">
+      <value>,v_tier_rufname,v_tier_rufname,,System.String,,False,False,False,False</value>
+      <value>,v_fusszeile1,v_fusszeile1,,System.String,,False,False,False,False</value>
+      <value>,v_fusszeile2,v_fusszeile2,,System.String,,False,False,False,False</value>
+      <value>,v_fusszeile3,v_fusszeile3,,System.String,,False,False,False,False</value>
+      <value>,v_fusszeile4,v_fusszeile4,,System.String,,False,False,False,False</value>
+      <value>,v_logo,v_logo,,System.Drawing.Image,,False,False,False,False</value>
+      <value>,v_tier_gattung,v_tier_gattung,,System.String,,False,False,False,False</value>
+      <value>,v_tier_rasse,v_tier_rasse,,System.String,,False,False,False,False</value>
+      <value>,v_tier_farbe,v_tier_farbe,,System.String,,False,False,False,False</value>
+      <value>,v_gesundheitszustand,v_gesundheitszustand,,System.String,,False,False,False,False</value>
+      <value>,v_tier_alter,v_tier_alter,,System.String,,False,False,False,False</value>
+      <value>,v_tier_haarlaenge,v_tier_haarlaenge,,System.String,,False,False,False,False</value>
+      <value>,v_tier_geschlecht,v_tier_geschlecht,,System.String,,False,False,False,False</value>
+      <value>,v_tier_kastriert,v_tier_kastriert,,System.String,,False,False,False,False</value>
+      <value>,v_tier_chip,v_tier_chip,,System.String,,False,False,False,False</value>
+      <value>,v_tierheimnr,v_tierheimnr,,System.String,,False,False,False,False</value>
+      <value>,v_aufnahmedatum,v_aufnahmedatum,,System.String,,False,False,False,False</value>
+      <value>,v_tier_beschreibung,v_tier_beschreibung,,System.String,,False,False,False,False</value>
+      <value>,v_datum_empfaenger,v_datum_empfaenger,,System.String,,False,False,False,False</value>
+      <value>,v_datum_vertreter,v_datum_vertreter,,System.String,,False,False,False,False</value>
+      <value>,v_unterschrift_empfaenger,v_unterschrift_empfaenger,,System.String,,False,False,False,False</value>
+      <value>,v_tierheim_genitiv,v_tierheim_genitiv,,System.String,,False,False,False,False</value>
+      <value>,v_tierheim_dativ,v_tierheim_dativ,,System.String,,False,False,False,False</value>
+      <value>,v_tierheim_nominativ,v_tierheim_nominativ,,System.String,,False,False,False,False</value>
+      <value>,v_tierhime_akkusativ,v_tierhime_akkusativ,,System.String,,False,False,False,False</value>
+      <value>,v_finder_name,v_finder_name,,System.String,,False,False,False,False</value>
+      <value>,v_finder_vorname,v_finder_vorname,,System.String,,False,False,False,False</value>
+      <value>,v_finder_adresse,v_finder_adresse,,System.String,,False,False,False,False</value>
+      <value>,v_finder_plzort,v_finder_plzort,,System.String,,False,False,False,False</value>
+      <value>,v_finder_tel,v_finder_tel,,System.String,,False,False,False,False</value>
+      <value>,v_fundort,v_fundort,,System.String,,False,False,False,False</value>
+      <value>,v_fundort_andere,v_fundort_andere,,System.String,,False,False,False,False</value>
+      <value>,v_funddatum,v_funddatum,,System.String,,False,False,False,False</value>
+      <value>,v_massnahmen,v_massnahmen,,System.String,,False,False,False,False</value>
+      <value>,v_unkostenbeteiligung_mwst,v_unkostenbeteiligung_mwst,,System.String,,False,False,False,False</value>
+      <value>,v_unkostenbeteiligung,v_unkostenbeteiligung,,System.String,,False,False,False,False</value>
+      <value>,v_tier_impfausweis,v_tier_impfausweis,,System.String,,False,False,False,False</value>
+      <value>,v_tier_bemerkungen,v_tier_bemerkungen,,System.String,,False,False,False,False</value>
+      <value>,v_tier_charakter,v_tier_charakter,,System.String,,False,False,False,False</value>
+      <value>,v_tier_stammbaum,v_tier_stammbaum,,System.String,,False,False,False,False</value>
+      <value>,v_tier_impfungen,v_tier_impfungen,,System.String,,False,False,False,False</value>
+      <value>,v_tier_uebernahmegrund,v_tier_uebernahmegrund,,System.String,,False,False,False,False</value>
+      <value>,v_tier_gueltigeimpfungen,v_tier_gueltigeimpfungen,,System.String,,False,False,False,False</value>
+      <value>,v_tier_heimtierausweis,v_tier_heimtierausweis,,System.String,,False,False,False,False</value>
+      <value>,v_besitzer_name,v_besitzer_name,,System.String,,False,False,False,False</value>
+      <value>,v_besitzer_vorname,v_besitzer_vorname,,System.String,,False,False,False,False</value>
+      <value>,v_besitzer_adresse,v_besitzer_adresse,,System.String,,False,False,False,False</value>
+      <value>,v_besitzer_tel,v_besitzer_tel,,System.String,,False,False,False,False</value>
+      <value>,v_besitzer_plzort,v_besitzer_plzort,,System.String,,False,False,False,False</value>
+      <value>,v_besitzer_ausweiskopie,v_besitzer_ausweiskopie,,System.String,,False,False,False,False</value>
+      <value>,v_tier_tierarzt,v_tier_tierarzt,,System.String,,False,False,False,False</value>
+      <value>,v_tier_geburtsdatum,v_tier_geburtsdatum,,System.String,,False,False,False,False</value>
+      <value>,v_tier_notfallkonsultation,v_tier_notfallkonsultation,,System.String,,False,False,False,False</value>
+      <value>,v_unterschrift_vertreter,v_unterschrift_vertreter,,System.String,,False,False,False,False</value>
+      <value>,v_kosten_zwt_leistungen,v_kosten_zwt_leistungen,,System.String,,False,False,False,False</value>
+      <value>,v_kosten_zwt_zusatzleistungen,v_kosten_zwt_zusatzleistungen,,System.String,,False,False,False,False</value>
+      <value>,v_kosten_zwt_rabatt,v_kosten_zwt_rabatt,,System.String,,False,False,False,False</value>
+      <value>,v_kosten_total_exklMwSt,v_kosten_total_exklMwSt,,System.String,,False,False,False,False</value>
+      <value>,v_kosten_mwst,v_kosten_mwst,,System.String,,False,False,False,False</value>
+      <value>,v_kosten_total,v_kosten_total,,System.String,,False,False,False,False</value>
+      <value>,v_kosten_anzahlung,v_kosten_anzahlung,,System.String,,False,False,False,False</value>
+      <value>,v_kosten_zahlungsart,v_kosten_zahlungsart,,System.String,,False,False,False,False</value>
+      <value>,v_kosten_total_inklMwSt,v_kosten_total_inklMwSt,,System.String,,False,False,False,False</value>
+      <value>,v_notfallkonsultation,v_notfallkonsultation,,System.String,,False,False,False,False</value>
+      <value>,v_kosten_sonderrabatt,v_kosten_sonderrabatt,,System.String,,False,False,False,False</value>
+      <value>,v_kosten_sonderrabatt_titel,v_kosten_sonderrabatt_titel,,System.String,,False,False,False,False</value>
+      <value>,v_kosten_zwt_rabatt_titelzusatz,v_kosten_zwt_rabatt_titelzusatz,,System.String,,False,False,False,False</value>
+      <value>Tierheim,Name_Genitiv,Name_Genitiv,,System.String,Zürcher_x0020_Tierschutzes,False,False,False,False</value>
+      <value>Tierheim,Name,Name,,System.String,Zürcher_x0020_Tierschutzes,False,False,False,False</value>
+      <value>Tierheim,Strasse,Strasse,,System.String,Zürichbergstrasse_x0020_263,False,False,False,False</value>
+      <value>Tierheim,PlzOrt,PlzOrt,,System.String,_x0038_044_x0020_Zürich,False,False,False,False</value>
+      <value>Tierheim,Nummer,Nummer,,System.String,Zürcher_x0020_Tierschutz,False,False,False,False</value>
+      <value>Tierheim,Fusszeile1,Fusszeile1,,System.String,Zürcher_x0020_Tierschutz,False,False,False,False</value>
+      <value>Tierheim,Fusszeile2,Fusszeile2,,System.String,Zürichbergstrasse_x0020_263_x002C__x0020_8044_x0020_Zürich,False,False,False,False</value>
+      <value>Tierheim,Fusszeile3,Fusszeile3,,System.String,T._x0020_044_x0020_261_x0020_97_x0020_14_x0020__x007C__x0020_info_x0040_zuerchertierschutz.ch,False,False,False,False</value>
+      <value>Tierheim,Fusszeile4,Fusszeile4,,System.String,PC_x0020_80-2311-7,False,False,False,False</value>
+      <value>Tierheim,Gerichtsstand,Gerichtsstand,,System.String,Zürich,False,False,False,False</value>
+      <value>Tierheim,Logo,Logo,,System.Drawing.Image,_x002F_9j_x002F_4AAQSkZJRgABAQEBLAEsAAD_x002F_4QBYRXhpZgAATU0AKgAAAAgABAExAAIAAAARAAAAPlEQAAEAAAABAQAAAFERAAQAAAABAAAuI1ESAAQAAAABAAAuIwAAAABBZG9iZSBJbWFnZVJlYWR5AAD_x002F_2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL_x002F_2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL_x002F_wAARCAIWBV0DASIAAhEBAxEB_x002F_8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL_x002F_8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4_x002B_Tl5ufo6erx8vP09fb3_x002B_Pn6_x002F_8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL_x002F_8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3_x002B_Pn6_x002F_9oADAMBAAIRAxEAPwD3_x002B_iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAorN1rWrbRLIzzndI3EUQPLn_x002B_g9T2_x002F_IVyliut_x002B_MUlml1H7JZqTGY4QQGyBkYzyMepPWgDsrvVLCwyLu8hhYLv2u4DEew6noelY1z450WDb5bzXG7OfKiI2_x002F_Xdj9K53VPAd1aWxmsp_x002F_tW0ZaPZtb8OTmsnRvDd7rayNbtCiRttYyPgg_x002F_QZNAG7cfES4aMC20_x002B_KN88mSQuMfQAfzrR0a41bxLaTXLauLWMsYzBBAuV4HIY8jrXM6j4O1bTojNsS4jUZYwkkge4IBq34E1IWurPZu2I7lfl_x002F_3x0_x002F_TP6UAWvEHh7WrWyklj1S6vrUDMkbyNkAc5xkggda5vS9Fv9ZkYWkW5VOHkY4Vfqa9jrloLE_x002B_HvFG_x002B_FSNO1D5CB0jk6gfQ84_x002B_vtQBmJ8P18lkfUR9r27gqp8o_x002F_qR703w7b_x002B_IZ9WuYZtTuYRbYWXzW83OegAbI7df8a6jW7g6cLbUufLgk2TY_x002F_55vgH8jtP4VJqNzFpkL6oI964RZinUpng_x002B__x002B_M_x002F_lmgCx5V4qhUu42x_x002F_FLDkn_x002F_vkqP0qvINbUHym0_x002B_Q9twdP6mrttcw3dulxbyLJE4yrL0NS0AYDXXieKZSdNsZ4h95YpirHjsW6c_x002B_1QzeIdZg_x002B_94ZnP_x002B_5Pv_x002F_APQVNdLRQByv_x002F_Cc20Ma_x002F_bdNvreXuuwED8SR29qsw_x002B_NdDliV3uXhY9UeJiR_x002F_3yCP1roCARggEHqDVC40LSrv_x002F_AF2n27E_x002F_xBAp_x002F_Mc0AWba9tLzd9luoZ9mN3lSBsZ6Zx9KnrlrvwFpU2TbvNbt2Abcv68_x002F_rVMaR4p0UZ0_x002B__x002F_F5Au0CJz_x002F_CvQAN0Hb5SKAO1orjrbxvJb3C22tafJbSfxSIDgc9dp5xjuCenSuqtL22v7cT2k6TRn_x002B_JDnBxnB9DyODzQBPRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUVWvtQtdNtjcXkyxRAhckE5J7ADk0AWaK8_x002B_1Xx9cS5j0uHyE_x002F_wCesoDP26DoO47_x002F_AIVy9zf3epTq17dySfMTmRiQmeuB2HsPSgD1x9X0yKRo5NRtEdSVZWnUEEdQRmm_x002F_23pP_x002F_QTsv_x002F_AhP8a46z8Ai4hSZtUjaNxuUxR7gR9Sa1YvAGloB5k11Ie_x002F_zAD_x002B_VAG8mr6ZLIsceo2juxCqqzqSSegAzV2uTufAGmyKfInuIX7ZIYfljP61hz_x002B_ENd0qRptOuDJxgtBIY3I9x_x002F_QE0AekUV5nbeMNc0qUQXqecF2gpcIVcAdeeDk_x002B_pzXTab440u8VVuS1nMSBh_x002F_mU5P8AeA_x002B_mc460AdNRTUdJY1kjZXRgGVlOQQehBp1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVjTeLNDglaN9QQsvUojOPzUEGuR8Y_x002B_JE1CQWFjKxtoz_x002B_9dT8srdseoH5E_x002F_QGrngvRtKv8AT5Li4hE9wkhUq54UYGOP8aAOoTxFo8lqbldRg8sAkgthuP8AZPP4Y5qofFlhNMlvpyy31zIDsSJdoyOm4tjA9_x002B_cVHqXgzSr2I_x002B_TF9lmxw8XT8V6fyrmNJNx4Q8RiHUI1EM42GUDIxnhgfTPUUAZWvJrEt891qsEqO3AJX5FHZVPTFbPgXWRa3babMQI7ht0ZPZ8dPxA_x002F_QV6GyJLGVdVdGGCCMgiuL8Q_x002B_DggN_x002F_o6lJEO5oF9u6_x002B_h9vyoA7auU1m2k0DUhr1ihMLnbeQr0IJ_x002B_99f6_x002F_U1q_x002B_HdXGsaUkzYE6fJMvow7_x002F_AI9a05YknheKVQ8bqVZT0INADba5hvLaO4gcPFIu5WHeuC8ZaN_x002F_Zl5Fq9iPLV5AXC_x002F_wSdQR9cfn9asaVev4V1_x002B_XR7tz9hlbdDI38Oeh_x002B_nY_x002B_4rq9ZshqOjXVrjLPGdv8AvDkfqBQAuj6kmraXBdpjLrh1H8LDqKuSRpKhSRQynqCK818F63_x002F_Z2o_x002F_Y53xbXJxknhX7H8en5V6ZQBiwXcPiHSr2ykCx3KhoJ4_x002F_7jcjI9s8is3wvef2toVzpF2cTQIYWB67CMD8un4CsnxO1z4f8ULqNk2z7Sm4jHysejAjv2P41h6VrU1jr66jI2fMcmfAxuDH5uB_x002B_f4UAT6Lrt34cvpIXBeAOVlhz0I4JHoa9Bu9ZhPhy41OzmVgIiUb0bsCPXJHFcB4wtVg1_x002B_SaLBhukWdCOhz1_x002F_UE_x002F_jWPFeXENrNbRysIZwPMTs2DkfyoA6_x002F_TviBKuE1G2Dj_x002F_npDwfyPB_x002F_MV1un67pupgfZbtGc_x002F_8s2O1vyNeOUUAe6UV5BZ_x002B_JNXsQBDfSlR0WT5x_x002B_tblt8Qr1MC6s4ZR6oSh_x002F_rQB6HRXKW3j7TJcCeGeBu_x002F_yhh_x002B_nP6VtWuv6Ve4EF_x002F_CzHorNtJ_x002F_A4NAFq6s7a_x002B_hMV1BHMno65x9PSuTvfB9zp85vfD91JFIP_x002B_WJfrznAPccDhq7OigDjtI8ZOlx9g12I29wGCCXbtXp_x002F_GO3Pccc9gK7GszWNCstag2XCYlA_x002B_SVfvL_x002F_iPauStdR1HwVc_x002F_Yb6I3Fi5zEynpzyV_x002F_qp79xnkA9AoqK2uYLy2juLeRZIZBlWXvUtABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUVS1XUoNJ06W7nZflHyKTje3ZR9f_x002F_r9qAKev_x002B_I7bQolDL51y_x002F_KQhsHHqT2H8z_x002B_OPL9S1K51W9e6un3SNwAOijsAOwo1LUrnVb17q6fdI3AA6KOwA7CqlABRT4n8qZJNivsYNtYZBx2PtXoeiaz4e1ELC9haWlyeiNEu1j7HH6UAc74X8Tvo8otrkl7Fzz3MZ9R7eo_x002F_yfTkdJY1kjYMjDKsDkEVGtpbJ923iXPogFSgADAAAHQCgBaKKKAILuytb6Lyrq3jmT0dc4_x002B_npXJ6n4Agk3SabOYW7RS_x002F_Mv59R_x002B_tdnRQB5ZFJr3hG4y0brESco_x002B_WhcnvwcZ4HoeK7TRfFun6sqxuy2t0TjyZG68gDa3AOcjjr1471vOiyIUdQysMEEZBrl9V8EWF7uksz9km9FGUP4dvw_x002F_KgDqaK46013UvD8ws_x002F_EKSSQnAiu0G4enJ7jv_x002F_AHvrnjr0dJI1kjZXRgCrKcgg9xQA6iiigAooooAKKKKACiiigAooooAKKKKACiiigAqpNqmn20rRT39rFIvVHmVSPwJrnfHOsz2Ftb2lpO0U0xLu0b4ZVHQeoye_x002F_H3SPWuS8NWel3_x002B_ofZtReVGf_x002F_AFW1gFY_x002B_h4_x002F_KgD0ibxBpEELSvqVsVXrskDn8lyTXJ634luNecaVokUpSTIkfGGkHoPRfUnHocc51rzwJpU8O228y2kA4YMXB_x002B_oP9MVj6et_x002F_4KvXN5bCawmIDTxLnHpz1_x002F_A_x002F_hQBbsPh9B9nzqFzIZmH3YSAF_x002F_Ejn9KzYkuvBGvoZWMljPwzgfeX6f3h_x002F_nrXocE8V1Ak8EiyROMqyngiq2q6ZBq_x002B_nyWk44blW7o3YigC2jrJGsiMGRgCpHQg1S1jSYNZsHtpxg9Y3xyjdjWB4Wv59Pu5PD2onE0RJgY9GXrgfzH4_x002B_lddQBzXhbUZl83Rb_x002F_AIvLPhcn76dvy4_x002F_AiulrlPF9pLbG312y_x002B_W4tWAkI_x002F_iQ_x002B_v54_x002B_hrd0nU4NX0_x002B_O7gON3DrnlG7g0AYmoxf8I7rS6xCCLK5YR3iKOFJ6P_x002B_f9fWuoDBlDKQVIyCO9UtZELaLei4AMXksWz9K57wPrf2q1OmTt_x002B__x002B_gGYif4k9Pw_x002F_l9KAJPHWmC60pb1F_x002F_eWx5wOqHr_x002B_RwfzqHwj4mjmsjZ38ypJbplZHbAZB6n1H8vxrrZ4UubeWCQZSRCjD2IxXic8LW9xJC_x002F_3o3KH6g4oAW52fa5vKOY97bD6jPFek_x002B_EPEA1Sy_x002B_y3D_x002F_6ZAvJPWRfX6_x002B_teY1Na3U1ncx3Fu5SWM5VhQB3_x002F_AMQolOkWsxHzLPtH0Kkn_x002B_Qrzqug8QeJ312ytYWh8poyWlweGboMfr_x002B_dc_x002F_QA_x002B_SaWUIJJHcIu1QzE7R6D0FMoooAKKKKACiiigAooooAv2Ot6lppH2W8lRR_x002F_ATlfyPFdZpnxABKx6nb7e3mw9PxX_x002F_D8q4SigD220vba_x002F_gE1rOksZ7qen19DTNQ0_x002B_21O0e2uow8bdPVT6j0NeP2Go3em3AntJmifvjo3sR3r0jw94rt9YAgmCw3mPuZ_x002B_V_x002F_93_x002F_CgDA0_x002B_e48F621nfM76fPyrqPl7YfHqOhA_x002F_XArv0dJY1kjZXRgGVlOQQehBqhrekQ61pz20mA4_x002B_aJ8fcb_x002F_Cub8HapLaXMnh_x002B__x002B_BWWNm8gbe_x002F_JYE_x002F_qPx56UAdrRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV5x481N7jVF05dwitgGYf3nYZz15wCMfU16HPNHbW8k8rbY41Lu2M4AGTXil1cPd3c1zIFDzSNIwXoCTk4oAiooqSAxCeMzhjEGG8J1I74oAu6doepaqN1pas6A4LnCr_x002B_ZrZi8A6s_x002F_Ly2sY93JP6CuisfGmhLDHColtY0G1VaLgf8AfOa2bfXNLuseTqFuxPRTIAfyPNAEGhaXd6Va_x002B_Tc6g90ONqleE9geprWpAQQCDkHoRS0AFFFFABRRRQAUUUUAMmhiuImimjSSNhhkcZB_x002F_Csez0WTRrsvpkmbOVsy2sjcL_x002F_tIfX2PX16Y26KACiobnzxFutthkU52v0ceme31qOyv4b5HMe5ZI22yROMMh9CP8igC1RRRQAUUUUAFFFFABRRRQAVQ1TWLLR7cS3ku3dnYgGWcgdAP69ORVi9u4rCymu5ziOJSx5GT7DPc9B715NPqo1LX1vtRUyQGUZiLfdjz90Yx0H5_x002F_jQB1E3jm9uQw0zSWYK_x002F_333P8AL7hcYPTuaoN4_x002F_wBXRirWtmrDqDG4I_x002F_8AHq9DgihhgSO3REiA_x002B_VUAAx7YqrqOj2Gqx7Lu3Vzjhxwy_x002F_Q0AeZW1tqni3U5C06yTrHuLSnaAoIGAAOOvp61bu_x002F_BOsWcLTKIp9g3EQuS34AgfpU_x002B_oaHqPhO_x002B_XUbCQy26H7_x002B_OQPRx6e_x002F_8AKu40bWLfWrFbiE4YcSRk8of8PegDK8J_x002B_I_x002F_7Ut_x002F_sd02L2IdT_x002F_AMtF9fr6_x002F_nXSOiyIyOoZGGCrDIIrmfEHhppZv7V0n9zqEZ3lV4Eh_x002F_wAf51paBrces2ZYr5d1Eds8R42n_x002F_CgClJYT_x002B_HZXu9MRpbFjuns85K_x002B_rR_x002F_4f5G5Z3lvf2qXNtKskTjhh_x002F_L61PXJautx4Xvv7VsF3WM7_x002F_AOlW_x002F_YMf4h6Z_x002F_nQBN4z08yWCapbkpdWbBg69duf6Hn860vD_x002B_sx63pqzjAmT5ZkHZvX6Gob7U7PUPCd9dwSBomt3XnqrEYwR2OSK850LWJdF1FbhMtGfllj_x002F_vL_x002F_jQB65c28d3ay28ozHKhRh7EV5JaalqPh6_x002B_njt5djK5SRCMqxBI5Fes2d3BfWsdzbuHikGQR_x002F_L615b4thEPii9VRgMyv_x002B_agn9c0AWdS8ZXmqaVJZSwRIZCNzxkjgHOMHP8AOsKzu5rC8iuoG2yxNuU_x002F_0_x002B_lQUUAex2Gt2V_x002F_pn25ZkSNVzKGbmM9wa8n1S4ju9Wu7mIERyzM65HOCaqUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABSq7I6ujFWU5DA4INJRQB6b4T8SjVYfsd02LyNeGP_x002F_AC1Hr9fX86peONJYLHrNrlJYiBKyHB_x002F_2W_x002B_oPH5elcJbXEtpcx3EDlJY23Kw7GvXNOvLfxBoYkZQUmQpKn909CP8APtQA_x002F_RNTTV9Jgu12h2G2VR_x002F_C46jGTj1GexFaFcH4Rll0jxFeaJO_x002F_ytkoCDy68gjsMrk_x002F_gK7ygAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDI8U3D23hm_x002B_kQKSY_x002F_L_x002B_b0YhT_x002B_hNeRV6V4_x002F_d08PxqrMA9yqsAfvDaxwfxAP4V5rQAV0_x002F_hLw9bavI895KpijOBAr4Zj6nuBXMVPa291cTBbSKWSUcjylJI_x002F_KgD1xNB0iNQq6ZaED_x002B_9CrH8yKBoGjhsjTLXPvEDXJ6YfGtuF2wtLGP4bll_x002F_mSGrsNPnv5o_x002F_wDT7NLdwP4JQ4P_x002B_FAFuOOOGMRxIqIvRVGAPwp1FFABRRRQAUUUUAFFFFABRRRQAVlarps8kq6hpzrFqEQwM_x002F_dmX_x002B_43t6HtWrRQBkaHriarG8MyeRfwcTwMMYPqPbP5flnXrB8QaAdQxe2MjW_x002B_pRD5JEbaXGOhI_x002F_nUXhvxIdQJ0_x002F_UB5WpRZVgRjzMdSB2Ydx_x002B_I74AOjooooAKKKKACiiquo3yadYTXTjdsX5U7u3ZR16mgDiPH2q_x002B_bdxaXGflhxJL_x002F_vkcDp2B7H_x002B_L2rjK6yx8G6pq0z3eoOLYSsXYsuXYk5J2jp_x002B_n0rfTwDpIi2tJdM39_x002F_eB_x002F_SgDm9B8ZXOmLHbXYNxaLwP76D29R7GvRbK_x002B_ttQtluLWVZIm7jt7H0Neda34Mu9NRri1Y3VuOTgfOo9x3HuKydI1m70a7E1s3yn_x002F_AFkZ_x002B_649_x002F_wDGgD2JlV1KsoZWGCCMgiuI1TTLnwtf_x002F_wBsaUM2hOJ4Oygn_x002B_X8q6rStVttYslubZuOjoeqH0NXWVXUqyhlYYIIyCKAKumalb6rYpdWzZRuCD1U9wfesfXNNmtLn_x002B_3dLAW6iBM8faZO_x002B_ff8Az1FYV_x002F_FdeC9ZF1Zgvp1weYyeP936jsf_x002F_AK9bM_x002F_jDSLrSrry7gpMYX2xSIQSdpwPT9aANvS9St9WsY7u3bKtwynqp7g1NdW0V5aS20y7o5VKsPrXlHh_x002F_XZtDvhIuWt3wJo_x002F_Ueo9xXq1pdwX1slxbSCSJxkMP89aAPH7pbrTLi808yuq7tkig4D4OQcfkapVu_x002B_MZUl8T3Zjx8u1SR3IUZ_x002F_w_x002F_CsKgDd8N_x002B_IpdEutr5ezkP7xPT_x002F_AGh7_x002F_wA6reIr2PUdfu7mFt0TMAh9QABn9Ky6KACiiigAooooAKKKKACinIjyyLHGrO7EKqqMkk9ABWzY_x002B_EtZvmGLRoEyQXuPkxxnp978hQBiUV2tv8O7hoybnUIo3zwI4y4x9SR_x002F_KtVPAGkJIrNLduAQSrSLhvY4UH8qAPNaK9X_x002F_AOEO0D_x002F_nw_x002F_8AI0n_x002F_AMVVm38OaNbRlI9Nt2BOf3ieYfzbJoA8for2X_x002B_xNJ_x002F_6Bdl_x002F_4Dp_x002F_hVWbwnoc8rSvp6Bm6hHZB_x002B_SkAUAeSUV6nN4K0OWJkS2eFj0dJWJH_x002F_AH0SP0rPuPh5YtGBbXtxG_x002B_eTIFcY_x002B_gx_x002F_OgDzyiukv_x002F_BGrWe5oVS6jG45iOGwOmVPc_x002B_gzXOujxSNHIrI6kqysMEEdQRQA2iiigArrvAWpGDUpLB2_x002F_d3C7kHo4_x002F_wARn8hXI1PZXTWV9BdJ96KQP9cGgDsvG0DWGr2GsQqpYMMgjgshyM_x002F_Ufyrt4Jo7m3jnibdHIodGxjIIyKxfFtqt_x002F_wCGJ3T5jGBOhHt1P_x002F_fJNM8F3f2rw1CpLs8DNExc56cjHsAQPwoA6GiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAOJ_x002B_Is0i2_x002B_nwBv3bs7suOpUAD_x002F_0I_x002F_nXA12vxEuEa7sbYBt8cbSE9sMQB_x002F_wCgn9K4qgDR0TS31jVIrRTtU_x002F_NI391R1P8An1r1qxsLbTrVbe1iWONfQck_x002B_pPc14qCQcg4Iq_x002F_b65qtr_x002F_qdQuFA_x002F_hLkj8jxQB7JRXCeHdc8SarcbE8mWFT_x002B_8mliwF_x002F_75xk_x002B_1d3QAUUUUAFFFFABRRSEgAknAHUmgDm_x002F_EXi6LR5fstvGJ7rGWycKnpn1PtXMf8J7rG7Oy1xnp5Z_x002F_xrCIudY1VvKRpbi5kJCjuTz_x002B_A_x002F_lXTL8PL77MzNe24uAflQBipHHVuo79jQBNZ_x002F_EOUHF7YowJ_x002B_9CxGB9DnP5ium07xLpWp7VhulSU_x002F_8spflb6eh_x002F_AmuDu_x002F_BetWuSsCXCqu4tC4P4YOCT9BWFNBLbStFPE8Ui9UdSpH4GgD3CivJdL8U6ppe1Un86Ef8spvmGPY9R_x002B_FdvpPjPTdRKxzH7JOeAsh_x002B_U_x002F_Rv8cUAdHXNeKPC6axGbq1CpfIPoJR6H39D_x002B_B9ulooA47wv4oeSQaTqxZLtDsjkk4Lnptb_x002F_a9_x002B__x002F_wBevY1zPirwwurRG7tFC3yD6CUeh9_x002F_Q_x002F_h9KnhbxS0rrpWqsVulOyOSTguem1v8Aa9_x002B__x002F_16gHY1n6nren6RHuu7hVcjKxLy7dcYH4EZPHvUHiLXE0LTvOCrJcSHbEhPf1PfA9vUDjOa4DTdF1PxRdy3TyfKzfvLiT19AO_x002F_GOOgoA1b_x002F_4g3Mm5LC1SFfmAklO5sdiB0B9jkVd8GwvqNzLq99d_x002F_aLoZSNGfJQdzjsOTgfWp4fh_x002F_piR4muLmR_x002B_5BCj8sH_x002B_dVbvwG8DefpN_x002F_Ikq8qshwfwYdPyoA7eivPI_x002F_FGu6FOLbVrczAdPM4Yj2YcH9a6XTvF_x002B_k6hhTP9nlP8E3y_x002F_r0oA3q4zxT4RjnSTUNOQJMoLSQgcP6keh_x002F_n_x002F_AD7IEMAQQQeQRS0AeO6JrE_x002B_i363EXzIeJY88Ov8AjXrdneQX9pHdW774pBkH_x002B_h968n8R6d_x002F_ZeuXECjEbHzI_x002F_908_x002F_pyPwrT8G68dOvvsVw_x002B_LW4bAJPCP2P0PQ_x002F_hQB6DqWnw6pp8tpOPlkHBxyp7EfSvHby0lsbya1mGJImKt_x002F_jXttcD8QdOVJrfUUXHmfupPqOQfyz_x002B_VAHE1c07Vb3SpvNs52jJ_x002B_8vVW_x002B_o71TooAkuJ3ubmWeU5klcux9yc1HRRQAUUUUAFFFFABRWtpXhzU9Yw1vBthP_x002F_LaX5U79O55GOAfeu_x002F_0Xwlp_x002B_kqsjqt1dA586RenII2ryBjA569ee1AHAaV4c1PWMNbwbYT_x002F_y2l_x002B_VO_x002F_TueRjgH3rr9N8A2UKo_x002B_oTPcSdWRDtTp09Tg98jtxXX0UAVrPT7PT49lpbRQggA7FwWx0yep_x002F_GrNFFABRRRQAUUUUAFFFFABRRRQAVm6toVhrUW26ixIMbZkwHUDtnHTk8HjmtKigDyHWvD97okp85N9uzbY516N35HY_x002B_x9DjOKya9vubaC8tpLe4jWSGQYZW715Jr2iz6LqLwureQxJgkJzvX6_x002B_o4z_x002F_gRQBl0UUUAev6Ky3_x002F_hi0D8rJbiNvfjaf5Vg_x002B_ATNF_x002F_allI3ywSr8uOjHcD_x002F_6CPyrT8FyeZ4XthnOxnX_x002F_AMeJ_x002F_rXB_x002B_KLYweJb5AOGk3_x002F_99AN_x002F_WgD1yiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAPL_x002F_HNz5_x002F_iV49m3yIkjznO7_x002B_LPt97H4Vzdd9450KSbbqtrFuKLtuAvXA6NjHOOhPoB2BrgaACtzw14ffXLw7yyWsXMjjqf9ke9YgBZgqgkk4AHevWdLhtPDehQxXU8UJxvkZ2A3Oev19PwoA1LW1gsrZLe2iWOJBhVUVNXI6h4_x002B_sYMrZQSXLf3m_x002B_Rf8f0rmrzxrrN0SEmS3Q_x002F_wxJ_x002F_U5NAHqdFeLvq_x002B_pSNufULpj6mZv8AGrth4o1ewkBW7eZB1jnJcH8_x002B_R_x002B_FAHrdFY2g_x002B_I7XXIiF_x002F_dXKDLwk_x002F_qD3FbNABSMoZSp6EYNLRQB5x4BUp4iuUYYZbZgf_x002B__x002B_1r0euI0OFLH4g6nAWVd8blAT13FXwPwz_x002B_VdvQAVBd2Vtf25gu4EmjP8LjODjGR6Hk8jmp6KAOF1fwD96bSpvU_x002B_RKfqcK35AA_x002F_ia4q5tp7O5kt7iNo5ozhlbtXt9UNU0ey1i3EV5Fu252ODhkJHUH_x002B_nTgUAeaaR4o1HSNqJJ51uP_x002B_WMnIA9j1H8vau_x002F_0fxTp2sBY1fybk_x002F_8ALGQ4J_x002B_h6H_x002B_ftXn2ueHbzQpFM22W3ckJMgOPofQ45x_x002B_RODWPQB7pXJeMvD9tc2cuqRskNxCuXJ4Eg9D_x002F_ten5fTnNK8aalp6rHORdwjoJD8w_x002B_jf45qLX_x002F_FNzriLD5Yt7ZTu8sNuLH3P9KAM_x002F_UNYvdUito7uXzBbqVQkcnPcnueAPw9ck_x002B_l_x002B_E5IJPDVmIMYRdrgdnzzn_x002B_f415LWno2uXeiXPmW7bo2_x002F_1kTfdb_x002F_A_x002B_9AHsNFZOjeIbLWov3L7JwMvC5_x002B_YfT1HvWtQBBd2dtfQGC6hSWM_x002F_wsP84rmJPh9pzSsyXNyiE8KCDj8cV11FAHIDwtqulDfo2rvgc_x002B_TKPlP8x_x002B_lZN54t8R6dMbe7ghjlA_x002F_ii6_x002B_45wfwrsrrVf7MuVW_x002F_G21lbEdwo_x002B_VT_x002F_AHX9PY_x002F_yqa_x002F_06z1iy8m4RZI2GUdTyvupoA8o1XWLvWJY5Lsxl412gquOKz61Nd0WfRL8wSfPE3MUmOGH_x002B_NZdAHceGPGIjWOx1R_x002F_lHyx3B7egb_x002F_H8_x002F_WtDx7cwDQ4oi6mSWUNGAeoAOT9Of1rzenvNLKqLJIziNdqBjnaPQe1ADKKKKACiiigAoorQ0jRbzWrlobRV_x002B_UZeRyQqemT7_x002F_wCehoApwwS3MqxQRPLI3REUsT_x002B_Aru9B8DJCyXOrFZJAQy26nKjj_x002B_P157DjjuDXQ6LoNnotsqQorz4xJOy_x002F_M_x002B_cZ_x002B_g4HHt681qUANREijWONVRFAVVUYAA6ACnUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABWR4k0dNZ0mSNY1NzGC0DY5DemcjrjHPHQ9q16KAPC6K3_x002F_ABjYix8RzFQoS4AnUAk9euc_x002F_7QY_x002F_jWBQB6b4DYnw6Qf4Z2A_x002F_IVzPjyLy_x002F_EQb_x002F_npArfqR_x002F_Sui_x002B_H_x002F__x002F_ACAZ_x002F_wDr6b_x002F_0FaxPiF_x002F_yGLY_x002F_9O4_x002F_9CNAHo1FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUANdEljaORVdGBVlYZBB6givFtRt0tNTu7aMsUhmeNS3UgEgZr2S9u4rCymu5ziOJSx5GT7DPc9B714o7vLI0kjM7sSzMxyST1JNACxSvBMksbbZEO5TjofWlnuJrmUyzyvLIerOxJqOigCW2tpbu5jt4ELSyMFUe9ekaX4J02ziVrtftU_x002B_PmLEhAfYf41x3hbULHStSe8vS5KRlYlRcnJ6n8sj8a7yz8QT6mQbDSbloj_x002F_y1nYRr_x002F_XP4ZoA0YtMsIRiKxtkx_x002F_diUf0qysaJnYirnrgYpVztG4ANjkA5FLQAUUUUAFZmu6wui6c10YXlYnaoA4z7nsK06ZNDHcQvDMivG4wysMgigDy3Q9UebxnbX11lnmlKnaOhYFR_x002B_AyPwFeq15hqejnw34ls5VG_x002B_0M6yRMT2DAlSfUV6fQAUUUUAFFFFADXRJY2jkVXRgVZWGQQeoIrzXxV4Xj0ZReW0ubaWXYImHKEjIwe44Pv069a9MryzxbrP8AbOrCK3Ba3tsxx4wd5zywx2OBjnoM96AOerV07w7qeqWr3Frb7o14BZgu4_x002B_gz1rNkikiIEkboT0DKRXWeCdeFpcf2bcviCY5iYnhX9Pof5_x002F_WgDlbi2ntJjFcQvFIOquuDUVe13lhaahCYbuBJk9GHT6HqPwritY8BOgabSpC69fIkPP4Hv_x002B_NAHGRSyQyrJE7JIpyrKcEGu40HxyDtttW4PRbhRx_x002F_wIf1FcPNDLbytFNG0cinDKwwRTKAPckdJUV43V0YZVlOQRTq8j0XxJfaK4WNvNtyfmhc8fh6GvSdI12x1qHdbSYkAy8TcMv8AiPegC9cW8V3byW86B4pF2sp7ivP5L3UfBeqtaBjPYN88aOeCp9D2I_x002F_yK9FrmvG2nC80NrhVzLaneD329GH9fwoAbfTaf4v0CZbVwbmNfMSNuHRh2x6Hp6c15lUkFxNazrNBI0cinKspwRTGYuxY9ScnigBKKKKACiiigAopyI8sixxqzuxCqqjJJPQAV3_x002F_h_x002F_wRHb_x002F_wCkauqSycFIAcqnQ_x002F_N6ntjkfXPABjeHvB1xqe25vd9vZsu5CCN8memPQd8kc8Y65Ho9tbQWdtHb28axwxjCqvapaKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDkPiDaebpVtdgOWgl2nA4CsOSfxVR_x002B_NedV674pt3ufDN9GhUER_x002B_Z83opDH9Aa8ioA9J_x002B_H3_x002F_IBn_x002F_6_x002B_m_x002F_9BWsXx0Uk12JCfuW6_x002F_mWb_x002F_wCtW18Pv_x002B_QDP_x002F_19N_x002F_6CtJDp2n6_x002F_4l1k3sHnC3MUafOy44OehHcUAdZRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAGF4x_x002F_5FS9_x002F_4B_x002F_6GteUV7Pq2nJq2lz2LyNGJQPnUZwQQR_x002B_oFeP3tpLYXs1pOMSRMVPBwfcZ7HqPagCCgAk4AyTRVrTrmOy1GC6lh85In3_x002B_XnGSOnP1xQB3_x002F_AIb8IW9lBHdX8QlumG4I4ysf4dzXV15rd_x002B_PdUmyLeOG3XsQu5vzPH6U6w0vxD4kxJdXk8Vq3O_x002B_RiAR_x002F_sqOv6CgD0NLm3kmaFJ4mlUZZFcFgPpUtZmkaDY6LGRbR5lYYeV_x002B_Wb_x002F_AewrQmmit4mlmkWONRlmc4AoAfRXNzeONFil2K80oH8SR8fritLTtf0zVDttbpGk_x002F_55t8rfkev4UAaVFFFAHJ_x002B_PrmKPRobdlDSyy7k_x002F_2dvU_x002F_rj8a3NCuReaDYziRpCYVDu2clgMNnPuDXKfESCTdY3HJjwyH2PB_x002F_X_x002B_laHgG887RZbVpNz28pwu37qNyOe_x002F_O7_x002F_OKAOrooooAKKKyNV8SadpdtK5uIpp0OwQRyAsW9D6e5P8APigCl4x1z_x002B_y9N_x002B_z282y8n4Xa2GRO7fpgdOuR0qt4At4V0ea4Ea_x002B_c0xUvjnAAwP1NcHqWpXOq3r3V0_x002B_6RuAB0UdgB2FbPhPxGNGna3uebOZskjrG3TP09fpQB6VdWlvewmG5hSWM_x002F_wuua47V_x002F_ASENNpUu1uvkSHj8G_x002F_x_x002F_Ou1jkSWNZI3V0YZVlOQRSsyojO7BVUZJJwAKAOI0XxRc6bONM15JIyvCzOOR6bvUe9durK6hlIZSMgg8EVjt_x002F_Y_x002F_iq1mjwJ0ifZ5gGCpxnKn_x002F_AD0rEU6n4Nkw_x002B__x002B_90ct1H3os_x002F_y_x002F_kfagDotX0Oy1mDZcx4kA_x002B_SVeGX8fT2rzPW_x002F_D95oc_x002B_JhvgY4SZRw3sfQ_x002B_1er2d7b6hbLcWsqyRN0I7ex9DTrm2hvLd7e4jWSJxhlbvQB4hUkM0tvMs0MjRyKcqynBFbXiXw5Jolz5ke57OQ_x002F_I_x002F_dT_x002F_dPv_x002F_OsGgDvNF8doVWHVhtYcCdF4P8AvAf0_x002F_KuuS4stTs5BFPFPA6lX2MDwRzn0rxWlVmXO1iMjBweooAfcRCC5liDrIEcqHU5DYPUVHRRQAUUUUAFW9N0251W9S1tU3SNySeijuSewqfRdFudbvRBANsa8yykcIP6n0Hf8zXqel6PZaPbmKzi27sb3JyzkDqT_x002F_AE6cmgCj4e8M22i26u6pNenlpiM7TjGF9Byeep_x002F_QbtFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAUNb_x002F_AOQDqP8A16y_x002F__x002B_gmvGq9l1v8A5AOo_x002F_wDXrL_x002F_6Ca8aoA9F8EzR2fhW6uZDhEmeRvoFX_x002F_Cr_x002F_g1XbQmu5H3PdzyTtx0OdpHv93P41xEGqlfCn9k24Zri5uTuVRk7cLgD6nj8DXqFlbfY7C3td_x002B__x002F_yYlj3YxnAAzj8KAJ6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK8_x002F__x002B_L_x002B_o32meE7WawvLi0la_x002B_RC8ErRsV8uQ4yD04H5V4r_x002F_wAJb4k_x002F_6GHVv_x002F_A2T_x002F_Gu6hgZVoc6djjrYuNKfK0fVVFfKv8AwlviT_x002F_oYdW_x002F_8DZP8aP8AhLfEn_x002F_Qw6t_x002F_4Gyf41t_x002F_Zc_x002F_5kZf2jH_x002B_U_x002B_qqK8q_x002B_DOralqn9t_x002F_2hqF3d_x002B_X5Gz7RM0m3PmZxuJxnA_x002F_KvVa4K1J0qjg_x002B_h20qiqQU11CiiisjQKKKKACiiigAooooAKKKKACiiigArkPHOitd2i6nCMyWy7ZFAJLJnqPpkn6E88V19Rzwx3NvJBKu6ORSjrnGQRg0AeH1ZsLKbUb2K0g2_x002B_ZIcLvbAqO6t3tLua2kKl4ZGjYr0JBwcVGCVIKkgjoRQB3Nvp_x002F_h3wziTUblLy9Xny1G7afZf6t_x002B_lX7DxDqev3oTTbVLazjYebPKNxx6Dtk_x002B_nP1rzatq38UajaaOmnWzpEik_x002F_vFX58HnGfz560Aeh6z4jsNFjIlfzLjHywIfmP19B9a5gaXrfi51ur2UWlkeY0wenqF7_x002F_AFNZPhPSxrGt77nLxQjzZN3O854B_x002F_H_x002B_Rr1SgDm7TwPo9uB5qS3DesjkD8hiti30nTrQqYLG3jZejLGM_x002F_n1q5RQAUUUUAU9U06HVdPktJx8rjhh1U9iK860iaTwn4nMd_x002B_m1CpikYDPynBDD2yB_x002B_GeM16jWD4q0MaxpjNEmbuAboiOrDuv4_x002F_zoA3EdJY1kjZXRgGVlOQQehBp1cH4L8SP5i6Teyrsxi3dzyD2T_x002F_D6Y9AOq8QXf2HQL24BdWERVWQ4IZvlB_x002F_AkUAcR4n8T3GpXj2Fg7JaqxjJjbmc9DyP4fQd_x002B_p9uXlhlt5WimjeORequpBH4VJZ_x002F_8AH9b_x002F_APXVf517FfaZZ6nD5V5bpKvYkcj6HqKAPG7e3mu51ggjMkr_x002F_AHVHU0k0E1tKYp4nikHVXUgj8DW5q2mT_x002B_Fddgni3PAHEkLnvg8qfevQ2g03xDpsUssKTwyLuQkcr_x002B_PUGgDzzw74ouNFkEMu6ayY8x55T3X_x002F_CvS7e5tdUsfMgkWWCVSpI9_x002B_oPoa4TWvAtxbbptNY3EQ5MTffH09f51haTrF7oV4XhJAziWF_x002B_jfUdj70Aa3hnVl8Pazc2N3xC8nlu_x002F_9xlJAP09a9JISWPBCujjoeQQa8Y1S9_x002F_tHU7i88oRea27YDnFdR4Q8UfZymm38n7k8Qysfuf7J9vT0_x002F_kAXNT0u88MXLapopJtScz2x5AHrj0_x002F_UfSug0TX7PW4N0LbJ1GXhY_x002F_Mv_x002B_I961SARgjINeeeJ9Al0W6XVtLLRw7ssE48pvb2P_x002F_1qAO8u7SG_x002B_tJLa4QPFIMMD_x002F_nrXketaTLo2pSWsmSv3o3x95exrs9E8cW08Qh1QiGYceaF_x002B_V_x002F_y6H9KzPHd7Z3w057S4hmx5m4xsCR93GfTvQBx1FFFABRRRQAVt_x002B_HfDs_x002B_u3OTujs4z_x002B_9lx1_x002F_wBlff8Al_x002B_QJ4d8Oz67c5O6OzjP72XHX_x002F_ZX3_x002F_l_x002B_QPqltbQWdtHb28axwxjCqvagBtpZW1hbiC0gSGMfwoMZOMZPqeByeanoooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAxPF7vH4WvmRmUkKuVOOC6gj8QSK8mr0H4h3O2wsrXZnzJTJuz02jGMe_x002B__x002F_9K8_x002B_oA6PwXpov9eSWRWMVqPNPBwWz8oz25599pr1GsLwnpH9laLH5ibbmf95LkYIz0XoDwOx6Emt2gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDzb42f8iZZ_x002F_9hBP_x002F_RcleDV7z8bP_x002B_RMs_x002F_wDsIJ_x002F_6LkrwavoMu_x002F_gfM8XHfxgoooruOM9h_x002B_BX_x002F_ADH_x002F_APt3_x002F_wDatew1498Cv_x002B_Y_x002F__x002F_wBu_x002F_wD7Vr2Gvncf_x002F_vEvl_x002B_SPcwf8CPz_x002F_ADCiiiuM6gooooAKKKKACiiigAooooAKKKKACiiigDyrxmjp4pumZWAcIykj7w2AZH4gj8KwK6Txz9o_x002F_4SV_x002F_O_x002F_1flJ5PT7nfp_x002F_tbuv8AhXN0AFFFFAHovw_x002B_twmk3Nxj5pZtv4KP8Sa6_x002B_uS8IatpdtoMNvLewRTgsXWRtuCWOOT14xWxceJdGtl3PqMDe0bbz_x002F_wCO5oA1aK4fUPiCoymnWpY9pJuB_x002F_wB8j_x002F_Gs9bTxX4h_x002B_aWSWOBv_x002B_ejeUn_x002F_fI5P5GgD0RriFH2NNGrHoCwBqQEEZHINcRafDyIAG8vnY91hXH6nP8q6TTNBsdI5tfOB77pmIP_x002F_Ac4_x002F_SgDTooooA8u8aaUNP1ozRriG6BkHoG_x002F_iH8j_x002B_NZl_x002F_reoanbW9vd3DSRwDCj_x002B_8f7zepxxn_x002B_pOev8AiJs_x002B_y2Gf9ZvfH0wM_x002F_wBKzNP8Dy6hpEN6l6qSSruETR8e3Of6UAcoCVIIOCDkGvYNB1dNZ0uO4BAlHyyqP4W_x002F_wPWvI7q2ms7mS3uEKSxnDKa0NA1uXQ9QEy5aF_x002F_lljz94f4igD1TU9Nt9VsXtLlco3Qjqp7Ee9cTpd7deD9UbTtRybGU5WQDIH_x002B_0Pb1H_x002B_T3dpdwX1rHc20gkicZVhUGqaXa6vZtbXSZXqrDqh9RQBbR0kjV0YMjDKspyCKyNa8NWOtIWdfKucfLMg5_x002F_H1Fc3Dc6n4Kuhb3Stc6W7fI69vp6H2P_x002F_167Syv7bUbZbi0mWWM9x29iOxoA8m1fQ73RZ9lzHmMn5JV5Vv_x002F_AK_x002F_tWbXt9xbw3cDQXESyROMMrDINed_x002B_IvB0unB7uw3S2o5ZOrR_x002F_4j3_x002F__x002F_AF0AaHhDxTu8vS79_x002B_fuwysevop_x002F_p_x002B_VdtLFHPE8UqB43BVlI4Irw6vQPCXivzwun6jKBKBiKZj9_x002F_2J9ffv9eoBy_x002F_iPRH0TUmiGTbyfNCx9PT6isevSfH5jGhRblBkM4CHuODmvNqACiiigArU0HRZ9a1FIUVvIUgzyA42L9fU84_x002F_wBqpp9jPqV_x002F_FZ24UyynA3HAHGST9ACa9c0fS4tH02OziO7bku5UAux6k_x002F_y_x002B_gFAFq2toLO2jt7eNY4YxhVXtUtFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRUV1cJaWk1zIGKQxtIwXqQBk4oA8z8bXiXfiORE2kW8aw7lbOTyT9MFiMe1Q_x002B_E9I_x002F_tXWo_x002F_MTdbQfvJcjIOOi9COT2PUA1ju897ds7BpbieQk7V5ZmPYD1J7V6x4b0dNG0mONo1FzIA07Y5LemcnpnHHHU96ANeiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDzb42f8iZZ_x002F_8AYQT_x002F_ANFyV4NXvPxs_x002F_wCRMs_x002F__x002B_wgn_x002F_AKLkrwavoMu_x002F_gfM8XHfxgoooruOM9h_x002B_BX_x002F_Mf_x002F_wC3f_x002F_2rXsNePfAr_x002F_mP_x002F_APbv_x002F_wC1a9hr53H_x002F_AO8S_x002B_X5I9zB_x002F_wI_x002F_P8wooorjOoKKKKACiiigAooooAKKKKACiiigAooooA5vxrpX9oaKbhB_x002B__x002B_tMyD3T_x002B_IdcdAD_x002F_wHHevL69ydEljaORVdGBVlYZBB6givGtWsTpurXVmQwEUhCbiCSvVSceoINAFKiiigAq9pWk3WsXYt7VM45dz91B6mqQBYgAZJOABXr2haVFomkJEdqyFd87nu3fn0HSgCHR_x002F_C2n6QquIxPcjrNIOQfYdv5_x002B_9bdcvq3jewst0dmPtcw4ypwg_x002F_Hv_x002B_H507QItW1K4XVdWkZI8Zt7ZflUZ_x002F_iI_x002B_nTPNAHTUUUUAFIzKilmYKqjJJOABUV1dQWVs9xcyrFEgyzNXNSRXnjC1dhM1jppOIl25ebB_x002B_83PT2_x002F__x002B_tQBynizWl1jVf3LE20A2Rn_x002B_8e7fj_x002F_ICuo8GeIYrq1j0ufCXEK4i_x002F_6aKP6iuQ1vw7e6HIDMBJAxwsyDg_x002B_x9DWVHI8MiyRuyOpyrKcEGgD1XxH4bh1yDem2O8QfJJjgj0b2_x002F_lXl95Z3Fhctb3UTRyr1U_x002F_zHqK9M8MeJU1mDyJyqXsY_x002B_YdnH94f1FaOraNZ6zb_x002B_VdR5YfckXhk_x002B_h_x002F_pQB5noPiG60O4yn7y3c_x002F_vISeD7j0Nen6Zqtpq1sJ7SUMP4lPDKfQivNNb8LX_x002B_jlpNvn2vaZB0_x002F_3h2_x002F_lWXZ3tzp9wtxazNFIO6nr7H1FAHtE8EVzA8M8ayRuMMrDINcbeeGdQ0S5a_x002F_8PzOV_x002F_itycnHp_x002F_tD261Povjm2utsOpBbeboJR9xvr_x002F_d_x002F_lXXKyugdGDKwyCDkEUAcvpXja0uG_x002B_z6khs7kHaSwOwn_x002B_a_x002F_j_x002B_ddQjrIgdGDKRkMpyDWZq3h_x002F_T9YX_x002F_SYcS44mThx_x002B_Pf8a4_x002B_70PXvDW6fTLuSW2HJ8vt_x002F_vIcg_x002F_XmgC74p8IK6vf6ZHhx80sCjg_x002B_6j19q4Kutt_x002F_iBqMYAntrebHcZUn_x002B_n6Vz2qXseo6hJdR2wt_x002F_M5ZFbI3dz_x002B_NAFOiiigAoorsfA_x002B_gm4uRqtwjCGE_x002F_uAyjEjc5PP93_x002B_ffg0AdD4R0EaTpwnnRftlwAzEqQyKcYTn8z059cCuioooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACs3X7S5vtCu7azbE8igL823IyCRn3GR6c1pUUAcd4W8IGxkF9qaKbhT_x002B_6hyGEf_x002B_0ccE_x002B_np169OxoooAKKKKACiq2oahaaVYTX19OkFrCu6SR_x002B_gH9SegA5JOBXgHjL4m6p4keS0s2ex0vcwWONiskykYxIQeQeflHHODuwDXTh8LOu_x002F_d27mFfEQorXc9n1Tx14Y0abyb3WbdZdzIyRZlZGXghggO0_x002F_XHf0Nc1N8afDMc0kaW2pyqrECRIU2uB3GXBwfcA_x002B_1eB0V6kcspJe82zzpY_x002B_o9kke8_x002F_8Ls8N_x002F_8APjq3_x002F_fqP_x002F_wCOUf8AC7PDf_x002F_Pjq3_x002F_fqP8A_x002B_OV4NRV_x002F_2dQ8yfr1Y95_x002F_4XZ4b_x002F_58dW_x002F_79R_x002F__x002F_AByj_x002F_hdnhv8A58dW_x002F_wC_x002F_Uf8A8crwaij_x002B_zqHmH16se8_x002F_8Ls8N_x002F_wDPjq3_x002F_AH6j_x002F_wDjlH_x002F_C7PDf_x002F_Pjq3_x002F_fqP_x002F_45Xg1FH9nUPMPr1Y95_x002F_wCF2eG_x002F__x002B_fHVv_x002B__x002F_Uf_x002F_xyj_x002F_hdnhv_x002F_AJ8dW_x002F_79R_x002F_8AxyvBqKP7OoeYfXqx7z_x002F_wuzw3_x002F_wA_x002B_Orf9_x002B_o_x002F__x002F_AI5R_x002F_wALs8N_x002F_8_x002B_Orf9_x002B_o_x002F_wD45Xg1FH9nUPMPr1Y95_x002F_4XZ4b_x002F_AOfHVv8Av1H_x002F_APHKP_x002B_F2eG_x002F__x002B_fHVv_x002B__x002F_Uf_x002F_wAcrwaij_x002B_zqHmH16se8_x002F_wDC7PDf_x002F_Pjq3_x002F_fqP_x002F_45R_x002F_wuzw3_x002F_AM_x002B_Orf8AfqP_x002F_AOOV4NRR_x002F_Z1DzD69WPef_x002B_F2eG_x002F_8Anx1b_x002F_v1H_x002F_wDHK67wt4psfFumSX9hFcRxRzGEidVDbgFPYnj5hXyxXvPwT_x002F_5Ey8_x002F_7CD_x002F__x002B_i465cZg6VKlzR3OjC4qpUqcsj0miiivJPSPNv_x002B_F2eG_x002F__x002B_fHVv_x002B__x002F_Uf_x002F_wAco_x002F_4XZ4b_x002F_AOfHVv8Av1H_x002F_APHK8Gor6D_x002B_zqHmeL9erHvP_x002F_AAuzw3_x002F_z46t_x002F_36j_x002F_APjlH_x002F_C7PDf_x002F_AD46t_x002F_36j_x002F_8AjleDUUf2dQ8w_x002B_vVj3n_x002F_hdnhv_x002F_nx1b_x002F_v1H_x002F_8AHKP_x002B_F2eG_x002F_wDnx1b_x002F_AL9R_x002F_wDxyvBqKP7OoeYfXqx7z_x002F_wuzw3_x002F_AM_x002B_Orf8AfqP_x002F_AOOUf8Ls8N_x002F_8_x002B_Orf9_x002B_o_x002F__x002F_jleDUUf2dQ8w_x002B_vVj3n_x002F_AIXZ4b_x002F_58dW_x002F_79R_x002F__x002F_HKP_x002B_F2eG_x002F_8Anx1b_x002F_v1H_x002F_wDHK8Goo_x002F_s6h5h9erHvP_x002F_C7PDf_x002F_AD46t_x002F_36j_x002F_8AjlH_x002F_AAuzw3_x002F_z46t_x002F_36j_x002F_APjleDUUf2dQ8w_x002B_vVj3n_x002F_hdnhv8A58dW_x002F_wC_x002F_Uf8A8co_x002F_4XZ4b_x002F_58dW_x002F_79R_x002F__x002F_AByvBqKP7OoeYfXqx9BWXxj8K3czRzG9slC5Ek8GVJ44_x002B_Qsc_x002F_hjjrXV6P4l0XX0B0vUre5YqX8pWxIFBwSUOGAz6juPWvlKis55ZTfwtouOYVF8SufYVFeH_x002B_A_x002F_ind2U0Gk6673VvLMFS9mm_x002B_eAN_x002F_fLfeXJHJIKjPUYA9wryq_x002B_HnRlyyPRo1o1Y3iFFFFYGx5_x002F_qPxf8P6Zqd3YTWeptLazPC5SKMqWUkHGX6cVW_x002F_4XZ4b_x002F_wCfHVv_x002B__x002F_Uf_x002F_AMcrx7xb_x002F_wAjnrn_x002F_AGELj_x002F_0Y1Y9e9DL6LimzxpY2qpNHvP8Awuzw3_x002F_z46t_x002F_36j_x002F__x002B_OUf8Ls8N_x002F_wDPjq3_x002F_AH6j_x002F_wDjleDUVX9nUPMX16sfXOnXsWp6ZaX8KusV1CkyBwAwVgCM4781ZrH8Jf8AImaH_x002F_wBg_x002B_3_x002F_9FrWxXgzVpNI9iLvFMKKKKkoKrXuo2OmQrNf3lvaRM2wPPKsaluTjJPXg_x002F_lXHeOviRaeE3_x002B_w2sSXmqMuTGXwkAI_x002B_UvjqTwdowSOcjIz4NrGtajr9_x002B_b7VLp7m4KhNzAABR0AAwAO_x002F_A6knqa78NgZ1VzS0Rx18ZGm_x002B_Vas95vfi54RtIVkhu7i9YtgxwW7BgOefn2jH4556VQ_x002F_4XZ4b_x002F_AOfHVv8Av1H_x002F_APHK8Gor0FltBdzhePqvse8_x002F_8Ls8N_x002F_8APjq3_x002F_fqP_x002F_wCOUf8AC7PDf_x002F_Pjq3_x002F_fqP8A_x002B_OV4NRT_x002F_ALOoeYfXqx7z_x002F_wALs8N_x002F_8_x002B_Orf9_x002B_o_x002F_wD45R_x002F_wuzw3_x002F_wA_x002B_Orf9_x002B_o_x002F__x002F_AI5Xg1FH9nUPMPr1Y95_x002F_4XZ4b_x002F_58dW_x002F_79R_x002F__x002F_AByj_x002F_hdnhv8A58dW_x002F_wC_x002F_Uf8A8crwaij_x002B_zqHmH16se8_x002F_8Ls8N_x002F_wDPjq3_x002F_AH6j_x002F_wDjlH_x002F_C7PDf_x002F_Pjq3_x002F_fqP_x002F_45Xg1FH9nUPMPr1Y95_x002F_wCF2eG_x002F__x002B_fHVv_x002B__x002F_Uf_x002F_xyj_x002F_hdnhv_x002F_AJ8dW_x002F_79R_x002F_8AxyvBqKP7OoeYfXqx7z_x002F_wuzw3_x002F_wA_x002B_Orf9_x002B_o_x002F__x002F_AI5R_x002F_wALs8N_x002F_8_x002B_Orf9_x002B_o_x002F_wD45Xg1FH9nUPMPr1Y_x002B_udOvYtT0y0v4VdYrqFJkDgBgrAEZx35qzWP4S_x002F_5EzQ_x002F__x002B_wfb_x002F_APota2K8GatJpHsRd4phRRRUlBRRRQAUUUUAFFc34s8baT4Rtj9rk829eMvBaJ96TnAycYUZ7n0OMkYrxLxN8Stf8SeZB5_x002F_2GwbI_x002B_zWxI3KcjDt1bhsEcKcfdrroYOpW1Wi7nNWxVOlo9We7ax4w8PaC5j1LVreGVWCtCpMkikjIyi5YDHcjHI9RXC3_x002F_AMcdNj8v_x002B_z9Hu7jOd_x002F_2iRYdvTGNu_x002F_Pf0_x002F_GvEqK9OnltKPxannzx9R_x002F_DoemTfG3xAZpDDp_x002B_mJEWJRXSRmC9gSHGT74H0FM_x002F_4XZ4k_x002F_58dJ_x002F_wC_x002F_Un_x002F_xyvNqK3_x002B_p0P5TH61W_x002F_mPSf_x002B_F2eJP_x002B_fHSf_x002B__x002F_Un_x002F_wAcq5YfHHUo_x002F_M_x002F_tDR7S4zjZ9nkaHb1zndvz29Pxryqih4Og1blGsVWX2j3_x002F_AEz4yeGrzat6t3YP5YZ2ki3pu4yoKZY9TyVHTt0rurLUbHU4WmsLy3u4lbYXglWRQ3BxkHryPzr5Gqa1u7mxuUubO4lt50ztlhcoy5GDgjkcEiuWplkH8DsbwzCa_x002B_NXPryivEvDnxovbbbB4htvtkf8Az826hJR1PK8K38I424A7mvYdM1aw1myW8027iuoGx88bZwcA4I6qcEcHBGa8uthqlF_x002B__x002B_j0aVeFVe6y5RRRWBsFFFFAHm3xs_x002F_5Eyz_x002F_wCwgn_x002F_ouSvBq95_x002B_Nn_x002F_ImWf_x002F_AGEE_x002F_wDRcleDV9Bl38D5ni47_x002B_MFFFFdxxne_x002F_Dbxtpvg7_x002B_0_x002F_7Qgu5ftXlbPs6K2Nu_x002F_OdzD_x002B_8K7z_x002F_hdnhv_x002F_nx1b_x002F_v1H_x002F_8AHK8Gorkq4KlUm5y3Z008XUpx5Y7HvP8Awuzw3_x002F_z46t_x002F_36j_x002F__x002B_OUf8Ls8N_x002F_wDPjq3_x002F_AH6j_x002F_wDjleDUVH9nUPMv69WPef8Ahdnhv_x002F_nx1b_x002F_v1H_x002F_8co_x002F_4XZ4b_x002F_wCfHVv_x002B__x002F_Uf_x002F_AMcrwaij_x002B_zqHmH16se8_x002F_8Ls8N_x002F_8APjq3_x002F_fqP_x002F_wCOUf8AC7PDf_x002F_Pjq3_x002F_fqP8A_x002B_OV4NRR_x002F_Z1DzD69WPef_x002B_F2eG_x002F_wDnx1b_x002F_AL9R_x002F_wDxyj_x002F_hdnhv_x002F_nx1b_x002F_v1H_x002F_8AHK8Goo_x002F_s6h5h9erHvP8Awuzw3_x002F_z46t_x002F_36j_x002F__x002B_OUf8Ls8N_x002F_wDPjq3_x002F_AH6j_x002F_wDjleDUUf2dQ8w_x002B_vVj3yH40_x002B_GZJo43ttTiVmAMjwptQHucOTgewJ9q6Kw_x002B_IHhPUfM8jXbRPLxn7QxgznPTzAM9O3T8a_x002B_YaKiWWUXs2io4_x002B_qt7M_x002B_wqK_x002B_aPCfj_x002F_WfCcgjhf7VYHAa0nYlVG7JKf3Cctz05yQcCvojRdYtNf0e21SxLm3uFyu9drAgkEEeoII9OOCRXmYnCToPXVdz0KGJjWWm5frifiDprPFbalGmfL_x002F_dSsMkgHlfYDOefVhXbVU1Owj1PTbiylOFlXAb_x002B_6eoPvggHFcp0Hi1Vb7ULfT0V7gsAxwMDNXHR4pGjkVkdSVZWGCCOoIrm_x002F_Fv_x002F_Hpb_x002F_wDXQ_x002F_yrfDU1UqqEtmZV5uFNyXQv23izTba7hny7_x002B_W6vtKHBwc4q9qnxFGrsftV1L5eeIkQhB_x002B_Hf8a82or1_x002F_7No_x002B_Z5f1_x002B_r5HpOg_x002B_LPD1tq0U_x002B_otM0EeWCiItlu2R_x002B_v4V3n_x002F_C4PCf_x002F_PW7_x002F_wC_x002F_Br56oo_x002F_s2j5h9fq_x002B_R9C_x002F_8Lg8Kf8APW7_x002F_AO_x002F_B_x002F_wAaI_x002F_i34fuHKWltqM7_x002B_iwgD8TnivnqrenX8mnXazRklejr_x002F_AHhUzy2movlvcuGPm5LmtY9X1rX7vXbgSTfu4VP7uEHhfr6n3r0vw5dxXugWckQChYxGyj_x002B_Erwf8_x002B_9eOQTx3MCTRNuRxkGu18BaqIL2XTpWwk_x002F_zx5_x002F_vjqPxH8q8Rpp2Z6qd1dHfXNtDeWz29xGJInGGU968u8ReGZ9EmMiZls3PySY5X2b39_x002B_9erUyWKOeJopUV43GGVhkEUhniMM0tvMk0MjRyIcqynBBr0nw54ug1NUtb0rDedATwsn09D7flXP_x002B_I_x002F_B0tgXutPVpbXq0fVo_x002F_8AEf5965OgD3QgEYIyDXL6x4Jsb_x002F_dLZkWk55wo_x002B_Rvw7fh_x002B_Vcvo_x002F_jPUNNCxXH_x002B_l244Ac_x002F_Mv0b_x002F_Gu103xXpOpbVW4EMp_x002F_wCWc3yn8D0P50Aebanot_x002F_pEm27gKqThZF5Vvoak0rxBqOjt_x002F_o02Ys8xPyh_x002F_Dt_x002B_FeuyRxzRNHKivGwwVYZBFchrHgSCcNNpjiCTr5TnKH6HqKALukeM9P1HbFcH7LcHjDn5CfZv8a6XqMivE7yxutPuDBdwvFIOzDr9D3FXbDxHqum27QW12wjIwFYBtv0z0oA1PHGkx2GpR3UCBIrkEkAcBx1_x002F_PI_x002F_WuWqxdX13fPvurmWZu29icfT0qvQAUUUUAXdK02fVtRitIFb5j87AZ2L3Y_x002F_T_x002F_63evYra2gs7aO3t41jhjGFVe1YXhHQRpOnCedF_x002B_2XADMSpDIpxhOfzPTn1wK6KgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAPEvjF4smn1L_x002F_hGrYyxQW217rkATMQrKPXCg55PJPT5Qa8qqzqN7Lqep3d_x002F_MqLLdTPM4QEKGYknGe3NVq_x002B_poUlSpqCPna1R1JuTCiiitTMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACvefgn_x002F_yJl5_x002F_2EH_x002F_9Fx14NXvPwT_x002F_5Ey8_x002F_7CD_x002F_APouOuHMf4HzOzA_x002F_xj0miiivnz2j49ooor64_x002B_ZCiiigAooooAKKKKACiiigAooooAKKKKACiiigAr3_x002F_4P66_x002B_qeFHsJ5d8_x002B_nSeWAdxIiYZTJPB5DqAOgUcevgFek_x002F_BW78nxfdWzXGxJ7NtsRfAkdWUjA7kLvPsN3vXHjqanQflqdWDm41V5nvNFFFfOnuHyr4t_x002F_5HPXP_x002B_whcf_x002B_jGrHrY8W_x002F_8AI565_x002F_wBhC4_x002F_9GNWPX1dP4F6Hzc_x002F_iYUUUVZJ9VeEv_x002B_RM0P_x002F_sH2_x002F_8A6LWtisfwl_x002F_yJmh_x002F_9g_x002B_3_x002F_APRa1sV8pU_x002B_N_x002B_p9JD4UFYni3xDF4Y8NXepuUMqLst0bHzynhRjIyO5wc4BPatuvGPjjqe690rSlaUeXG9zIufkbcdqHGeSNr9uN3HU1rhaXtaqi9jPEVPZ03JHluoahd6rfzX19O891M26SR_x002B_pP9AOgA4AGBVaiivpkklZHz7d9WFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH1V4S_x002F_5EzQ_x002F__x002B_wfb_x002F_wDota2Kx_x002F_CX_x002F_ImaH_x002F_2D7f8A9FrWxXylT436n0kPhQUUUVBQUUUUAFeVePviolhjTvDN1FLcnDS3qbZEjHXanVWJ7nkDp1_x002B_7Q_x002B_K_x002F_jyXzpPDek3CCILtvpomO4tyDFnsB_x002F_FjOc7TjDA_x002B_Q16_x002B_DwKaVSp93_x002B_Z5mKxjTcKf3j5ppbiaSaaR5JZGLu7sSzMeSST1JplFFeueYFFFFABRRRQAUUUUAFFFFABWroHiPVPDV_x002B_t3pl08ZDAyREny5QM8Ovccn3Gcgg81lUUpRUlZ7DTcXdH0r4F8dWnjCw2sEg1SFc3FuDwR03pnqp_x002F_ME4PYnra_x002B_RtP1C70q_x002F_hvrGd4LqFt0cidQf6g9CDwQcGvozwL46tPGFhtYJBqkK5uLcHgjpvTPVT_x002B_YJwexPhYzBuk_x002B_eHw_x002F_kevhcV7T3J7_x002F_mdbRRRXnncebfGz_x002F_kTLP_x002F_ALCCf_x002B_i5K8Gr3n42f8iZZ_x002F_8AYQT_x002F_ANFyV4NX0GXfwPmeLjv4wUUUV3HGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABXpnwa8Qy2XiGTQ5C7W9_x002B_peMDJCSopOeuACoIPBJIXsK8zrS8O3UNj4m0q8uX2QQXkMsj4J2qrgk4HJ4Hasq9NVKbizSjNwqKR9YUUUV8sfRHmPjjTTZ62blVUQ3Y3jaAMMMBh_x002F_I5_x002F_2q838W_x002F_8AHpb_x002F_APXQ_x002F_wAq_x002B_gPEOix63prQYRbhPmhkYfdPccdj0P544FeA_x002B_MEeKCGORWR1lKsrDBBA5BFdWC_x002F_jxOfFfwZHI0UUV9IeCFFFFABRRRQBs6Dq_x002F_wBgm8iZv9HkPX_x002B_4fX6V28MrxSpNE5V0IZWHY9jXl9dHoGuCHbZ3T_x002F_u_x002B_kbn_x002B_H2PtXl47B837yG_x002F_U9HB4rl_x002F_dz26H0H4e8SW_x002B_tW6ozLHeKPniz1919R_x002F_KtyvDEdkdXRirKchlOCDXXaP46ubULDqSG5iHHmLw4_x002B_vY_x002F_pXinqnotcvrvgy11ItPZlba5PJGPkc_x002B_47H3Fben6tY6pHvs7hJOMlc4ZfqOtXaAPF9Q0u90ubyryBoyfut1Vvoe9U69wmgiuIminjSSNuquuQa5jUPAen3JL2kj2rnt95PyPP60AcPp_x002B_vanpmBa3cioP_x002B_WbHcv5Guns_x002F_iG4AW9sQx7vC2P0P_x002B_NZt34G1iAkwrFcL22Pg_x002F_kcVz91az2Vw0FzE0Uq9VYc0AehT_x002B_IvDWu2xt71mQH7vmxkFT6gjODXndxGsNzLGjiRUcqrqchgD1qOigAooooAK6_x002F_wV4f_x002B_2XA1O6RxDCwMA6CRwevrgEfifoRWb4Z8Py61eq7piyiYGVznDd9g9z_x002B_g_x002F_DPqqIkUaxxqqIoCqqjAAHQAUAOooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD49ooor64_x002B_ZCrOnWUup6naWELIst1MkKFyQoZiAM47c1WrY8Jf8jnof_x002F_YQt_x002F_8A0YtTN2i2hxV5JHY_x002F_8KT8Sf8AP9pP_x002F_f2T_x002F_wCN0f8ACk_x002F_En_x002F_P9pP8A39k_x002F__x002B_N17zRXg_x002F_wBo1_x002F_I9n6jRPBv_x002B_FJ_x002B_JP_x002B_f7Sf8Av7J_x002F_8bo_x002F_4Un4k_x002F_5_x002F_tJ_x002F_7_x002B_yf_x002F_ABuveaKP7Rr_x002B_QfUaJ4N_x002F_wpPxJ_x002F_z_x002F_AGk_x002F_9_x002F_ZP_x002F_jdH_x002F_Ck_x002F_En_x002F_P9pP_x002F_AH9k_x002F_wDjde80Uf2jX8g_x002B_o0Twb_x002F_hSfiT_x002F_AJ_x002F_tJ_x002F_7_x002B_yf8Axuj_x002F_AIUn4k_x002F_5_x002F_tJ_x002F_7_x002B_yf_x002F_G695oo_x002F_tGv5B9Rong3_x002F_AApPxJ_x002F_z_x002F_aT_x002F_AN_x002F_ZP_x002F_jdH_x002F_Ck_x002F_En_x002F_AD_x002F_aT_x002F_39k_x002F_8Ajde80Uf2jX8g_x002B_o0Twb_x002F_hSfiT_x002F_n_x002B_0n_x002F_v7J_x002F_8AG65HxT4WvvCWpx2F_x002F_LbySyQiYGBmK7SWHcDn5TX1PXg3xs_x002F_5HOz_x002F_AOwen_x002F_oySurB4yrVq8stjnxWFp06fNE82ooor1jzQr3n4J_x002F_8iZef9hB_x002F__x002F_RcdeDV7z8E_x002F__x002B_RMvP_x002B_wg_x002F_wD6LjrhzH_x002B_B8zswP8Y9Jooor589o_x002B_PaKKK_x002B_uPmQqzp1lLqep2lhCyLLdTJChckKGYgDOO3NVq2PCX_x002F_I56H_x002F_ANhC3_x002F_8ARi1M3aLaHFXkkdj_x002F_AMKT8Sf8_x002F_wBpP_x002F_f2T_x002F_43R_x002F_wpPxJ_x002F_z_x002F_aT_x002F_wB_x002F_ZP8A43XvNFeD_x002F_aNfyPZ_x002B_o0Twb_x002F_hSfiT_x002F_AJ_x002F_tJ_x002F_7_x002B_yf8Axuj_x002F_AIUn4k_x002F_5_x002F_tJ_x002F_7_x002B_yf_x002F_G695oo_x002F_tGv5B9Rong3_x002F_AApPxJ_x002F_z_x002F_aT_x002F_AN_x002F_ZP_x002F_jdH_x002F_Ck_x002F_En_x002F_AD_x002F_aT_x002F_39k_x002F_8Ajde80Uf2jX8g_x002B_o0Twb_x002F_hSfiT_x002F_n_x002B_0n_x002F_v7J_x002F_8AG6P_x002B_FJ_x002B_JP_x002B_f7Sf8Av7J_x002F_8br3mij_x002B_0a_x002F_kH1GieDf8KT8Sf8_x002F_2k_x002F_8Af2T_x002F_AON1m6_x002F_8Ltb8OaJcareXWnvBBt3LDI5Y7mCjAKAdSO9fRdcd8U_x002F__x002B_Sb6t_x002F_wBsf_x002F_RyVpRx9aVSMX1aIq4OlGDkuiPm6iiivcPICux_x002B_Fn_x002F_JSNJ_x002F_7bf_x002B_iXrjq7H4Wf8AJSNJ_x002F_wC23_x002F_ol6xxH8Gfo_x002F_wAjWh_x002F_Fj6o_x002B_kaKKK_x002B_XPoT5V8W_x002F_8jnrn_x002F_YQuP_x002F_RjVj1seLf_x002B_Rz1z_x002F_sIXH_x002F_oxqx6_x002B_rp_x002F_AvQ_x002B_bn8TCiiirJPqrwl_x002F_yJmh_x002F_9g_x002B_3_x002F_wDRa1sVj_x002B_Ev_x002B_RM0P_x002F_sH2_x002F_8A6LWtivlKnxv1PpIfCgrwb42f8jnZ_x002F_wDYPT_x002F_0ZJXvNeDfGz_x002F_kc7P_x002F_ALB6f_x002B_jJK68u_x002F_j_x002F_I5cd_x002F_BPNqKKK_x002B_gPFCut8LfDvV_x002F_FumSX9hcWUcUcxhIndw24BT2U8fMK5Kvefgn_x002F_yJl5_x002F_2EH_x002F_9Fx1y4yrKlS5o7nRhacalTlkcf_x002F_wpPxJ_x002F_z_x002F_aT_x002F_wB_x002F_ZP8A43R_x002F_wpPxJ_x002F_z_x002F_AGk_x002F_9_x002F_ZP_x002F_jde80V5P9o1_x002F_I9L6jRPBv8AhSfiT_x002F_n_x002B_0n_x002F_v7J_x002F_8bo_x002F_4Un4k_x002F_wCf7Sf_x002B__x002F_sn_x002F_AMbr3mij_x002B_0a_x002F_kH1GieDf8KT8Sf8AP9pP_x002F_f2T_x002F_wCN0f8ACk_x002F_En_x002F_P9pP8A39k_x002F__x002B_N17zRR_x002F_aNfyD6jRPBv_x002B_FJ_x002B_JP_x002B_f7Sf8Av7J_x002F_8bo_x002F_4Un4k_x002F_5_x002F_tJ_x002F_7_x002B_yf_x002F_ABuveaKP7Rr_x002B_QfUaJ4N_x002F_wpPxJ_x002F_z_x002F_AGk_x002F_9_x002F_ZP_x002F_jdH_x002F_Ck_x002F_En_x002F_P9pP_x002F_AH9k_x002F_wDjde80Uf2jX8g_x002B_o0Twb_x002F_hSfiT_x002F_AJ_x002F_tJ_x002F_7_x002B_yf8Axuj_x002F_AIUn4k_x002F_5_x002F_tJ_x002F_7_x002B_yf_x002F_G695oo_x002F_tGv5B9RolDQ7KXTPD_x002B_m2EzI0traxQuUJKllQA4z24q_x002F_RRXE3d3Z1pWVgooopDCvP_x002F_in4ybw7o66dYyumpXynbJG4DQRgjLeoJ5UHj_x002B_IggrXaarqdto2k3WpXjbYLaMyNyATjooyQMk4AGeSQK_x002B_WNa1i71_x002F_WLnVL4obi4bLbF2qAAAAB6AAD145JNd_x002B_Aw3tZ80tkcWMr_x002B_zjyrdlCiiivfPGCiirOn6fd6rfw2NjA891M22ONOpP8AQDqSeABk0NpK7BK_x002B_iK1dXoXw68S_x002B_II4p7ex_x002B_z2sn3bi6by1xt3AgfeIORggEc_x002F_WvVPBPwusvD_x002F_l32rCK91VJN8ZUkxQ4zjaDjce_x002B_SODjGMZPodeVXzKz5aS_x002B_Z6VHAXV6n3HlVh8DtNj8z_x002B_0NYu7jONn2eNYdvXOd2_x002F_Pb0_x002F_Gt61_x002B_E3hC3tkilsJbp1zmaa5cM3PfYVX24A6V29FedLF15byf5HbHDUY7ROCv_x002F_AIQeE7vy_x002F_Ihu7HbnP2e4J35x18zd09sda5vVfgd_x002F_rpNI1j08qG7j_x002B_md0i_x002F_iRhPQe9ew0U4YyvHaQpYWjLeJ8seIfCWteGJimp2TpEW2pcJ80T9cYYdztJwcHHUCsSvr_x002B_aKK4hkhmjSSKRSjo6gqynggg9Qa8b8bfCN4PM1HwxHugSPdJYlmZ8jH_x002B_rJyWyMnaTnjjOQB6eGzCM3y1NH_x002B_BwV8C4LmhqjySiiivSOAKuaVqdzo2rWupWbbZ7aQSLyQDjqpwQcEZBGeQSK7Hw58J9f1rbNfL_x002F_ZVqf4rhCZT1HEfB6gfeK8HIzXsPhzwJoHhfbJY2nmXQ_x002F_wCXq4IeXv0OMLwxHygZHXNcWIx1KCcd2ddHCVZu_x002B_xsaVfPqWk2t5JbS2sk0YZ4JkZWibupDAHg5Gcc9RwauUUV8_x002B_7X0PaW2p5t8bP8AkTLP_x002F_sIJ_x002F_wCi5K8Gr3n42f8AImWf_x002F_YQT_x002F_wBFyV4NXv5d_x002F_A_x002B_Z42O_x002F_jBRRRXccZ0nhPwTqXjH7Z_x002F_Z89pF9l2b_x002F_ALQ7Lnduxjap_x002F_umul_x002F_4Un4k_x002F_5_x002F_tJ_x002F_wC_x002F_sn_x002F_xutj4Ff8AMf8A_x002B_3f_x002F_ANq17DXj4rG1adZwjsv8j08PhKdSkpS3PBv_x002B_FJ_x002B_JP_x002B_f7Sf8Av7J_x002F_8bo_x002F_4Un4k_x002F_5_x002F_tJ_x002F_7_x002B_yf_x002F_ABuveaK5_x002F_wC0a_x002F_kb_x002F_UaJ4N_x002F_wpPxJ_x002F_wA_x002F_2k_x002F_9_x002F_ZP_x002F_AI3R_x002F_wAKT8Sf8_x002F_2k_x002F_wDf2T_x002F_43XvNFH9o1_x002F_IPqNE8G_x002F_4Un4k_x002F_5_x002F_tJ_x002F_wC_x002F_sn_x002F_xuj_x002F_hSfiT_x002F_n_x002B_0n_x002F_v7J_x002F_8AG695oo_x002F_tGv5B9Rong3_x002F_Ck_x002F_En_x002F_P8AaT_x002F_39k_x002F__x002B_N0f8KT8Sf8_x002F_2k_x002F_8Af2T_x002F_AON17zRR_x002F_aNfyD6jRPBv_x002B_FJ_x002B_JP8An_x002B_0n_x002F_v7J_x002F_wDG6P8AhSfiT_x002F_n_x002B_0n_x002F_v7J_x002F_8br3mij_x002B_0a_x002F_kH1GifHtFFFfQHihRRRQB9hUUUV8ifTBXnfjz4c3Hia7in0ya1tsktMsu4bm_x002F_vDAPXv06Z5ya9Eoq6dSVOSlHdEzgpx5ZbHhX_x002F_AApHXf8AoJad_x002F_wB9P_x002F_8AE0f8KR13_x002F_oJad_x002F_30_x002F_wD8TXutFdX9oV_x002B__x002F_4HN9So9jwr_x002F_hSOu_x002F_9BLTv_x002B__x002B_n_x002F_wDiaP8AhSOu_x002F_wDQS07_x002F_AL6f_x002F_wCJr3Wij_x002B_0K_x002F_f8AAPqVHseFH4I69jjUdNz_x002F_ALz_x002F_APxNR_x002F_8ACk_x002F_En_x002F_P9pP8A39k_x002F__x002B_N17zRTWY1_x002B_4PA0ex4N_x002F_wpPxJ_x002F_z_x002F_AGk_x002F_9_x002F_ZP_x002F_jdH_x002F_Ck_x002F_En_x002F_P9pP_x002F_AH9k_x002F_wDjde80Uf2jX8hfUaJ4_x002F_Z_x002F_DzxPpdjJ9qmsbuOJcosEjmTHoAUGfzz9ay690rnde8I2erK88AW3vMEhlGFc5z84x9eRzz3xiuSc3OXMzqhHljyo8wjlkhkWSJ2R15DKcEfjXT6Z461C0wl4q3cY7n5XH49_x002F_xFYWpaVeaTctBdwsnJCvg7Xx3U9_x002B_o_x002F_PmqVQUeuaZ4n0vVMLFP5cx_x002F_5ZS_x002F_K34dj_x002B_FbFeF1pW_x002F_iDVrWNY4b_x002B_dUXopbIH50AexVxXj5tOa3iDv8A8TBfuBeTt77vQen_x002F_AOuuYbxVrjKQdQk59AB_x002F_SsmSR5ZGkkdndjlmY5JNADaKKgury3so_x002F_MuJVRe2ep_x002B_gppOTshNpK7J66Pw74Un1pftEztBZg4DbctJzyF_x002F_Xn17HnHA6Vr7aj4t0e1ijC2sl9AjhwCZFMgBB7YPpX0fWtWhOlbn6mdOtGpfl6EVtbQWdtHb28axwxjCqvapaKKxNQooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD49ooor64_x002B_ZCtjwl_x002F_wAjnof_x002F_AGELf_x002F_0YtY9bHhL_x002F_AJHPQ_x002F_8AsIW_x002F__x002F_oxaip8D9CofEj6qooor5Q_x002B_kCiiigAooooAKKKKACiiigArwb42f8jnZ_x002F_wDYPT_x002F_0ZJXvNeDfGz_x002F_kc7P_x002F_ALB6f_x002B_jJK7su_x002F_j_x002F_I48d_x002F_BPNqKKK_x002B_gPFCvefgn_x002F_yJl5_x002F_2EH_x002F_9Fx14NXvPwT_x002F_5Ey8_x002F_7CD_x002F_APouOuHMf4HzOzA_x002F_xj0miiivnz2j49ooor64_x002B_ZCtjwl_x002F_yOeh_x002F_wDYQt_x002F__x002F_AEYtY9bHhL_x002F_kc9D_x002F_AOwhb_x002F_8Aoxaip8D9CofEj6qooor5Q_x002B_kCiiigAooooAKKKKACuO_x002B_Kf_x002F_JN9W_x002F_7Y_x002F_8Ao5K7GuO_x002B_Kf8AyTfVv_x002B_2P_x002F_o5K2w_x002F_8aHqvzMq_x002F_8KXoz5uooor6g_x002B_eCux_x002B_Fn_x002F_JSNJ_x002F_7bf8Aol646ux_x002B_Fn_x002F_JSNJ_x002F_7bf_x002B_iXrHEfwZ_x002B_j_x002F_I1ofxY_x002B_qPpGiiivlz6E_x002B_VfFv_x002F_ACOeuf8AYQuP_x002F_RjVj1seLf8Akc9c_x002F_wCwhcf_x002B_jGrHr6un8C9D5ufxMKKKKsk_x002B_qvCX_x002F_ImaH_x002F_2D7f8A9FrWxWP4S_x002F_5EzQ_x002F__x002B_wfb_x002F_APota2K_x002B_UqfG_x002F_U_x002B_kh8KCvBvjZ_x002F_yOdn_x002F_2D0_x002F_9GSV7zXg3xs_x002F_5HOz_x002F_AOwen_x002F_oySuvLv4_x002F_yOXHfwTzaiiivoDxQr3n4J_x002F_8AImXn_x002F_YQf_x002F_wBFx14NXvPwT_x002F_5Ey8_x002F_7CD_x002F__x002B_i464cx_x002F_gfM7MD_x002F_GPSaKKK_x002B_fPaCiiigAooooAKKKKACiiigAooooAKKKKACiiigDyf416_x002B_sNhZ6BE7iWdhcz7WIHljIUEYwwLZPXgoOORXitdP8Q9Ul1bx3qskm9VgmNtGjOWCrH8vHoCQWx6sevWuYr6bCUvZ0UjwMTU56rYUUUV0GA_x002B_GKW4mjhhjeSWRgiIikszHgAAdSa_x002B_jvAHgm28KaSk0se7VrmMG5kbBMecHy1wSMA9SD8xGfQDg_x002F_gv4c_x002B_06lceIZ1_x002F_d2mYLfnrIw_x002B_Y8HspxgjB3_x002B_or22vGzHEty9lHbqergaCS9pL5BRRRXlHohRRRQAUUUUAFFFFAHm3jD4Uw_x002B_Idfh1DT54rATbzfHaW3N_x002F_CyoMDJOd3zDseTnPS_x002B_HPAmgeF9sljaeZdD_x002F_l6uCHl79DjC8MR8oGR1zXSUVvLEVZQUG9DKNCmpOaWoUUUVgahRRRQB5t8bP_x002B_RMs_x002F_8AsIJ_x002F_6LkrwavefjZ_x002F_yJln_x002F_wBhBP8A0XJXg1fQZd_x002F_A_x002B_Z4uO_x002F_jBRRRXccZ7D8Cv_x002B_Y_x002F__x002F_ANu_x002F__x002F_tWvYa8e_x002B_BX_x002F_ADH_x002F_APt3_x002F_wDatew187j_x002F_APeJfL8ke5g_x002F_4Efn_x002B_YUUUVxnUFFFFABRRRQAUUUUAFFFFAHx7RRRX1x8yFFFFAH2FRRRXyJ9MFFFFABRRRQAUUUUAFFFFABRRRQAUUUUARzQRXMTRTxJLG3VHUMD_x002B_BrmNQ8Badc7TZSPZsOCOZFI57E5z07446V1dFAHl9z4G1qDb5aQ3G7OfKlA2_x002F_Xdj9KzZvD_x002B_sQStE_x002B_m3RZepSMuPzXINexUUAeLT6XqNrby3E_x002B_n3ccMSF5HaBgFUDJJ46Yrm5vE_x002B_nxj92ZJT_x002F_srj_x002B_eK918W_x002F_8iZrn_x002F_YPuP8A0W1fKtejgcLTrJufQ4cXiJ0mlHqb134pupQVt41gX1_x002B_83_x002B_FYks0k8hklkZ3PVmOTTKK9inRp0l7iseXUqzqfEzY8Jf8AI56H_x002F_wBhC3_x002F_9GLX1VXyr4S_x002F_5HPQ_x002F__x002B_whb_x002F_wDoxa_x002B_qq8rNPjj6Ho5d8Mgoooryz0QooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD49ooor64_x002B_ZCtjwl_x002F_yOeh_x002F_9hC3_x002F_wDRi1j1seEv_x002B_Rz0P_x002F_sIW_x002F_8A6MWoqfA_x002F_QqHxI_x002B_qqKKK_x002B_UPpAooooAKKKKACiiigAooooAK8G_x002B_Nn_x002F_ACOdn_x002F_2D0_x002F_8ARkle814N8bP_x002B_Rzs_x002F__x002B_wen_x002F_oySu7Lv4_x002F_yOPHfwTzaiiivoDxQr3n4J_x002F_wDImXn_x002F_AGEH_x002F_wDRcdeDV7z8E_x002F_8AkTLz_x002F_sIP_x002F_wCi464cx_x002F_gfM7MD_x002F_GPSaKKK_x002B_fPaPj2iiivrj5kK2PCX_x002F_I56H_x002F_2ELf8A9GLWPWx4S_x002F_5HPQ_x002F__x002B_whb_x002F_APoxaip8D9CofEj6qooor5Q_x002B_kCiiigAooooAKKKKACsfxToX_x002F_CS_x002B_G7vSPtP2b7Rs_x002F_e7N_x002B_3a6t0yM_x002F_dx171sUU4ycWpLdClFSTTPHv_x002B_FFf9TH_x002F_wCSP_x002F_2yj_x002F_hRX_x002F_Ux_x002F_wDkj_x002F_8AbK9horr_x002B_v4j_x002B_b8F_x002F_kc31Oh_x002F_L_x002B_LPHv_x002B_FFf9TH_x002F_wCSP_x002F_2ytjwt8J_x002F__x002B_Ea8SWmr_x002F_ANtfafs_x002B__x002F_wDdfZdm7cjL13nH3s9O1ek0VMsbXknFy0fkio4SjFppfmFFFFcp0Hyr4t_x002F_5HPXP_x002B_whcf_x002B_jGrHrY8W_x002F_8jnrn_x002F_YQuP_x002F_RjVj19XT_x002B_Beh83P4mFFFFWSfVXhL_x002F_kTND_x002F_AOwfb_x002F_8Aota2Kx_x002F_CX_x002F_ImaH_x002F_2D7f_x002F_ANFrWxXylT436n0kPhQV4N8bP_x002B_Rzs_x002F_8AsHp_x002F_6Mkr3mvGPjjpm290rVVWU_x002B_ZG9tI2PkXadyDOOCdz9_x002B_dvHQ11Ze0q6uc2NTdFnklFFFfQniBXW_x002B_FviJq_x002F_hLTJLCwt7KSKSYzEzo5bcQo7MOPlFclRUzpxmuWSuioTlB3i7HpP_x002F_C7PEn_x002F_PjpP_x002F_AH6k_x002F_wDjlH_x002F_C7PEn_x002F_PjpP_x002F_fqT_x002F_45Xm1FY_x002F_VKH8qNfrNb_x002B_Y9J_x002F_wCF2eJP_x002B_fHSf_x002B__x002F_Un_x002F_xyj_x002F_hdniT_x002F_AJ8dJ_x002F_79Sf8AxyvNqKPqlD_x002B_VB9ZrfzHpP_x002F_C7PEn_x002F_AD46T_x002F_36k_x002F_8AjlH_x002F_AAuzxJ_x002F_z46T_x002F_AN_x002B_pP_x002F_jlebUUfVKH8qD6zW_x002F_mPSf_x002B_F2eJP_x002B_fHSf8Av1J_x002F_8co_x002F_4XZ4k_x002F_58dJ_x002F_79Sf_x002F_AByvNqKPqlD_x002B_VB9ZrfzHpP8AwuzxJ_x002F_z46T_x002F_36k_x002F__x002B_OUf8Ls8Sf8_x002B_Ok_x002F_8AfqT_x002F_AOOV5tRR9UofyoPrNb_x002B_Y9b0z443K7V1XR4pMyDdLayFNqcZwjZyep_x002B_8M8DjrXo3hnxrovixHGnTutxGu_x002B_S2mXbIq5xnuCOnQnGRnBNfL1Phmlt5o5oZHjljYOjoxDKw5BBHQisKuXUpr3dGa08dUi_x002F_e1R9f0V5_x002F_8O_x002F_iJF4mhXTdSdI9YjXg8BblR1ZR2Yd1_x002F_EcZC_x002B_gV4lWlKlLlluevTqRqR5ohUN3dQ2NlPeXL7III2lkfBO1VGScDk8DtU1Y_x002F_i3_x002F_kTNc_x002F_7B9x_x002F_6LapgrySKk7Js_x002B_VaKKK_x002B_sPmgoorS8O2sN94m0qzuU3wT3kMUiZI3KzgEZHI4PalJ2VxpXdj6b8NaOugeGtP0sBA1vCBJsYspkPLkE84LFj_x002B_PQVq0UV8nKTk231PpEklZBRRRSGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAebfGz_x002F_AJEyz_x002F_7CCf8AouSvBq95_x002B_Nn_x002F_ACJln_x002F_2EE_x002F_8ARcleDV9Bl38D5ni47_x002B_MFFFFdxxnsPwK_x002F_5j_x002F__x002F_AG7_x002F_APtWvYa8e_x002B_BX_x002F_Mf_x002F_AO3f_x002F_wBq17DXzuP_x002F_AN4l8vyR7mD_x002F_AIEfn_x002B_YUUUVxnUFFFFABRRRQAUUUUAFFFFAHx7RRRX1x8yFFFFAH2FRRRXyJ9MFFFFABXK_x002B_JfiHoHha5_x002B_yXkss94MFre2QMyAgkFiSFHQcZzyDjBzXKfEr4lf2f52haFP_x002F_pnKXV0h_x002F_1PqiH_x002B__x002F_wCp_x002F_h6D5vu_x002B_JV6eFwHtFz1NEefiMbyPlhueq3_x002F_xx1KTy_x002F_7P0e0t8Z3_x002F_AGiRpt3TGNuzHf1_x002F_Cqf_x002F_AAuzxJ_x002F_z46T_x002F_AN_x002B_pP_x002F_jlebUV6SwdBK3KcLxVZ_x002F_aPSf8AhdniT_x002F_nx0n_x002F_v1J_x002F_8co_x002F_4XZ4k_x002F_wCfHSf_x002B__x002F_Un_x002F_AMcrzap4Z447eeKSASGQDa2cFCM80PCUUtIAsTVb1kehf8Ls8Sf8_x002B_Ok_x002F_9_x002B_pP_x002F_jlH_x002F_C7PEn_x002F_PjpP_x002F_AH6k_x002F_wDjlebUU_x002F_qlD_x002B_VC_x002B_s1v5j0n_x002F_hdniT_x002F_nx0n_x002F_AL9Sf_x002F_HKP_x002B_F2eJP_x002B_fHSf_x002B__x002F_Un_x002F_wAcrzaij6pQ_x002F_lQfWa38x6T_x002F_AMLs8Sf8_x002B_Ok_x002F_9_x002B_pP_x002F_jlH_x002F_C7PEn_x002F_PjpP_x002F_AH6k_x002F_wDjlebUUfVKH8qD6zW_x002F_mPSf_x002B_F2eJP8Anx0n_x002F_v1J_x002F_wDHKP8AhdniT_x002F_nx0n_x002F_v1J_x002F_8crzaij6pQ_x002F_lQfWa38x6BqPxf8Qanpl3YTWemLFdQvC5SKQMFYEHGX6815_x002F_RRWlOlCmrQVjOdSc9ZO4UUUVoQbHhL_x002F_kc9D_x002F_7CFv8A_x002B_jFr6qr5V8Jf8jnof_x002F_YQt_x002F_8A0YtfVVeLmnxx9D1cu_x002B_GQUUUV5Z6IUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB8e0UUV9cfMhWx4S_x002F_5HPQ_x002F_wDsIW_x002F__x002F_AKMWsetjwl_x002F_yOeh_x002F_9hC3_x002F_wDRi1FT4H6FQ_x002B_JH1VRRRXyh9IFFFFABRRRQAUUUUAFFFFABXg3xs_x002F_5HOz_x002F_7B6f_x002B_jJK95rwb42f8jnZ_x002F_9g9P_x002F_Rkld2Xfx_x002F_kceO_x002F_gnm1FFFfQHihXvPwT_x002F_wCRMvP_x002B_wg_x002F__x002F_AKLjrwavefgn_x002F_wAiZef9hB_x002F__x002F_AEXHXDmP8D5nZgf4x6TRRRXz57R8e0UUV9cfMhWx4S_x002F_5HPQ_x002F__x002B_whb_x002F_wDoxax62PCX_x002F_I56H_x002F_2ELf8A9GLUVPgfoVD4kfVVFFFfKH0gUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAfKvi3_x002F_kc9c_x002F_7CFx_x002F_wCjGrHrY8W_x002F_8jnrn_x002F_YQuP8A0Y1Y9fV0_x002F_gXofNz_x002B_JhRRRVkn1V4S_x002F_wCRM0P_x002F_ALB9v_x002F_6LWtisfwl_x002F_yJmh_x002F_wDYPt_x002F__x002F_AEWtbFfKVPjfqfSQ_x002B_FBXPeNfDK_x002B_LPDU2nB0juFYS28j52rIPXHYgsvfG7OCRXQ0UoTcJKUd0EoqScWfIE0UtvNJDNG8csbFHR1IZWHBBB6EUyvoXx98OIfFeL_x002F_T2itdWXCs75CTr0_x002B_fAJyB0bB6YPYr4NqelX_x002B_jXrWepWktrOufkkXGRkjIPRhkHkZBxX0eHxMK8dN_x002B_x4VfDypPXYp0UUV0mAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBNaXU1jewXls_x002B_yeCRZY3wDtZTkHB4PI719VeH9Zh8QaBZarbjalzHuKZJ2MOGXJAzhgRnHOM18n17_x002F_8ABm6muPA7xSvuS2vJIohgDapVXx7_x002F_ADOx59a83M6adNT6o78vm1Nx7nodY_x002F_i3_x002F_kTNc_x002F_7B9x_x002F_6Latisfxb_x002F_wAiZrn_x002F_AGD7j_x002F_0W1eNT_x002B_Nep6s_x002F_hZ8q0UUV9WfNhWx4S_x002F_wCRz0P_x002F_ALCFv_x002F_6MWsermk3_x002F_APZes2OoeX5v2W4jn8vdt3bWDYzzjOOtTNNxaRUHaSbPraiiivkz6QKKKKACiiigAooooAKKKKACiiigAooooAKKKKAPNvjZ_x002F_wAiZZ_x002F_9hBP_x002F_AEXJXg1e8_x002F_Gz_x002F_kTLP_x002F_sIJ_x002F_6LkrwavoMu_x002F_gfM8XHfxgoooruOM9h_x002B_BX_x002F_Mf_x002F_7d_x002F_wD2rXsNePfAr_x002F_mP_x002F_wDbv_x002F_7Vr2Gvncf_x002F_ALxL5fkj3MH_x002F_AAI_x002F_P8wooorjOoKKKKACiiigAooooAKKKKAPj2iiivrj5kKKKKAPsKiiivkT6YKwfGeup4c8KX9_x002F_5vlz_x002B_WY7YjaSZWGFwG4OD8xHPCng4reryf45XssemaPYBU8qaaSZiQdwZAAMe37xs_x002F_QVvhqaqVYxZjiJuFJyR4xNNLcTSTTSPJLIxd3diWZjySSepNMoor6c_x002B_fCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA2PCX_x002F_I56H_x002F_2ELf_x002F_ANGLX1VXyr4S_x002F_wCRz0P_x002F_ALCFv_x002F_6MWvqqvFzT44_x002B_h6uXfDIKKKK8s9EKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA_x002B_PaKKK_x002B_uPmQrY8Jf8AI56H_x002F_wBhC3_x002F_9GLWPWx4S_x002F_wCRz0P_x002F_ALCFv_x002F_6MWoqfA_x002F_QqHxI_x002B_qqKKK_x002B_UPpAooooAKKKKACiiigAooooAK8G_x002B_Nn_x002F_I52f8A2D0_x002F_9GSV7zXg3xs_x002F_5HOz_x002F_wCwen_x002F_oySu7Lv4_x002F_yOPHfwTzaiiivoDxQr3n4J_x002F_8iZef9hB_x002F__x002F_RcdeDV7z8E_x002F__x002B_RMvP_x002B_wg_x002F_wD6LjrhzH_x002B_B8zswP8Y9Jooor589o_x002B_PaKKK_x002B_uPmQrY8Jf8jnof8A2ELf_x002F_wBGLWPWx4S_x002F_5HPQ_x002F_wDsIW_x002F__x002F_AKMWoqfA_x002F_QqHxI_x002B_qqKKK_x002B_UPpAooooAKKKKACiiigAooooAKKKKACiiigAooooA_x002B_VfFv_x002F_ACOeuf8AYQuP_x002F_RjVj1seLf8Akc9c_x002F_wCwhcf_x002B_jGrHr6un8C9D5ufxMKKKKsk_x002B_qvCX_x002F_ImaH_x002F_2D7f8A9FrWxWP4S_x002F_5EzQ_x002F__x002B_wfb_x002F_APota2K_x002B_UqfG_x002F_U_x002B_kh8KCiiioKCq17p1jqcKw39nb3cStvCTxLIobkZwR15P51ZopptaoGr7nHXfwu8IXfnt_x002F_ZXkyTbjvhmddhPdVztGOwxj2xWP_x002F_AMKT8N_x002F_8_x002F_wBq3_x002F_f2P_x002F_43XpNFbRxVZbSZi8PSe8Uebf8ACk_x002F_Df_x002F_P9q3_x002F_f2P8A_x002B_N0f8KT8N_x002F_8AP9q3_x002F_f2P_x002F_wCN16TRVfW6_x002F_wDMxfVqP8p5t_x002F_wpPw3_x002F_AM_x002F_2rf8Af2P_x002F_AON0f8KT8N_x002F_8_x002F_wBq3_x002F_f2P_x002F_43XpNFH1uv_x002F_Mw_x002B_rUf5Tzb_x002F_AIUn4b_x002F_5_x002F_tW_x002F_7_x002B_x_x002F__x002F_G6P_x002B_FJ_x002B_G_x002F_8An_x002B_1b_x002F_v7H_x002F_wDG69Joo_x002B_t1_x002F_wCZh9Wo_x002F_wAp5t_x002F_wpPw3_x002F_wA_x002F_2rf9_x002F_Y_x002F__x002F_AI3R_x002F_wAKT8N_x002F_8_x002F_2rf9_x002F_Y_x002F_wD43XpNFH1uv_x002F_Mw_x002B_rUf5Tzb_x002F_hSfhv8A5_x002F_tW_x002F_wC_x002F_sf8A8brzP4ieFrHwl4ggsLCW4kiktVmJnZS24u47AcfKK_x002B_la8G_x002B_Nn_x002F_I52f8A2D0_x002F_9GSV14HEVZ1uWUro5cXQpwpXijzaiiivaPKCvefgn_x002F_yJl5_x002F_2EH_x002F_9Fx14NXvPwT_x002F_5Ey8_x002F_7CD_x002F_APouOuHMf4HzOzA_x002F_xj0miiivnz2j5G1Gyl0zU7uwmZGltZnhcoSVLKSDjPbiq1d18WdGl0zxvcXQhSO1v1WaIxoQpYAB88Y3bgWOM_x002F_eBPWuFr6qlP2lNS7nzlSHJNx7BRRRWhB9K_x002F_DTWF1jwJp5ynm2i_x002F_ZJFRSApThevUlNhJHGT26Dra_x002B_bvh14w_x002F_wCET1_x002F__x002F_AEl8aZd4S6xHuK4ztcd_x002B_CecZ4J4JxX0jXzmNoOlVfZ6nu4SsqlNd0FFFFch0hRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAHm3xs_x002F_5Eyz_x002F_7CCf_x002B_i5K8Gr3n42f8iZZ_x002F_9hBP_x002F_RcleDV9Bl38D5ni47_x002B_MFFFFdxxnsPwK_x002F_wCY_x002F_wD9u_x002F_8A7Vr2GvHvgV_x002F_zH_x002F_8At3_x002F_9q17DXzuP_x002F_wB4l8vyR7mD_x002F_gR_x002B_f5hRRRXGdQUUUUAFFFFABRRRQAUUUUAfHtFFFfXHzIUUUUAfYVFFFfIn0wV498df_x002B_YB_x002F_28f_x002B_0q9hrx746_x002F_8AMA_x002F_7eP8A2lXZgP8AeI_x002F_P8mcuM_x002F_gS_x002B_X5nj1FFFfRHhhXe_x002F_DbwTpvjH_x002B_0_x002F_7Qnu4vsvlbPs7qud2_x002F_Odyn_x002B_6K4KvYfgV_x002F_wAx_x002F_wD7d_x002F_8A2rXNjJyhQlKLs_x002F_8AgnRhYqVVRlt_x002F_wDY_x002F_4Un4b_x002F_5_x002F_tW_x002F_7_x002B_x_x002F__x002F_ABuj_x002F_hSfhv8A5_x002F_tW_x002F_wC_x002F_sf8A8br0mivD_x002B_t1_x002F_5mev9Wo_x002F_ynm3_x002F_Ck_x002F_Df8Az_x002F_at_x002F_wB_x002F_Y_x002F_8A43R_x002F_wpPw3_x002F_z_x002F_AGrf9_x002F_Y_x002F__x002F_jdek0UfW6_x002F_8zD6tR_x002F_lPNv8AhSfhv_x002F_n_x002B_1b_x002F_v7H_x002F_8bo_x002F_4Un4b_x002F_wCf7Vv_x002B__x002F_sf_x002F_AMbr0mij63X_x002F_AJmH1aj_x002F_ACnm3_x002F_Ck_x002F_Df_x002F_AD_x002F_at_x002F_39j_x002F_8AjdH_x002F_AApPw3_x002F_z_x002F_at_x002F_39j_x002F_APjdek0UfW6_x002F_8zD6tR_x002F_lPNv_x002B_FJ_x002B_G_x002F_wDn_x002B_1b_x002F_AL_x002B_x_x002F_wDxuj_x002F_hSfhv_x002F_n_x002B_1b_x002F_v7H_x002F_8AG69Joo_x002B_t1_x002F_5mH1aj_x002F_KeT658IPD_x002B_meH9Sv4bzU2ltbWWZA8sZUsqEjOE6cV4rX1V4t_x002F_5EzXP_x002B_wfcf_x002B_i2r5Vr1cvqzqRk5u55uOpwhJKKsFFFFegcRseEv_x002B_Rz0P_x002F_sIW_x002F_8A6MWvqqvlXwl_x002F_yOeh_x002F_wDYQt_x002F__x002F_AEYtfVVeLmnxx9D1cu_x002B_GQUUUV5Z6IUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB8e0UUV9cfMhWx4S_x002F_wCRz0P_x002F_ALCFv_x002F_6MWsetjwl_x002F_yOeh_x002F_wDYQt_x002F__x002F_AEYtRU_x002B_B_x002B_hUPiR9VUUUV8ofSBRRRQAUUUUAFFFFABRRRQAV4N8bP_x002B_Rzs_x002F_wDsHp_x002F_6Mkr3mvBvjZ_x002F_yOdn_x002F_ANg9P_x002F_Rkld2Xfx_x002F_kceO_x002F_gnm1FFFfQHihXvPwT_x002F_5Ey8_x002F_7CD_x002F__x002B_i468Gr3n4J_x002F_8iZef9hB_x002F__x002F_RcdcOY_x002F_wPmdmB_x002F_jHpNFFFfPntHx7RRRX1x8yFbHhL_x002F_kc9D_x002F_AOwhb_x002F_8Aoxax62PCX_x002F_I56H_x002F_2ELf_x002F_ANGLUVPgfoVD4kfVVFFFfKH0gUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAfKvi3_x002F_AJHPXP8AsIXH_x002F_oxqx62PFv8AyOeuf9hC4_x002F_8ARjVj19XT_x002B_Beh83P4mFFFFWSfVXhL_x002F_kTND_x002F_7B9v8A_x002B_i1rYrH8Jf8AImaH_x002F_wBg_x002B_3_x002F_9FrWxXylT436n0kPhQUUUVBQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV4N8bP_x002B_Rzs_x002F_8AsHp_x002F_6Mkr3mvBvjZ_x002F_yOdn_x002F_wBg9P8A0ZJXdl38f5HHjv4J5tRRRX0B4oV7z8E_x002F__x002B_RMvP_x002B_wg_x002F_wD6Ljrwavefgn_x002F_yJl5_x002F_2EH_x002F_APRcdcOY_x002F_wAD5nZgf4x6TRRRXz57RwXxY8Of214Ua_x002B_hXN1pm6deeseP3g5IHQBs8n5MDrXz1X2FXzR4_x002F_8Jv4T8RPDGM2Fzma1YBsKuT_x002B_7JPUrwOp4Kk4zivYy2vo6T_x002B_R5ePo6_x002B_0XzOUooor1jzQr1X4a_x002F_Er_x002B_z_x002F_J0LXZ_x002F_9D4S1unP_x002B_p9Ec_x002F_3PQ_x002F_w9D8v3fKqKyrUY1o8sjSlVlSlzRPsKivn3wb8U9R8OpHY6ir3_x002B_moqxxrkCSBQf4Tj5hgkbSeygFQK9t0fxLouvoDpepW9yxUv5StiQKDgkocMBn1HcetfP18LUovVadz26OJhVWm_x002F_Y1aKKK5jcKKKKACq2oahaaVYTX19OkFrCu6SR_x002B_gH9SegA5JOBWD4p8eaL4WhlSe4SfUFUlLKJsuW4wGxnYPmBye2cA9K8I8WeNtW8XXJ_x002B_1yeVZJIXgtE_x002B_7HxgZOMscdz6nGAcV2YbBTrO70j_x002F_AFsctfFQpKy1ZreJvifrWra4lzpd3cadZ27f6PDG_x002B_C_x002F_Od0gHDE4_x002B_6cgDjnknp_x002F_DPxo_x002F_1dr4ktvRfttsv0GXT_x002F_vokr9AtePUV7MsHRlDl5Tyo4qrGXNc_x002B_ttM1aw1myW8027iuoGx88bZwcA4I6qcEcHBGauV8k6Zq1_x002F_o16t5pt3Lazrj542xkZBwR0YZA4OQcV6r4Z_x002B_NH_x002B_rtfElt6L9ttl_x002B_gy6f8AfRJX6Ba8uvl04aw1X4no0sdCWk9Gew0VW0_x002F_ULTVbCG_x002B_sZ0ntZl3RyJ0I_x002F_oR0IPIIwas157TTszuTvqjzb42f8iZZ_x002F_wDYQT_x002F_0XJXg1e8_x002F_Gz_x002F_kTLP_x002F_ALCCf_x002B_i5K8Gr38u_x002F_gfM8XHfxgoooruOM9h_x002B_BX_x002F_Mf_x002F_wC3f_x002F_2rXsNePfAr_x002F_mP_x002F_APbv_x002F_wC1a9hr53H_x002F_AO8S_x002B_X5I9zB_x002F_wI_x002F_P8wooorjOoKKKKACiiigAooooAKKKKAPj2iiivrj5kKKKKAPsKiiivkT6YK8e_x002B_Ov_x002F_ADAP_x002B_3j_x002F_ANpV7DXj3x1_x002F_5gH_x002F_AG8f_x002B_0q7MB_x002F_vEfn_x002B_TOXGfwJfL8zx6iiivojwwr2H4Ff8x_x002F_8A7d_x002F__x002F_AGrXj1ew_x002F_Ar_x002F_AJj_x002F_AP27_x002F_wDtWuTH_x002F_wC7y_x002B_X5o6cH_x002F_Hj8_x002F_wAj2GiiivnD3QooooAKKKKACiiigAooooAx_x002F_Fv_x002F_ACJmuf8AYPuP_x002F_RbV8q19VeLf_x002B_RM1z_x002F_sH3H_x002F_otq_x002B_Va9rK_x002F_gl6nlZj8UQooor1DzjY8Jf8jnof_x002F_YQt_x002F_wD0YtfVVfKvhL_x002F_kc9D_x002F_AOwhb_x002F_8Aoxa_x002B_qq8XNPjj6Hq5d8Mgoooryz0QooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD49ore8Z6E_x002F_hzxXf2Hk_x002B_XB5hktgNxBiY5XBbk4Hyk88qeTisGvrIyUoqS6nzUouLcWFPhmlt5o5oZHjljYOjoxDKw5BBHQimUVQjY_x002F_wCEt8Sf9DDq3_x002F_gbJ_x002F_jR_x002F_wAJb4k_x002F_6GHVv_x002F_A2T_x002F_Gseio9nDsiueXc2P8AhLfEn_x002F_Qw6t_x002F_4Gyf40f8ACW_x002B_JP_x002B_hh1b_x002F_wNk_x002F_xrHoo9nDsg55dzY_x002F_4S3xJ_x002F_wBDDq3_x002F_AIGyf40f8Jb4k_x002F_6GHVv_x002F_AANk_x002F_wAax6KPZw7IOeXc2P8AhLfEn_x002F_Qw6t_x002F_4Gyf40f8ACW_x002B_JP_x002B_hh1b_x002F_wNk_x002F_xrHoo9nDsg55dzY_x002F_4S3xJ_x002F_wBDDq3_x002F_AIGyf40f8Jb4k_x002F_6GHVv_x002F_AANk_x002F_wAax6KPZw7IOeXc2P8AhLfEn_x002F_Qw6t_x002F_4Gyf41QvdRvtTmWa_x002F_vLi7lVdgeeVpGC8nGSenJ_x002F_Oq1FNQitUhOUnuwoooqhBXvPwT_x002F_wCRMvP_x002B_wg_x002F__x002F_AKLjrwavefgn_x002F_wAiZef9hB_x002F__x002F_AEXHXDmP8D5nZgf4x6TRRRXz57R8e0UUV9cfMhWx4S_x002F_5HPQ_x002F__x002B_whb_x002F_wDoxax62PCX_x002F_I56H_x002F_2ELf8A9GLUVPgfoVD4kfVVFFFfKH0gUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAfKvi3_x002F_kc9c_x002F_7CFx_x002F_wCjGrHrY8W_x002F_8jnrn_x002F_YQuP8A0Y1Y9fV0_x002F_gXofNz_x002B_JhRRRVkn1V4S_x002F_wCRM0P_x002F_ALB9v_x002F_6LWtisfwl_x002F_yJmh_x002F_wDYPt_x002F__x002F_AEWtbFfKVPjfqfSQ_x002B_FBXn_x002F_xf1G_x002B_0zwnazWF5cWkrXyIXglaNivlyHGQenA_x002F_KvQK82_x002B_Nn_x002F_ImWf_x002F_YQT_x002F_0XJWuESdaKZliW1SlY8e_x002F_4S3xJ_x002F_wBDDq3_x002F_AIGyf40f8Jb4k_x002F_6GHVv_x002F_AANk_x002F_wAax6K_x002B_j9nDsjwueXc2P_x002B_Et8Sf9DDq3_x002F_gbJ_x002F_jR_x002F_wlviT_x002F_oYdW_x002F_8DZP8ax6KPZw7IOeXc2P_x002B_Et8Sf9DDq3_x002F_gbJ_x002F_jR_x002F_wlviT_x002F_AKGHVv8AwNk_x002F_xrHoo9nDsg55dzY_x002F_4S3xJ_x002F_0MOrf_x002B_Bsn_x002B_NH_x002F_CW_x002B_JP_x002B_hh1b_x002F_wNk_x002F_xrHoo9nDsg55dzY_x002F_4S3xJ_x002F_0MOrf_x002B_Bsn_x002B_NH_x002F_CW_x002B_JP8AoYdW_x002F_wDA2T_x002F_Gseij2cOyDnl3Nj_x002F_hLfEn_x002F_Qw6t_x002F_4Gyf40f8Jb4k_x002F_6GHVv_x002F_A2T_x002F_Gseij2cOyDnl3Nj_x002F_hLfEn_x002F_Qw6t_x002F_4Gyf41QvdRvtTmWa_x002F_vLi7lVdgeeVpGC8nGSenJ_x002F_Oq1FNQitUhOUnuwoooqhBXvPwT_x002F_5Ey8_x002F_7CD_x002F__x002B_i468Gr6V_x002B_Gmjro_x002F_gTTxhPNu1_x002B_1yMjEhi_x002F_K9ehCbAQOMjv1Pn5lJKjbuztwEW6t_x002F_I62iiivBPZCsTxX4ZtPFmhvpt07xkMJIZU6xyAEBsdxyQQex7HBG3RVRk4vmjuKUVJWZ8jahp93pV_x002F_NY30DwXULbZI36g_x002F_wBQeoI4IORVavpXx14FtPGFhuUpBqkK4t7gjgjrsfHVT_x002B_YJyO4PznqGn3elX81jfQPBdQttkjfqD_x002F_UHqCOCDkV9FhcVGvHzPCxGHlRl5Faiiiuo5wp8M0tvNHNDI8csbB0dGIZWHIII6EUyigDrdP8AiZ4u09IY11Z54omzsuY1kLjOSGcjeQen3s46EVuf8Ls8Sf8APjpP_x002F_fqT_x002F_wCOV5tRWEsNRk7uKNliKq0UmejTfGnxNJDJGltpkTMpAkSF9yE9xlyMj3BHtXNap468T6zD5N7rNw0W1kZIsRK6twQwQDcPrnv6mueopxw9KDvGKFKvUlo5MKKKK2MgooooAK6vwJ4Lm8Y6s8Zl8mwttrXUoI3YOcKo9Tg89BgnngGl4T8J3_x002F_i7VhZ2Y8uFMNcXLDKwr_x002F_UnnC9_x002F_YAkfSWhaFYeHNJi07TofLhTlmPLSN3Zj3J_x002F_wAwABXBjcWqUeWPxfkdmFwzqPmlt_x002B_Zfhiit4Y4YY0jijUIiIoCqo4AAHQCn0UV4B7R5t8bP8AkTLP_x002F_sIJ_x002F_wCi5K8Gr3n42f8AImWf_x002F_YQT_x002F_wBFyV4NX0GXfwPmeLjv4wUUUV3HGew_x002F_Ar_x002F_mP_x002F_8Abv8A_x002B_1a9hrx74Ff8x_x002F_8A7d_x002F__x002F_AGrXsNfO4_x002F_8A3iXy_x002F_JHuYP8AgR_x002B_f5hRRRXGdQUUUUAFFFFABRRRQAUUUUAfHtFFFfXHzIUUUUAfYVFFFfIn0wV498df_x002B_YB_x002F_28f8AtKvYa4X4t6XLqXgSaSLeWspkuSiIWLKMq30ADlifRfxHTg5KNeLf9XOfFRcqMkj53ooor6U8EKuWGralpfmf2fqF3aeZjf8AZ5mj3YzjO0jOMn86p0UNJqzBNrVGx_x002F_wlviT_x002F_AKGHVv8AwNk_x002F_xo_x002F_4S3xJ_x002F_wBDDq3_x002F_AIGyf41j0VHs4dkVzy7mx_x002F_wlviT_x002F_AKGHVv8AwNk_x002F_xo_x002F_4S3xJ_x002F_wBDDq3_x002F_AIGyf41j0Uezh2Qc8u5sf8Jb4k_x002F_6GHVv_x002F_A2T_x002F_Gj_x002F_AIS3xJ_x002F_0MOrf_x002B_Bsn_x002B_NY9FHs4dkHPLubH_x002F_CW_x002B_JP8AoYdW_x002F_wDA2T_x002F_Gj_x002F_hLfEn_x002F_AEMOrf8AgbJ_x002F_jWPRR7OHZBzy7mx_x002F_wlviT_x002F_oYdW_x002F_8DZP8aP8AhLfEn_x002F_Qw6t_x002F_4Gyf41j0Uezh2Qc8u5qzeJ_x002F_EFxDJDNrmpyRSKUdHu5CrKeCCCeQayqKKpRS2Qm29wooopiNjwl_x002F_yOeh_x002F_9hC3_x002F_APRi19VV8q_x002B_Ev_x002B_Rz0P8A7CFv_x002F_wCjFr6qrxc0_x002B_OPoerl3wyCiiivLPRCimu6xozuwVFGWZjgAeprGvfFmk2ZKic3DggFYBu7ZzngH8DWdSrTpq83YTaW5t0VzH_x002F_Cc6Z_x002F_zwu_x002F__x002B__x002B_F_x002F__x002B_Ko_x002F_4TnTP_x002B_eF3_x002F_wB8L_x002F_8AFVh9ew_x002F_86J9pHudPRXMf8Jzpn_x002F_PC7_x002F_74X_x002F_4qj_x002F_hOdM_x002F_54Xf_x002F_AHwv_x002F_wAVR9ew_x002F_wDOg9pHudPRVXT76LUrGO7hV1jkzgOADwSO30q1XVGSklJbMtahRRWZq_x002B_u2ui_x002B_T9pjmfzt23ywDjGOuSPWpnUjTjzSdkJtJXZp0VzH_x002F_AAnOmf8APC7_x002F_AO_x002B_F_x002F_wDiqP8AhOdM_x002F_wCeF3_x002F_3wv8A8VXP9ew_x002F_86J9pHudPRXMf8Jzpn_x002F_PC7_x002F_74X_x002F_4qtTSNdtda877NHMnk7d3mADOc9ME_x002B_lXDF0akuWMrsanFuyZp0UUV0FBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBwvxI8Ct4ssI7qxKLqlopEakACdTzsLdiOq5OASc4zkfPU0UtvNJDNG8csbFHR1IZWHBBB6EV9f1xHjb4cWHivzL6BvsurCPaso_x002B_5KRjHmDGTwMbhyM98AV6WCxvs_x002F_wB3U2_x002F_I4MVhPae_x002F_Dc_x002B_dKK6TWvAXiXQt73WlyvAm8_x002B_fbjzU2r1YleVGOfmA_x002F_Q1zde1GcZq8Xc8qUZRdpKwUUUVRIUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV7z8E_x002F_8AkTLz_x002F_sIP_x002F_wCi468Gr3n4J_x002F_8AImXn_x002F_YQf_x002F_wBFx1w5j_x002F_A_x002B_Z2YH_x002B_Mek0UUV8_x002B_e0fHtFFFfXHzIVseEv_x002B_Rz0P_x002F_sIW_x002F_8A6MWsetjwl_x002F_yOeh_x002F_9hC3_x002F_APRi1FT4H6FQ_x002B_JH1VRRRXyh9IFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAHyr4t_x002F_5HPXP_x002B_whcf8Aoxqx62PFv_x002F_I565_x002F_2ELj_x002F_ANGNWPX1dP4F6Hzc_x002F_iYUUUVZJ9VeEv8AkTND_x002F_wCwfb_x002F__x002B_i1rYrH8Jf8iZof8A2D7f_x002F_wBFrWxXylT436n0kPhQV5t8bP8AkTLP_x002F_sIJ_x002F_wCi5K9Jrzb42f8AImWf_x002F_YQT_x002F_wBFyVthP48fUyxX8GR4NRRRX0p4AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUVcsNJ1LVPM_x002F_s_x002F_T7u78vG_x002F_7PC0m3OcZ2g4zg_x002F_lXo3h34MajczRzeIJ0tLUqxaCCQNNu6AZwUA75BPpgZ4yq16dJe_x002B_zSnRnUfuowPh34Kl8Vaws11A50e3b_x002F_AEh9xXe2MiNT3J4zjGB3BIz9H1W0_x002F_T7TSrCGxsYEgtYV2xxp0A_x002F_qT1JPJJyas18_x002F_isS6879Fse3h6Coxt1CiiiuY3CiiigArnvFfg3S_x002F_Flg8V1Ekd2FAhvEQeZGRnAz3Xk5UnHPY4I6GiqhOUHzRdmTKKkrSPl7xX4N1TwnfvFdRPJaFgIbxEPlyA5wM9m4OVJzx3GCeer6_x002F_miiuIZIZo0kikUo6OoKsp4IIPUGvMNf_x002B_C2nXbtNol49i20kW8oMkZbA2gNncoyDknd14HGK9ihmUWrVdH3PLrYCS1p6nh9FdJrXgLxLoW97rS5XgTefPtx5qbV6sSvKjHPzAfoa5uvSjOM1eLucMoyi7SVgoooqiQooooAKKfDFLcTRwwxvJLIwRERSWZjwAAOpNdvoHwo8R6yizXESabblgCbsESFckMRHjORjo23ORg45qKlWFNXm7Fwpzm7RVzha9G8HfCjUdYm_x002B_0a7Fcadp4UkKQFmkbkYCkHaBjJLDnjAOcj0vwz8NdA8N_x002B_XP5H26_x002F_XB_x002B_03IB2sMHKL0Xlcg8sM_x002F_ersa8rEZlf3aX3no0MBbWp9xW0_x002F_T7TSrCGxsYEgtYV2xxp0A_x002F_qT1JPJJyas0UV5Tbbuz0kraIKKKKQHm3xs_x002F_wCRMs_x002F__x002B_wgn_x002F_AKLkrwavefjZ_x002F_wAiZZ_x002F_9hBP_x002F_AEXJXg1fQZd_x002F_A_x002B_Z4uO_x002F_jBRRRXccZ7D8Cv_x002B_Y_x002F__x002F_wBu_x002F_wD7Vr2GvHvgV_x002F_zH_x002F_wDt3_x002F_8Aatew187j_x002F_wDeJfL8ke5g_x002F_wCBH5_x002F_mFFFFcZ1BRRRQAUUUUAFFFFABRRRQB8e0UUV9cfMhRRRQB9hUUUV8ifTBTJooriGSGaNJIpFKOjqCrKeCCD1Bp9FAHzd4_x002F_wDBNz4U1Z5oo92k3MhNtIuSI85Pltkk5A6En5gM_x002B_oHHV9c6hp9pqthNY30CT2sy7ZI36Ef0I6gjkEZFeJeIfg1rFlMZNDlTUbdm4jdljlQc9ckKwAA5BBJP3QK9zCY_x002B_Mo8tV2f5nkYnByi_x002B_amro8zoqze6dfaZMsN_x002F_Z3FpKy7wk8TRsV5GcEdOD_x002B_VVq9JNPVHA1bcKKKKACiiigAooooAKKKKACiiigAooooAKKKKANjwl_x002F_yOeh_x002F_wDYQt_x002F__x002F_AEYtfVVfKvhL_x002F_kc9D_x002F_7CFv8A_x002B_jFr6qrxc0_x002B_OPoerl3wyCquoahb6ZaNc3L7UXgAdWPYAdzVqvNfFeqPqGryQ9IbVmjQYwc9GP5j8gPevn8bivq9LmW72O6c_x002B_VFXV9dvNYl_x002F_fNtgVt0cK9F_x002F_xPufU4xWZRRXys6kqkuabuzkbbd2FFFFQIKKKKAPTfCf_x002F_ACLNn_x002F_wP_x002F_wBDatqsXwn_x002F_AMizZ_x002F_8AA_x002F_8A0Nq2q_x002B_ywv8CHovyO2HwoK4zx9_x002F_zD_x002F_wDtp_x002F_7LXZ1xnj7_x002F_AJh_x002F__x002F_bT_x002F_ANlrDMv91l8vzRNX4GcXRRRXyhyBXaeAf_x002B_Yh_x002F_wBs_x002F_wD2auLrtPAP_x002F_MQ_x002F_7Z_x002F__x002B_zV3Zb_x002F_vUfn_x002B_TNKXxo7OiiivqzrCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK8G_x002B_Nn_x002F_ACOdn_x002F_2D0_x002F_8ARkle814N8bP_x002B_Rzs_x002F__x002B_wen_x002F_oySu7Lv4_x002F_yOPHfwTzaiiivoDxQr3n4J_x002F_wDImXn_x002F_AGEH_x002F_wDRcdeDV7z8E_x002F_8AkTLz_x002F_sIP_x002F_wCi464cx_x002F_gfM7MD_x002F_GPSaKKK_x002B_fPaCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACsrUPDOhaq80l9o9lPLMu2SZ4F8wjGPv43AgdCDkY4rVopqTi7piaT0ZxF18JvCFxbPFFYS2rtjE0Ny5Zee28svtyD1rN_x002F_4Un4b_x002F_AOf7Vv8Av7H_x002F_APG69JordYqsvtMyeHpP7KPOYfgt4Zjmjke51OVVYExvMm1wOxwgOD7EH3rctfht4Qs7lLiLRImdM4E0jyryMcq7FT17iuqopSxNaW8mCoUltFFay06x0yFobCzt7SJm3lIIljUtwM4A68D8qs0UVi23qzZK2wUUUUgCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAK9_x002F_O1rp11cIAXiid1DdMgE815BXrWsf8AIEv_x002F_APr2k_x002F_8AQTXkteBnLfPBeRz190FFFFeKYBRVrT7GXUr6O0hZFkkzguSBwCe30rd_x002F_4QbU_x002F_wDnvaf99t_x002F_8TW9PDVaq5oRuilFvY5iiun_x002F_4QbU_x002F__x002B_e9p_x002F_wB9t_x002F_8AE0f8INqf_x002F_Pe0_x002F_wC_x002B_2_x002F_8Aia0_x002B_o4j_x002B_Rj9nLsdN4T_x002F_5Fmz_x002F_AOB_x002F__x002B_htW1WfoljLpujwWkzI0ke7JQkjlie_x002F_1rQr6jDxcaMIvdJfkdUdIoK4zx9_x002F_zD_x002F_8Atp_x002F_7LXZ1xnj7_x002F_mH_x002F_APbT_x002F_wBlrnzL_x002F_dZfL80TV_x002B_BnF0UUV8ocgV2ngH_x002F_mIf8AbP8A9mri67TwD_x002F_zEP_x002B_2f_x002F_s1d2W_x002F_71H5_x002F_kzSl8aOzooor6s6wooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAMHxprdz4c8JX2q2aRPPB5e1ZgSp3SKpyAQehPevJP_x002B_F2eJP_x002B_fHSf8Av1J_x002F_8cr0j4p_x002F_8k31b_x002F_tj_x002F_wCjkr5ur18voU6lJuavr_x002F_keZja1SFRKLtoek_x002F_8AC7PEn_x002F_PjpP8A36k_x002F__x002B_OUf8Ls8Sf8APjpP_x002F_fqT_x002F_wCOV5tRXf8AVKH8qOP6zW_x002F_mPSf_x002B_F2eJP_x002B_fHSf8Av1J_x002F_8co_x002F_4XZ4k_x002F_58dJ_x002F_79Sf_x002F_AByvNqKPqlD_x002B_VB9ZrfzHpP8AwuzxJ_x002F_z46T_x002F_36k_x002F__x002B_OVyPinxTfeLdTjv7_x002B_K3jljhEIECsF2gse5PPzGsSiqhh6UHzRjZkzr1Jq0mFFFFbGQV7z8E_x002F__x002B_RMvP_x002B_wg_x002F_wD6LjrwavpX4YxSwfDrSEljeNisjgOpBKtI5U_x002F_Qggj2NefmUrUbd2duAV6t_x002F_I62iiivBPZCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKoapq9ppFuJblj8xwiIMs3rge1cZe_x002B_NtRnJFssdqmQRgb26dCTx_x002B_lcmIxtGg7SevZESqRjuehUV5L_x002F_bGp_x002F_wDQRu_x002F__x002B__x002F_wC3_x002B_NH9san_x002F_ANBG7_x002F_7_x002F_ALf41w_x002F_2zT_x002F_lZn7ddj1qivJf7Y1P_x002F_oI3f_x002F_f9v8aP7Y1P_x002F_oI3f_x002F_f9v8aP7Zp_x002F_ysPbrsetUV5L_x002F_bGp_x002F_wDQRu_x002F__x002B__x002F_wC3_x002B_NH9san_x002F_ANBG7_x002F_7_x002F_ALf40f2zT_x002F_lYe3XY9aoryX_x002B_2NT_x002F_6CN3_x002F_AN_x002F_2_x002F_wAaP7Y1P_x002F_oI3f8A3_x002F_b_x002F_ABo_x002F_tmn_x002F_ACsPbrsetUV5L_x002F_bGp_x002F_8AQRu_x002F__x002B__x002F_7f40f2xqf_x002F_AEEbv_x002F_v_x002B_3_x002B_NH9s0_x002F_5WHt12PWqK8l_x002F_tjU_x002F_wDoI3f_x002F_AH_x002F_b_x002F_Gj_x002B_2NT_x002F_AOgjd_x002F_8Af9v8aP7Zp_x002F_ysPbrsetUV5L_x002F_bGp_x002F_9BG7_x002F_AO_x002F_7f41reGdSvrjxDaxTXtzJG2_x002F_KPKxB_x002B_Q9iaunm0Kk1BRersNVk3ax6JRRRXrGwUUUUAFFFFABRRRQAUUyWaK3iaWaRI416u7AAfia5XU_x002F_G8EWY9Oi85v8AnrICE7dB1PcdvxrCtiaVFXqOxMpKO51tRT3MFqge4mjhQnAaRwoz6c15ld_x002B_JNWu33NeyRgEkLCdgGe3HJ_x002F_HNZVeZUzmK_x002B_CN_x002F_UydddEeqz6_x002F_pNugd9QgIJx_x002B_7befyXJqv_x002F_wAJZon_x002F_AD_x002B__x002F__x002B_Qn_x002F_AMK8yornecVr6RX4_x002F_wCZPtpHq8Wu6VNEsiahbBT0DyBD_x002B_RwatwXMF0he3mjmQHBaNwwz6cV47RVxzmf2oIarvsez0V5hZeKNWsiMXRmTJJSf588Y69fyNdJp_x002F_ji2mIS_x002F_hNucD94mWUnHPHUe3XrXdRzOhU0bs_x002F_P_x002F_ADNI1Ys6uimRTRXESywyJJG3R0YEH8RT69FO_x002B_qNAooooAKKKKACiivMNV1XUY9YvUS_x002F_ulRbiQKqzMABuPA5rkxeLjhoptXuROfKehax_x002F_yBL_x002F_AP69pP8A0E15LVt9V1GRGR7_x002B_6ZGGGVpmII9DzVSvn8di44mSaVrHPUnzMKKKK4TM2vCf_x002F_IzWf_x002F_A_x002F__x002F_QGr02vG4ppbeVZYZHjkXo6MQR_x002B_Iq1_x002F_bGp_x002F_9BG7_x002F_AO_x002F_7f416mCzCOHpuDV9bmtOooqx61RXkv9san_x002F_0Ebv8A7_x002F_t_x002F_jXofhmaW48PWss0jySNvy7sST857mvVwuYRxE3BK2lzaFRSdjXooor0DQK4zx9_x002F_zD_x002F_8Atp_x002F_7LXZ1xnj7_x002F_mH_x002F_APbT_x002F_wBlrhzL_x002F_dZfL80Z1fgZxdFFFfKHIFdp4B_x002F_5iH_x002F_bP_x002F_2auLqa3vLq03fZrmaHdjd5blc49cV0YWsqNZVGr2_x002F_yKhLllc9horyX_x002B_2NT_x002F_wCgjd_x002F_9_x002F_wBv8aP7Y1P_x002F_AKCN3_x002F_3_x002F_AG_x002F_xr2P7Zp_x002F_ys29uux61RXkv9san_x002F_wBBG7_x002F_7_x002F_t_x002F_jXceDbme60eZ7iaSZxcEBpHLHG1eOa6MNmMa9TkUbFRqqTsdFRRRXomoUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBx3xT_x002F_AOSb6t_x002F_2x_x002F_8ARyV83V9I_x002F_FP_x002F_AJJvq3_x002F_bH_x002F_0clfN1e7ln8F_x002B_v6I8fMP4q9P8AMKKKK9E4QooooAKKKKACiiprW0ub65S2s7eW4nfO2KFC7NgZOAOTwCaG7ATaVplzrOrWum2a7p7mQRrwSBnqxwCcAZJOOACa_x002B_rdOsotM0y0sIWdorWFIULkFiqgAZx34riPh38O4vDMK6lqSJJrEi8DgrbKeqqe7Hu34DjJb0CvAx_x002B_JVWSjHZHs4Og6ceaW7CiiiuA7QooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKzda1eHSLBpXYecwIhQjO5vp6Dv_x002F_wDqrSrzXxbqBvdckjD5ht_x002F_3aAZAz_x002F_Fwe_x002B_cjPsK4sfiXQpXW70RFSXKjHuLia7uHuLiQySucsx71FRRXyjbbuzjCiiikAUUUUAFFFFABRRRQAUUUUAFFFFABW14T_x002F_wCRms_x002F__x002B_B_x002F_8AoDVi1teE_x002F_wDkZrP_x002F_AIH_x002F_AOgNW_x002B_F_x002F_jw9V_x002B_ZUPiR6bRRRX2R2hRRRQAUUUUAFYWu_x002B_JrfSN0EY868K5CD7qem7_x002B_eP5ZzWf4n8T_x002F_AGffYWD_x002F_AL7pLMp_x002B_5_x002F_sj_x002F_a9_x002B_316cLXj47MuRunS379jGpVtoi3qGp3eqXBmupS3JKpn5U9lHboKqUUV4EpOT5pO7OZu4UUUVIBRRRQAUUUUAFFFFAF3TdVvNKnMtpLt3Y3oRlXAPQj_x002B_vXk16FoviK01hNvEFyDjyWfJPfK_x002B_vA_x002F_CvMKcjtG6ujFXU5VlOCD6iu3C46ph3bePYuFRxPZaK53w34kXVEFrdELeqOOwlHqPf1H4j26Kvp6NaFaCnB6HXGSkroKKKK1GFeS6x_x002F_wAhu_x002F_8A_x002B_vmT_x002F_wBCNetV5LrH_x002F_Ibv_x002F_wDr5k_x002F_9CNeNnP8ADj6mFfZFKiiivnznCiiigAooooAK9N8J_x002F_wDIs2f_x002F_AAP_x002F_ANDavMq9N8J_x002F_8izZ_x002F_wDA_x002F_wD0Nq9XJ_x002F_479P1RtR_x002B_I2qKKK_x002B_kOkK4zx9_x002F_zD_x002F_8Atp_x002F_7LXZ1xnj7_x002F_mH_x002F_APbT_x002F_wBlrhzL_x002F_dZfL80Z1fgZxdFFFfKHIFFFFABRRRQAV6B4G_x002F_5Ak3_x002F_Xy3_x002F_oK15_x002F_XoHgb_x002F_kCTf8AXy3_x002F_AKCtellX_x002B_8L0ZrR_x002B_I6eiiivpzqCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAM3X9EtvEeiXGlXjypBPt3NCQGG1gwwSCOoHauI_x002F_wCFJ_x002B_G_x002F__x002B_f7Vv_x002B__x002F_sf_x002F_xuvSaK1p16lNWg7Gc6NObvJXPNv_x002B_FJ_x002B_G_x002F__x002B_f7Vv_x002B__x002F_sf_x002F_wAbo_x002F_4Un4b_x002F_AOf7Vv8Av7H_x002F_APG69JorT63X_x002F_mZH1aj_x002F_ACnm3_x002F_Ck_x002F_Df_x002F_AD_x002F_at_x002F_39j_x002F_8AjdH_x002F_AApPw3_x002F_z_x002F_at_x002F_39j_x002F_APjdek0UfW6_x002F_8zD6tR_x002F_lPNv_x002B_FJ_x002B_G_x002F_wDn_x002B_1b_x002F_AL_x002B_x_x002F_wDxuj_x002F_hSfhv_x002F_n_x002B_1b_x002F_v7H_x002F_8AG69Joo_x002B_t1_x002F_5mH1aj_x002F_KeeWvwZ8L29ykssmoXSLnMM0yhW477FVvfgjpXaaXoml6JD5WmWFvaqVVWMUYDOF6bm6seTySTyav0VnOvUqfFK5cKUIfCrBRRRWRoFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV43NK9xPJNK26SRi7HGMknJr2SvGK8POn8C9f0MK_x002F_QKKKK8I5woor1r_x002B_x9M_x002F_6B1p_x002F_34X_x002F_Cu3CYOWJvZ2sXCDkeS0V61_x002F_Y_x002B_mf8AQOtP_x002B__x002F_C_x002F_4Uf2Ppn_x002F_AEDrT_x002F_vwv_x002B_Fdn9jVP5kaewfc8lor1r_x002B_x9M_x002F_6B1p_x002F_34X_x002F_AAo_x002F_sfTP_x002B_gdaf9_x002B_F_x002F_wAKP7GqfzIPYPueS0V61_x002F_Y_x002B_mf8AQOtP_x002B__x002F_C_x002F_4Uf2Ppn_x002F_AEDrT_x002F_vwv_x002B_FH9jVP5kHsH3PJaK9a_x002F_sfTP_x002B_gdaf8Afhf8KP7H0z_x002F_oHWn_x002F_AH4X_x002F_Cj_x002B_xqn8yD2D7nktFetf2Ppn_x002F_QOtP_x002B__x002F_C_x002F_wCFH9j6Z_x002F_0DrT_x002F_vwv8AhR_x002F_Y1T_x002B_ZB7B9zyWtrwn_x002F_AMjNZ_x002F_8AA_x002F_8A0Bq9A_x002F_sfTP8AoHWn_x002F_fhf8KfFptjbyrLDZW0ci9HSJQR_x002B_IFaUcpnTqRm5LRpjVFp3uWqKKK9w3CiiigArmvFXiBbC3eytpCLyQDLIf9Uv_x002B_JHTvznjjOxqupRaVp8l3KN23hUyAXY9B_x002F_nsDXlVxcTXdw9xcSGSVzlmPevLzLGeyj7OHxP8EZVZ2VkRUUUV80coUUU5EaR1RFLOxwqqMkn0FADaK6zSfBU1wiTahIYEYZESD5_x002B__x002F_XPC9vX8K7Cy0ux08AWlrHEQCNwGWIJzgseTXp4fK61VXl7q_x002F_H7jWNKT3PNYNA1a4comnzggZ_x002F_eLsH5tgVY_x002F_4RPW_x002F__x002B_fL_x002F_AMip_x002F_jXptFegsno21k_x002F_w_x002F_wAjT2MTyiXQtVhlaN9PuSw6lIy4_x002F_MZFZ9ez1UvdLsdQBF3axykgDcRhgAc4DDkVjUyZW_x002F_dy_x002B_8TodmeR0V1Wr_x002B_DJ7VfO05nuIx96Nsb1GOv_x002B_134Az061yteRWoVKMuWorGEouL1CiiisRDkdo3V0Yq6nKspwQfUV6R4Z13_x002B_17QxzsgvIvvAcF1_x002F_vY_x002F_Q4_x002F_TIrzWrFjezafexXcBAkjORuGQexB_x002F_CuzB4qWHqX6PcuE_x002B_Vnr9FV7G9h1Cyiu4CTHIMjcMEdiD_x002B_NWK_x002B_sjJSV1sdgV5LrH_x002F_Ibv_x002F_8Ar5k_x002F_9CNetVUfStOkdnewtWdjlmaFSSfU8VxY7CSxMUk7WM6kOZHkdFen6rpWnR6Peulhaq628hVlhUEHaeRxXmFfP4vCSw0km73OecOUKKKK5CAorW8MwxXHiG1imjSSNt_x002B_UdQQfkPY16J_x002F_Y_x002B_mf9A60_x002F_78L_x002F_AIV6GFwEsRBzTtrY0hTclc8lr03wn_x002F_yLNn_x002F_wP_x002F_0Nqu_x002F_2Ppn_x002F_AEDrT_x002F_vwv_x002B_FWooYreJYoY0jjXoiKAB_x002B_Ar1cFgJYeo5t30sbU6bi7j6KKK9Q1CuM8ff8AMP8A_x002B_2n_x002F_ALLXZ1xnj7_x002F_mH_x002F_8AbT_x002F_2WuHMv91l8vzRnV_x002B_BnF0UUV8ocgUUV1vgmztbv7d9ptoZtvl7fMQNjO7pmtsPRdeoqadrlRjzOxyVFetf2Ppn_x002F_QOtP_x002B__x002F_C_x002F_wCFH9j6Z_x002F_0DrT_x002F_vwv8AhXp_x002F_2NU_x002F_mRr7B9zyWvQPA3_x002F_IEm_x002F_6_x002B_W_x002F_9BWtr_x002B_x9M_x002F_wCgdaf9_x002B_F_x002F_wqxBbQWqFLeCOFCclY0CjPrxXVg8ulQq87lcqFNxdyWiiivWNgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACvGK9nrxivDzr7Hz_x002F_AEOev0CiiivCMAr2evGK9nr3cl_x002B_38v1N6HUKKKK9w6AooooAKKKKACiiigAooooAKKKKACiiigAooqG8uPsllcXO3f5MbSbc4zgZxSbSV2BwvjPVPtWoLZRPmG2_x002B_9g8Fz179hx6g7q5inzSvcTyTStukkYuxxjJJyaZXxuIrOtUc31OGT5ncKKKKxEORGkdURSzscKqjJJ9BXofhvw2uloLq6Aa9YcdxEPQe_x002F_qfwHvW8HaKILcalcIDLKP3IKnKLzz_x002B_P8u_x002F_NdXX0GW4FRSrVN_x002B_nkdFKnb3mFFFFeybhRRRQAUUUUAFc54i8MRajE1xZRpHeLkkAACXuc_x002F_wC17_x002F_n6jo6KyrUYVock1oKUVJWZ406NG7I6lXU4ZWGCD6Gm12XjHQ1QHVLaMKCf9IAOOSQAwH16_x002F_gfU1xtfJYmhKhUcJHHKLi7BRRRWBJ1vgjU_x002F_KupNOkPyzfvI_x002F_wDeA5HTuB6_x002F_w_x002B_9d1Xj1pdS2V3FcwnEkTBhycH2OOx6GvX0dZEV0YMjDKspyCPUV9HlNZzpOm_x002F_s_x002F_kzpoyurDqKKK9Y2KWsf8gS_x002F__x002F_AOvaT_x002F_0E15LXrWsf8gS_x002F__x002F_wCvaT_x002F_0E15LXz_x002B_c_x002F_wASPoc9fdBRRRXjGBteE_x002F_8AkZrP_x002F_gf_x002F_AKA1em15l4T_x002F_AORms_x002F_8Agf8A6A1em19Jk_x002F_8AAfr_x002B_iOmj8IUUUV6psFFFFABXGePv_x002B_Yf_x002F_ANtP_x002F_Za7OuM8ff8AMP8A_x002B_2n_x002F_ALLXDmX_x002B_6y_x002B_X5ozq_x002F_Azi6KKK_x002B_UOQK7TwD_x002F_zEP_x002B_2f_x002F_s1cXXaeAf8AmIf9s_x002F_8A2au7Lf8Aeo_x002F_P8maUvjR2dFFFfVnWFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABXjFez143NE9vPJDKu2SNijDOcEHBrw86XwP1_x002F_Qwr9BlFFFeEc4V61_x002F_bGmf9BG0_x002F_wC_x002F_6_x002F_415LRXbhMZLDXsr3LhNxPWv7Y0z_x002F_oI2n_x002F_f9f8AGj_x002B_2NM_x002F_6CNp_x002F_3_x002F_X_x002F_ABryWiuz_x002B_2an8qNPbvsetf2xpn_x002F_QRtP_x002B__x002F_wCv_x002B_NH9saZ_x002F_0EbT_x002F_v8Ar_x002F_jXktFH9s1P5UHt32PWv7Y0z_x002F_oI2n_x002F_f9f8AGj_x002B_2NM_x002F_6CNp_x002F_3_x002F_X_x002F_ABryWij_x002B_2an8qD277HrX9saZ_x002F_wBBG0_x002F_7_x002F_r_x002F_jR_x002F_bGmf8AQRtP_x002B__x002F_6_x002F_415LRR_x002F_bNT_x002B_VB7d9j1r_x002B_2NM_x002F_6CNp_x002F_wB_x002F_1_x002F_xo_x002F_tjTP_x002B_gjaf8Af9f8a8loo_x002F_tmp_x002F_Kg9u_x002B_x7JFNFcRLLDIkkbdHRgQfxFPrx61u7iynE1tM8Ug7qevOcH1HHQ12Wi_x002B_MlmK2_x002B_p4RyQqzqMKeP4vTnuOOe2K7MPmlOo_x002B_Wa5X_x002B_Bcaqe519FFFeoahXP_x002B_M7jyfD7x7c_x002B_fIsec_x002F_d_x002F_iz_x002F_AOO4_x002F_GugrjfHzsEsEDHYTISueCRtwf1P51yY_x002B_fJhpvy_x002F_PQio7RZxVFFFfInGFXdJsf7S1W3tC21ZG_x002B_Y5wdoGTj3wDiqVdb4Dt917d3O7HlxiPbjruOc_x002F__x002B_O_x002F_rXRhKXta0YMqCvJI7hEWNFRFCoowqqMAD0FOoor7E7QooooAKKKKACiiigAooooAZNElxBJDKu6ORSjDOMgjBryO_x002B_tGsb_x002B_e1fJMTlclcbh2OPcc_x002F_jXr9ee_x002B_N7cRa0kyxkCaIFm5wzAkfy215Gb0lKkqnVfqY1lpc5qiiivnTmCvT_x002F_AAtcG58O2paQO6AxnGPlwSADj_x002F_ZxXmFd74ElQ6Xcwhv3iTb2GOgKgD_x002F_0E_x002F_lXp5TPlxFu6NaL946qiiivpjqKWsf8gS_x002F__x002F_AOvaT_x002F_0E15LXrWsf8gS_x002F__x002F_wCvaT_x002F_0E15LXz_x002B_c_x002F_wASPoc9fdBRRRXjGBteE_x002F_8AkZrP_x002F_gf_x002F_AKA1em15l4T_x002F_AORms_x002F_8Agf8A6A1em19Jk_x002F_8AAfr_x002B_iOmj8IUUUV6psFFFFABXGePv_x002B_Yf_x002F_ANtP_x002F_Za7OuM8ff8AMP8A_x002B_2n_x002F_ALLXDmX_x002B_6y_x002B_X5ozq_x002F_Azi6KKK_x002B_UOQK7TwD_x002F_zEP_x002B_2f_x002F_s1cXXaeAf8AmIf9s_x002F_8A2au7Lf8Aeo_x002F_P8maUvjR2dFFFfVnWFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABXmvi3TzZa5JIExDcfvEIyRn_x002B_Lk985OPcV6VWZrukJrGntDhFnXmGRh90_x002B_n0PT9e1cWPwzr0bR3WqIqR5onldFS3FvNaXD29xGY5UOGU9qir5Rpp2ZxhRRRSAKKKKACiiigAooooAKKKKACiiigAooooA7zwdrQntxptw4EsQ_x002F_ckscuvPH4fy7cV1deR6XenT9UtrsEgRuC20Akr0YDPtmvXK_x002B_myvEOrS5Zbx_x002F_LodVKV1YK4fx5OrXVlbgHeiM5PbDEAf8AoJruK4zx9_x002F_zD_x002F_wDtp_x002F_7LWmZ3_x002B_qy_x002B_X5odX4GcXRRRXypyBXf_x002B_BUUaPcOFG83BBbHJAVcD9T_x002B_dcBXdeA7jdZXdttx5cgk3Z67hjH_x002F_jv616OVtLEq_x002F_maUviOtooor6g6wooooAKKKKACiiigAooooAK4zx9_x002F_wAw_x002F_wD7af8AstdnXEePZUM9jCG_x002F_eIruwx0BIA_x002F_9BP5VwZm_x002F_9ll8vzRnV_x002B_BnH0UUV8qcgV2ngH_x002F_mIf8AbP8A9mri67XwCjBL9yp2ExgNjgkbsj9R_x002B_dd_x002B_W_x002F_71H5_x002F_kzSl8aOyooor6o6ylrH_x002F_IEv8A_x002F_r2k_x002F_wDQTXktetax_x002F_wAgS_x002F_8A_x002B_vaT_x002F_wBBNeS18_x002F_nP8SPoc9fdBRRRXjGBteE_x002F__x002B_Rms_x002F_wDgf_x002F_oDV6bXmXhP_x002F_kZrP_x002F_gf_x002F_oDV6bX0mT_x002F_wH6_x002F_ojpo_x002F_CFFFFeqbBRRRQAVxnj7_x002F_AJh_x002F__x002F_bT_x002F_ANlrs64zx9_x002F_zD_x002F_8Atp_x002F_7LXDmX_x002B_6y_x002B_X5ozq_x002F_Azi6KKK_x002B_UOQK7TwD_x002F_AMxD_x002F_tn_x002F_AOzVxddp4B_x002F_5iH_x002F_bP_x002F_2au7Lf96j8_x002F_wAmaUvjR2dFFFfVnWFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBS1LSrPVoBFdxbtudjg4ZCR1B_x002F_p04Fcje_x002B_BrtHdrK4jljAJVZDtfvx6Htzx_x002B_Fd3RXLXwdGvrNa9yJQjLc8y_x002F_4RPW_x002F_wDny_x002F_8AIqf40f8ACJ63_x002F_wA_x002B_X_x002F_kVP8a9Nork_x002F_seh3f4f5EexieZf8Inrf_x002F_Pl_x002F_wCRU_x002F_xo_x002F_wCET1v_x002F_AJ8v_x002F_Iqf416bRR_x002F_Y9Du_x002F_w_x002F_yD2MTzL_x002F_hE9b_x002F_58v8AyKn_x002B_NH_x002F_CJ63_x002F_AM_x002B_X_x002F_kVP8a9Noo_x002F_seh3f4f5B7GJ5l_x002F_wiet_x002F_8_x002B_X_x002F_kVP8AGj_x002F_hE9b_x002F_AOfL_x002F_wAip_x002F_jXptFH9j0O7_x002F_D_x002F_ACD2MTzL_x002F_hE9b_x002F_58v_x002F_Iqf40f8Inrf_x002F_Pl_x002F_wCRU_x002F_xr02ij_x002B_x6Hd_x002F_h_x002F_kHsYnmX_x002F_AAiet_x002F_8APl_x002F_5FT_x002F_GsiaJ7eeSGVdskbFGGc4IODXsleS6x_x002F_yG7_x002F_8A6_x002B_ZP_x002F_QjXn4_x002F_BU8NFODevczqU1FaFKiiivLMgr1_x002B_wna6061uHADyxI7BemSAeK8gr1rR_x002F__x002B_QJYf9e0f_x002F_oIr2smb55ryN6G7Ltcl48t91laXO7HlyGPbjruGc_x002F__x002B_O_x002F_rXW1j_x002B_KLIXugXAwN8I85SSRjb1_x002F_wDHcj8a9XGw9ph5R8vy1NZq8WeYUUUV8gcYV0vgm9MGsNbEnZcoRgAfeXkE_x002F_hu_x002F_Ouap8Mr288c0TbZI2DqcZwQcitqFV0qsanYcXZ3PZKKq6depqOnwXcYwsq5I9D0I_x002F_A5FWq_x002B_yjJSSktmdy1CiiimAUUUUAFFFFABRRRQAV5n4svRea_x002F_MFIKQAQggEdOuc_x002F_wC0SPwrvdY1FdK0ua6ON4GI1P8AEx6DqM_x002B_p9ga8pd2kdndizscszHJJ9TXi5xWSiqS9TCtLoNooorwDnCvRPBMTx6CzuuFlmZ0OeowB_x002F_MGvO69X0O1_x002B_x6HZwEOrCMMwcchm_x002B_Yj8ya9XKIXrOXZG1Fe9c0KKKK_x002B_kOkpax_x002F_yBL_x002F_8A69pP_x002F_QTXktetax_x002F_yBL_x002F__x002F_AK9pP_x002F_QTXktfP5z_x002F_ABI_x002B_hz190FFFFeMYG14T_x002F_wCRms_x002F__x002B_B_x002F_8AoDV6bXmXhP8A5Gaz_x002F_wCB_x002F_wDoDV6bX0mT_x002F_wAB_x002B_v6I6aPwhRRRXqmwUUUUAFcZ4_x002B__x002F_5h_x002F_8A20_x002F_9lrs64zx9_x002F_wAw_x002F_wD7af8AstcOZf7rL5fmjOr8DOLooor5Q5ArtPAP_x002F_MQ_x002F_7Z_x002F__x002B_zVxddp4B_x002F_wCYh_x002F_2z_x002F_wDZq7st_x002F_wB6j8_x002F_yZpS_x002B_NHZ0UUV9WdYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABXkusf8hu_x002F__x002F_AOvmT_x002F_0I161Xkusf8hu_x002F__x002F_wCvmT_x002F_0I142c_x002F_w4_x002B_phX2RSooor585wr1rR_x002F__x002B_QJYf9e0f_x002F_oIryWvWtH_x002F_AOQJYf8AXtH_x002F_AOgivZyb_x002B_JL0NqG7LtNdFkRkdQyMMMrDII9DTqK_x002B_gOk8j1SyOn6pc2hBAjchdxBJXqpOPbFVK7rxvpnm2seoxj5of3cn_x002B_6TwevYn0_x002F_i9q4WvkMZQdCs4dOnocU48srBRRRXKSb_x002F_hnXxpFw0Vxk2sxG4jJ8s_x002F_3gP59_x002B_B6YPoyOsiK6MGRhlWU5BHqK8arovDfiRtLcWt0S1kx_x002B_piPqPb1H4j39fL8f7P91U_x002B_Ho_x002B_3_x002F_AADanUtoz0Wiore4hu7dLi3kEkTjKsO9S19Cmmro6QooopgFFFFABTXdY0Z3YKijLMxwAPU1HdXdvZQGa5mSKMd2PXjOB6njoK891_x002F_xNNq4_x002B_zxIYbUHJXPMnPBb9OPX14xyYrGU8PHXfsROaiiDxFrTaxf8Ay4FtCSsOB1H949_x002B_cDjtWPRRXylSpKpNzluzkbbd2FFFFQI0tB08anrEFu4JizukwCflHPOOmemfevVa5jwZpf2XT2vZUxNc_x002F_dyOQg6du559CNtdPX1GWUPZUeZ7y1_x002F_yOqlG0Qooor0TUpax_x002F_yBL_x002F_AP69pP8A0E15LXrWsf8AIEv_x002F_APr2k_x002F_8AQTXktfP5z_x002F_Ej6HPX3QUUUV4xgbXhP_x002F_kZrP8A4H_x002F_6A1em15l4T_x002F_5Gaz_x002F_4H_x002F_6A1em19Jk_x002F_8B_x002B_v6I6aPwhRRRXqmwUUUUAFcZ4_x002B__x002F_wCYf_x002F_20_x002F_wDZa7OuM8ff8w_x002F__x002F_ALaf_x002B_y1w5l_x002F_usvl_x002B_aM6vwM4uiiivlDkCu08A_x002F_wDMQ_x002F_7Z_x002F_wDs1cXXaeAf_x002B_Yh_x002F_2z_x002F_9mruy3_x002F_eo_x002F_P8AJmlL40dnRRRX1Z1hRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVz_x002B_u_x002B_J_x002F_7FvUtvsfnboxJu83bjJIx0PpXQV5_x002F_wCOf_x002B_Q3D_x002F_17L_x002F_6E1cWYVp0aPNB2ZFSTUbou_x002F_wDCff8AUM_x002F_8j_x002F_8A2NH_x002F_AAn3_x002F_UM_x002F_8j_x002F__x002F_AGNcXRXg_x002F_wBpYr_x002B_b8F_x002F_kc_x002F_tZ9ztP_x002B_E_x002B__x002F_6hn_x002F_AJH_x002F_APsaP_x002B_E_x002B__x002F_wCoZ_x002F_5H_x002F_wDsa4uij_x002B_0sV_x002F_N_x002B_C_x002F_yD2s_x002B_52n_x002F_Cff8AUM_x002F_8j_x002F_8A2NH_x002F_AAn3_x002F_UM_x002F_8j_x002F__x002F_AGNcXRR_x002F_aWK_x002F_m_x002F_Bf5B7Wfc7T_x002F_hPv_x002B_oZ_x002F_5H_x002F__x002B_xo_x002F_4T7_x002F_qGf8Akf8A_x002B_xri6KP7SxX834L_x002F_ACD2s_x002B_52n_x002F_Cff9Qz_x002F_wAj_x002F_wD2NH_x002F_Cff8AUM_x002F_8j_x002F_8A2NcXRR_x002F_aWK_x002F_m_x002F_Bf5B7Wfc7T_x002F_AIT7_x002F_qGf_x002B_R_x002F__x002F_ALGj_x002F_hPv_x002B_oZ_x002F_5H_x002F__x002B_xri6KP7SxX834L_x002F_IPaz7naf8J9_x002F_1DP8AyP8A_x002F_Y1yN5cfa724uduzzpGk25zjJzioaKxrYqtWSVR3t6EynKW4UUUVzkhXrmlI0ej2SOpV1t4wysMEHaODXk0MT3E8cMS7pJGCKM4yScCvZK9vJo6zl6G9BbsKKKK946BrosiMjqGRhhlYZBHoa8t13SH0fUGhw7QNzDIw_x002B_8PT6jp_x002B_vevVKparpsWq6fJaSnbu5V8AlGHQ_x002F_wCexNcOOwixFPT4lt_x002F_kZ1IcyPJaKtahp9xpl21tcptdeQR0YdiD3FVa_x002B_VlFxdnucmwUUUUgLVlqN5p0pktLh4mPUDoevUHg9T1rq7Lx2uAt9aEEA5eA5yc8fKenHua4qiumhi61D4HoVGco7HqUHiTR7hyiX8YIGf3gKD82AFWP7Y0z_x002F_oI2n_x002F_f9f8a8lorvWcVbaxRp7d9j0_x002B_48U6PbF1N4JHQZ2xKW3cZwCOP1rFvfHa4K2NoSSBh5zjBzz8o68e4riqKxqZriJ6Ky9BOtJlq91G81GUSXdw8rDoD0HToBwOg6VVoorzpScneTuzK9wooopAFbfhvQ21a9Dyxn7FEf3jZxuPZR_x002B_mfb04qppGkXGsXfkwjai8ySkcIP6n0H_x002F_wBc16bp_x002B_n2_x002B_mWi21sm1F5JPVj3JPc16eX4J1pc817q_x002F_E1pw5nd7FqiiivpjqCiiigClrH_x002F_IEv8A_x002F_r2k_x002F_wDQTXktetax_x002F_wAgS_x002F_8A_x002B_vaT_x002F_wBBNeS18_x002F_nP8SPoc9fdBRRRXjGBteE_x002F__x002B_Rms_x002F_wDgf_x002F_oDV6bXmXhP_x002F_kZrP_x002F_gf_x002F_oDV6bX0mT_x002F_wH6_x002F_ojpo_x002F_CFFFFeqbBRRRQAVx_x002F_j2JzBYzBf3aM6Mc9CQCP_x002F_QT_x002B_VdhXOeNonk0FXRcrFMruc9Bgj_x002B_ZFcePjzYaa_x002F_rQiorxZ53RRRXyRxhW1oGv_x002F_wBh_x002F_aP9G8_x002F_ztv8Ay024xn2PrWLRWlKrOlNTg7NDTad0dp_x002F_wn3_x002F_UM_x002F_8AI_x002F_8A9jR_x002F_wn3_x002F_AFDP_x002F_I_x002F__x002F_ANjXF0V1f2liv5vwX_x002B_RftZ9ztP8AhPv_x002B_oZ_x002F_5H_x002F_8Asa6DQtX_x002F_ALasnufI8nbIY9u_x002F_dnABz0HrXldegeBv_x002B_QJN_x002F_wBfLf8AoK13Zfja9atyzldeiLpzk5WZ09FFFe6dAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABXn_x002F_jn_x002F_kNw_x002F_8AXsv_x002F_AKE1egV5_x002F_wCOf_x002B_Q3D_x002F_17L_x002F_6E1ebmv_x002B_7v1RlW_x002B_E5iiiivmDlCiiigAooooAKKKKACiiigAooooAKKKKACiitPSNCvNYl_x002F_crtgVtskzdF_x002F_xPsPUZxVwpyqS5YK7Gk27I0PB2mPdaqt48f_x002B_j2_x002B_TuZcgvjgfUZz7YHqK9Eqrp_x002B_n2_x002B_mWi21sm1F5JPVj3JPc1ar6vB4b6vS5evU64R5VYKKKK6ywooooAz9X0i31i08mYbXXmOUDlD_x002F_Ueo_x002F_8ArGvONX0i40e78mYbkbmOUDhx_x002F_Q_x002B_o_x002F_wDrGvV6iuLeG7t3t7iMSROMMp71wYzAQxC5lpLv_x002F_mZzpqXqeO0V1_x002B_reCZkd5dMYSITkQOcMvTgE8Hv1xwO9cnLDLbytFNG8ci9UdSCPwNfOV8NVoO01_x002F_kc0ouO4yiiisCQooooAKKKKACiinxQy3EqxQxvJI3REUkn8BTSvogGVp6RoV5rEv7ldsCttkmbov_x002B_J9h6jOK39I8Elgs2qMV5_x002F_490I9e7D154HtzXZRQxW8SxQxpHGvREUAD8BXrYTK5TfNW0Xbr_x002F_wDaFJvWRBp_x002B_n2_x002B_mWi21sm1F5JPVj3JPc1aoor6GMVFWWx07BRRRTAKKKKAKWsf8gS_x002F__x002F_wCvaT_x002F_0E15LXrWsf8gS_x002F_wD_x002B_vaT_x002F_ANBNeS18_x002F_nP8SPoc9fdBRRRXjGBteE_x002F__x002B_Rms_x002F__x002B_B_x002F__x002B_gNXpteZeE_x002F_8AkZrP_x002F_gf_x002F_AKA1em19Jk_x002F_8B_x002B_v6I6aPwhRRRXqmwUUUUAFQ3drFe2kttMMxyqVPAyPcZ7jqKmopNJqzA8eu7WWyu5baYYkiYqeDg_x002B_4z2PUVDXpHiPw4NZCTQuI7pBtBcnay56H0xk8_x002F_5HnlxbzWlw9vcRmOVDhlPavk8ZhJ4ef93ozjnBxZFRRRXGQFFFFABXoHgb_x002F_kCTf9fLf_x002B_grXn9egeBv8AkCTf9fLf_x002B_grXpZV_x002F_vC9Ga0fiOnooor6c6gooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACuf13wx_x002F_bV6lz9s8nbGI9vlbs4JOeo9aKKzq0YVo8s1dCaTVmZn_x002F_AAgP_x002F_UT_x002F_APIH_x002F_wBlR_x002F_wgP_x002F_UT_x002F_wDIH_x002F_2VFFcv9m4X_x002B_X8X_x002F_mR7KHYP_x002B_EB_x002F_6if_x002F_AJA_x002F__x002B_yo_x002F_4QH_x002F_AKif_x002F_kD_x002F_AOyooo_x002F_s3C_x002F_y_x002F_i_x002F_8w9lDsH_x002F_CA_x002F_8AUT_x002F_8gf8A2VH_x002F_AAgP_x002F_UT_x002F_APIH_x002F_wBlRRR_x002F_ZuF_x002F_l_x002F_F_x002F_5h7KHYP_x002B_EB_x002F_6if8A5A_x002F__x002B_yo_x002F_4QH_x002F_qJ_x002F_8AkD_x002F_7Kiij_x002B_zcL_x002F_L_x002B_L_x002F_wAw9lDsH_x002F_CA_x002F_wDUT_x002F_8AIH_x002F_2VH_x002F_CA_x002F_8AUT_x002F_8gf8A2VFFH9m4X_x002B_X8X_x002F_mHsodg_x002F_wCEB_x002F_6if_x002F_kD_x002F_wCyo_x002F_4QH_x002F_qJ_x002F_wDkD_x002F_7Kiij_x002B_zcL_x002F_AC_x002F_i_x002F_wDMPZQ7B_x002F_wgP_x002F_UT_x002F_wDIH_x002F_2VH_x002F_CA_x002F_wDUT_x002F_8AIH_x002F_2VFFH9m4X_x002B_X8X_x002F_mHsodjUtPB_x002B_k2r72jkuCCCPOfIGPYYB_x002F_HNbqIsaKiKFRRhVUYAHoKKK6qdGnSVoKxailsOooorQYUUUUAFFFFABRRRQAVVvdOs9RiEd3bpKo6E9R06EcjoOlFFKUVJWkroNznrvwLaSPutbqSAEklXXeB6AdDx75rm9V8N3mj2q3FxJAyM4QCNiTnBPcD0oorxMwwlGnHmhGzMKkIpXRj0UUV4RzhW_x002F_pnhO81O0hu0ngSCQnqSWABIPGMdvWiiunCU41KnLJaFQSb1OgsvA9jCQ13NJckE_x002F_KPkUjHfHP610VraW9lAIbaFIox2UdeMZPqeOpoor6qlhqVH4I2OtRS2JqKKK2KCiiigAooooAKKKKAIby3_x002B_12VxbbtnnRtHuxnGRjNcl_x002F_wAID_x002F_1E_x002F_wDyB_x002F_8AZUUVz1sLRrtOor29SZQjLcP_x002B_EB_x002F_6if8A5A_x002F__x002B_yo_x002F_4QH_x002F_qJ_x002F_8AkD_x002F_7Kiisf7Nwv8v4v_x002F_Mn2UOxc0nwh_x002F_Zepw3n27zfL3fJ5O3OQR13H1rp6KK6aNCnRjy01ZFxioqyCiiitRhRRRQAUUUUAFVb3TrPUYhHd26SqOhPUdOhHI6DpRRSlFSVpK6Dc5_x002B_68DWUmTbXM0DFs4YB1A9AOD_x002B_ZNVv_x002B_EB_x002F_6if8A5A_x002F__x002B_yoorjll2Gk7uH5kezh2D_x002F_hAf_x002B_on_x002F_AOQP_x002F_sqP_x002B_EB_x002F_6if_x002F_AJA_x002F__x002B_yoopf2bhf5fxf8AmL2UOwf8ID_x002F_1E_x002F_8AyB_x002F_9lXQaFpH9i2T23n_x002B_dukMm7ZtxkAY6n0oorSlgqFGXNCNn6sahFO6NOiiiuosKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD_x002F__x002F_2Q_x003D__x003D_,True,False,False,False</value>
+      <value>,v_tierheim_firma,v_tierheim_firma,,System.String,,False,False,False,False</value>
+      <value>,v_tierheim_adresse,v_tierheim_adresse,,System.String,,False,False,False,False</value>
+      <value>,v_tierheim_plzOrt,v_tierheim_plzOrt,,System.String,,False,False,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="2">
+    <Page1 Ref="12" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="9">
+        <PageFooterBand2 Ref="13" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,32.64,19,0.6</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text75 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.8,0.1,4.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text75</Name>
+              <Page isRef="12" />
+              <Parent isRef="13" />
+              <Text>Seite {PageNumber} von {TotalPageCount}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text75>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageFooterBand2</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+        </PageFooterBand2>
+        <ReportTitleBand1 Ref="15" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,12</ClientRectangle>
+          <Components isList="true" count="24">
+            <Text1 Ref="16" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Double;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,12.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Text>Pensionsvertrag (Ferien-Tier)</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Image1 Ref="17" type="Image" isKey="true">
+              <AspectRatio>True</AspectRatio>
+              <Border>None;Transparent;1;Dot;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13,0,6,2.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <HorAlignment>Right</HorAlignment>
+              <ImageData>{v_logo}</ImageData>
+              <Margins>0,0,0,0</Margins>
+              <Name>Image1</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Stretch>True</Stretch>
+            </Image1>
+            <Text14 Ref="18" type="Text" isKey="true">
+              <AllowHtmlTags>True</AllowHtmlTags>
+              <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1,12.8,3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Text>zwischen&lt;br&gt;&lt;br&gt;
+&lt;b&gt;{v_tierheim_firma}, {v_tierheim_adresse}, {v_tierheim_plzOrt}&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+und&lt;br&gt;&lt;br&gt;
+_________________________________________________________
+</Text>
+              <TextBrush>Black</TextBrush>
+              <TextQuality>Wysiwyg</TextQuality>
+              <Type>Expression</Type>
+            </Text14>
+            <Text8 Ref="19" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,4.2,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>8d79c23b90e24180821f06cd37f4bd38</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Text>Aufnahmedatum: 							Tierheim/Nr.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text8>
+            <Text15 Ref="20" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9,4.2,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>7f8d154c0a6c4855bb85ba6709125be5</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Text>Tierheim/Nr.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text15>
+            <Text16 Ref="21" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,4.2,5.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>6f8593a8890448c887247da4276ab0a8</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text16>
+            <Text57 Ref="22" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,4.2,6.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>f525c487f67b46e1bf140a61b30cfab7</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text57</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Text>{v_tierheimnr}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text57>
+            <Text10 Ref="23" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,5.2,5.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>91d510ec110647e7ba67adaa4253be5d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text10>
+            <Text24 Ref="24" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,5.2,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>97fc512ba3394d97bd415fe4ee0056b7</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Text>Notfallkonsultation:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text24>
+            <Text77 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,6.4,19,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>962c4a0462d94d4ba3d836385ec83484</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text77</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Text>Besitzer / Vertragsnehmer:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text77>
+            <Text79 Ref="26" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,7.2,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>643c9a8e938942d595b5db943686bf86</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text79</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Text>Name:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text79>
+            <Text80 Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9,7.2,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>a6ec086db1c440cbba2a8943c41bef1b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text80</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Text>Vorname:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text80>
+            <Text81 Ref="28" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,7.8,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>1673b337bff048cdb3cb588854c80e35</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text81</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Text>Adresse:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text81>
+            <Text82 Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9,7.8,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>621d29e6c7bc47299905d93e7dc1c446</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text82</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Text>Plz/Ort:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text82>
+            <Text83 Ref="30" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,8.4,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>2db6b2ce1514455298b500e83d5ac7ab</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text83</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Text>Kontaktangaben:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text83>
+            <Text84 Ref="31" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,7.2,5.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>743408003086418389255b41fda5e218</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text84</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text84>
+            <Text85 Ref="32" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,7.8,5.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>5df9c61c1bb14dc8ba786333cfb7cf64</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text85</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text85>
+            <Text86 Ref="33" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.4,8.4,5.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>f8781629db404b91a4c289177416fd10</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text86</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text86>
+            <Text87 Ref="34" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,7.2,6.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>dcd33b24ab944fd0984879e063a80057</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text87</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text87>
+            <Text88 Ref="35" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,7.8,6.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>b41d5fa2dcd3457db84bda63e84d662b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text88</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text88>
+            <Text89 Ref="36" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,9.4,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>522a9dbaafa84060bf064e1497bf6a24</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text89</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Text>Ausweis-Kopie:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text89>
+            <Text90 Ref="37" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,9.4,15.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>9d46726a34034a089aa598e8d9c2e7c1</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text90</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text90>
+            <Text78 Ref="38" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,10,15.6,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text78</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <TextBrush>Black</TextBrush>
+            </Text78>
+            <Text58 Ref="39" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,11.4,19,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>c0a7f0472ca647bd94e5e3d6e577fd23</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text58</Name>
+              <Page isRef="12" />
+              <Parent isRef="15" />
+              <Text>Angaben Ferientier(e):</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text58>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+        </ReportTitleBand1>
+        <Tiere Ref="40" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,13.2,19,0.2</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Condition>{Tierdaten2.Chip_Nr}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>Tiere</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+        </Tiere>
+        <Details_Tiere Ref="41" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,14.2,19,4</ClientRectangle>
+          <Components isList="true" count="21">
+            <Text2 Ref="42" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.6,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <Text>Gattung:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+            <Text3 Ref="43" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.2,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>ffc5f77e7022422e9107b7bd96426bfd</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <Text>Rasse/Mischung:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+            <Text4 Ref="44" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.8,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>4c93c2668ed64661b8dd335e105f462b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <Text>Farbe(n):</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+            <Text5 Ref="45" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9,1.2,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>c17cae73134248eea04fdf0a2ffc489d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <Text>Geschlecht:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text5>
+            <Text6 Ref="46" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9,0.6,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>ee14712efebc48eb8257d946d86a2922</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <Text>Geburtsdatum:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text6>
+            <Text7 Ref="47" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9,0,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>b6a62c1d386049afb27ae1ac14d0b4b9</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <Text>Tierarzt:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text7>
+            <Text9 Ref="48" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>1fdbb6b98737494a8e6d99dd1e85b9d9</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <Text>Rufname: </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text9>
+            <Text11 Ref="49" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9,1.8,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>ef8e2182850f4c07870a70a62ffb10d2</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <Text>Chip-Nr.:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text11>
+            <Text12 Ref="50" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,1.8,6.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>15e919a19fb5404e932661fdcdd0c947</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text12>
+            <Text13 Ref="51" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,1.2,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>c6c9ac437d164e9f9a0bd669a7c64887</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text13>
+            <Text17 Ref="52" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.2,1.2,2.8,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text17>
+            <Text18 Ref="53" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,0.6,6.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>a2429d1e8c2b4634b1d171e5f7150c9d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text18>
+            <Text19 Ref="54" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,0,6.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>ecf946d80aa64e45ac7b5a24cb70b24e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text19>
+            <Text20 Ref="55" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,0,5.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>adac6bb4e84849f79f4b08f91a545a97</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text20>
+            <Text21 Ref="56" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,0.6,5.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>aa95134c33484bfead9b0c20848deccc</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text21>
+            <Text22 Ref="57" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,1.2,5.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>ec2914b8291f4605b1ca0822c25dfbfa</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text22>
+            <Text23 Ref="58" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,1.8,5.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>cfb6b470ec444ff5bc9b616d521608b4</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text23>
+            <Text72 Ref="59" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>4c65601de43145708715000e13d47b75</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text72</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <Text>Bemerkungen:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text72>
+            <Text73 Ref="60" type="Text" isKey="true">
+              <AllowHtmlTags>True</AllowHtmlTags>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.4,3,15.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>c5a06194aa324f2a8a2dcfa032b85176</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text73</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <TextQuality>Wysiwyg</TextQuality>
+              <Type>DataColumn</Type>
+            </Text73>
+            <Text105 Ref="61" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,2.4,5.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text105</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <TextBrush>Black</TextBrush>
+            </Text105>
+            <Text106 Ref="62" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.4,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text106</Name>
+              <Page isRef="12" />
+              <Parent isRef="41" />
+              <Text>Gattungsgroesse</Text>
+              <TextBrush>Black</TextBrush>
+            </Text106>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <CountData>1</CountData>
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>Details_Tiere</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+          <Sort isList="true" count="0" />
+        </Details_Tiere>
+        <END_x0020_Tiere Ref="63" type="GroupFooterBand" isKey="true">
+          <Border>Bottom;[140:140:140];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,19,19,1.2</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text35 Ref="64" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,0.8,5.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="12" />
+              <Parent isRef="63" />
+              <Text>Impfungsbezeichnung</Text>
+              <TextBrush>Black</TextBrush>
+            </Text35>
+            <Text38 Ref="65" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.8,0.8,3,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text38</Name>
+              <Page isRef="12" />
+              <Parent isRef="63" />
+              <Text>Impfungsdatum</Text>
+              <TextBrush>Black</TextBrush>
+            </Text38>
+            <Text101 Ref="66" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.8,0.8,7.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text101</Name>
+              <Page isRef="12" />
+              <Parent isRef="63" />
+              <Text>Bemerkung</Text>
+              <TextBrush>Black</TextBrush>
+            </Text101>
+            <Text103 Ref="67" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.8,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text103</Name>
+              <Page isRef="12" />
+              <Parent isRef="63" />
+              <Text>Rufname</Text>
+              <TextBrush>Black</TextBrush>
+            </Text103>
+            <Text104 Ref="68" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.2,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>78480e901628493faa3bb9d0011f742b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text104</Name>
+              <Page isRef="12" />
+              <Parent isRef="63" />
+              <Text>Impfungen:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text104>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>END Tiere</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+        </END_x0020_Tiere>
+        <DataBand2 Ref="69" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,21,19,0.6</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text30 Ref="70" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,0.1,5.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="12" />
+              <Parent isRef="69" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text30>
+            <Text34 Ref="71" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.8,0.1,3,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="12" />
+              <Parent isRef="69" />
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="72" type="DateFormat" isKey="true">
+                <StringFormat>dd/MM/yyyy</StringFormat>
+              </TextFormat>
+              <Type>DataColumn</Type>
+            </Text34>
+            <Text100 Ref="73" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.8,0.1,7.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text100</Name>
+              <Page isRef="12" />
+              <Parent isRef="69" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text100>
+            <Text102 Ref="74" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.1,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text102</Name>
+              <Page isRef="12" />
+              <Parent isRef="69" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text102>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <CountData>1</CountData>
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand2</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+        <GroupHeaderBand1 Ref="75" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,22.4,19,1.2</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text91 Ref="76" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.6,19,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>13c59efe844f475d969bf95afaed0727</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text91</Name>
+              <Page isRef="12" />
+              <Parent isRef="75" />
+              <Text>Ferientage /-zeiten:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text91>
+          </Components>
+          <Condition>{Zeiten.IDFS_Ferientier}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+        </GroupHeaderBand1>
+        <DataBand1 Ref="77" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,24.4,19,0.4</ClientRectangle>
+          <ColumnGaps>0.2</ColumnGaps>
+          <Columns>7</Columns>
+          <Components isList="true" count="1">
+            <Text92 Ref="78" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text92</Name>
+              <Page isRef="12" />
+              <Parent isRef="77" />
+              <Text>{Zeiten.Fixdatum}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text92>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <CountData>1</CountData>
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <MinRowsInColumn>3</MinRowsInColumn>
+          <Name>DataBand1</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <GroupFooterBand1 Ref="79" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,25.6,19,0.4</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand1</Name>
+          <Page isRef="12" />
+          <Parent isRef="12" />
+        </GroupFooterBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>093b14d3c03b4e1a95ba4a1f9d89edfd</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="80" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+    <Page2 Ref="81" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="8">
+        <PageFooterBand1 Ref="82" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,36.38,19,2.4</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text52 Ref="83" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.3,19,1.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>ecc31a54fbb547cdbde45fcf90dc4cdb</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text52</Name>
+              <Page isRef="81" />
+              <Parent isRef="82" />
+              <Text>{v_fusszeile1}
+{v_fusszeile2}
+{v_fusszeile3}
+{v_fusszeile4}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text52>
+            <Text76 Ref="84" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.8,1.9,4.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>bc7af73b015f45b9bac9ce15ed355a0a</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text76</Name>
+              <Page isRef="81" />
+              <Parent isRef="82" />
+              <Text>Seite {PageNumber} von {TotalPageCount}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text76>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>5ad8a87fe7b1400a816f165d9c4d884e</Guid>
+          <Name>PageFooterBand1</Name>
+          <Page isRef="81" />
+          <Parent isRef="81" />
+        </PageFooterBand1>
+        <Leistungen Ref="85" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,1.6</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text60 Ref="86" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1,9.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>84420256f4c941e8ad940ebae3f6bf4c</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text60</Name>
+              <Page isRef="81" />
+              <Parent isRef="85" />
+              <Text>Leistungsbeschreibung</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text60>
+            <Text61 Ref="87" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.6,1,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>de774753b80e4acbb1cc1f7e87855fbb</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text61</Name>
+              <Page isRef="81" />
+              <Parent isRef="85" />
+              <Text>Kosten  [CHF]</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text61>
+            <Text63 Ref="88" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.6,1,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>b823832eb4ce4a8baeb3911f1288261e</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text63</Name>
+              <Page isRef="81" />
+              <Parent isRef="85" />
+              <Text>Leistungkosten  [CHF]</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text63>
+            <Text64 Ref="89" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13,1,2.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>399ac180d22b4b30a5aba00f1d692134</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text64</Name>
+              <Page isRef="81" />
+              <Parent isRef="85" />
+              <Text>Dauer</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text64>
+            <Text71 Ref="90" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.2,19,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>8994146f7e5f4a428bc8385886b93a0c</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text71</Name>
+              <Page isRef="81" />
+              <Parent isRef="85" />
+              <Text>Ferien- /Pensionsleistungen:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text71>
+            <HorizontalLinePrimitive2 Ref="91" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.4,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="92" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>359d69d6c3b5428ca49e7f429b335488</Guid>
+              <Name>HorizontalLinePrimitive2</Name>
+              <Page isRef="81" />
+              <Parent isRef="85" />
+              <StartCap Ref="93" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>3dfacc1232db47d4949ed0cd63bd4905</Guid>
+          <Name>Leistungen</Name>
+          <Page isRef="81" />
+          <Parent isRef="81" />
+        </Leistungen>
+        <Detail_Leistungen Ref="94" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2.8,19,0.4</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text62 Ref="95" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,9.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>fbcb3575ce994ff6ae6010b0e7c9508c</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text62</Name>
+              <Page isRef="81" />
+              <Parent isRef="94" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text62>
+            <Text65 Ref="96" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13,0,2.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>7dec1288b4074cf5a00989f28e3b4681</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text65</Name>
+              <Page isRef="81" />
+              <Parent isRef="94" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text65>
+            <Text66 Ref="97" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.6,0,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>1f17f5ed3b0043b3be7763caf31e22da</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text66</Name>
+              <Page isRef="81" />
+              <Parent isRef="94" />
+              <Text>Fr.</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="98" type="CurrencyFormat" isKey="true">
+                <GroupSeparator>'</GroupSeparator>
+                <NegativePattern>2</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>Fr. </Symbol>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text66>
+            <Text67 Ref="99" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.6,0,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>7955951c74474a57bb4bddd4a597c656</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text67</Name>
+              <Page isRef="81" />
+              <Parent isRef="94" />
+              <Text>Fr.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text67>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <CountData>1</CountData>
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Guid>0b751abacc5844dda97b6d35ba6996f4</Guid>
+          <Name>Detail_Leistungen</Name>
+          <Page isRef="81" />
+          <Parent isRef="81" />
+          <Sort isList="true" count="0" />
+        </Detail_Leistungen>
+        <END_x0020_Leistungen Ref="100" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4,19,0.8</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Guid>b2d252ba21b04b48adefbfd37ab98cd5</Guid>
+          <Name>END Leistungen</Name>
+          <Page isRef="81" />
+          <Parent isRef="81" />
+        </END_x0020_Leistungen>
+        <Zusatzleistungen Ref="101" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,5.6,19,1.8</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text55 Ref="102" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1,15.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>2a92c28c72884649ad48acc0c0987612</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text55</Name>
+              <Page isRef="81" />
+              <Parent isRef="101" />
+              <Text>Leistungsbeschreibung</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text55>
+            <Text56 Ref="103" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.6,1,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>db5eb02a1b2b4a37ae186a69fee72afd</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text56</Name>
+              <Page isRef="81" />
+              <Parent isRef="101" />
+              <Text>Kosten [CHF]</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text56>
+            <Text74 Ref="104" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.2,19,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>7f1ddc10c1f54314be2ca8fa727780b2</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text74</Name>
+              <Page isRef="81" />
+              <Parent isRef="101" />
+              <Text>Zusatzleistungen:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text74>
+            <HorizontalLinePrimitive3 Ref="105" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.4,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="106" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>6892f51a76b64f85a4a1fe873e576b9d</Guid>
+              <Name>HorizontalLinePrimitive3</Name>
+              <Page isRef="81" />
+              <Parent isRef="101" />
+              <StartCap Ref="107" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>2d1561eec63b4bc3b9de8d98a1576fdb</Guid>
+          <Name>Zusatzleistungen</Name>
+          <Page isRef="81" />
+          <Parent isRef="81" />
+        </Zusatzleistungen>
+        <Detail_Zusatzleistungen Ref="108" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,8.2,19,0.8</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text69 Ref="109" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>0,0.4,19,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7</Font>
+              <Guid>e37ba33f8eda4f8f99874c3a7a17af6a</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text69</Name>
+              <Page isRef="81" />
+              <Parent isRef="108" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text69>
+            <Text68 Ref="110" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,15.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>dda53471021f4a2e857f74ff7db5235a</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text68</Name>
+              <Page isRef="81" />
+              <Parent isRef="108" />
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text68>
+            <Text70 Ref="111" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15.6,0,3.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>fe91710f756641bab8c18b22562a71d0</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text70</Name>
+              <Page isRef="81" />
+              <Parent isRef="108" />
+              <Text>Fr.</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="112" type="CurrencyFormat" isKey="true">
+                <GroupSeparator>'</GroupSeparator>
+                <NegativePattern>2</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>Fr.</Symbol>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text70>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <CountData>1</CountData>
+          <DataRelationName isNull="true" />
+          <Filters isList="true" count="0" />
+          <Guid>5c87c4863d07481ca49d2ba8450c76dc</Guid>
+          <Name>Detail_Zusatzleistungen</Name>
+          <Page isRef="81" />
+          <Parent isRef="81" />
+          <Sort isList="true" count="0" />
+        </Detail_Zusatzleistungen>
+        <END_x0020_Zusatzleistungen Ref="113" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,9.8,19,0.8</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Guid>fc7ffba425fb4ef9ab100593fe113ed9</Guid>
+          <Name>END Zusatzleistungen</Name>
+          <Page isRef="81" />
+          <Parent isRef="81" />
+        </END_x0020_Zusatzleistungen>
+        <ReportSummaryBand1 Ref="114" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,11.4,19,13.4</ClientRectangle>
+          <Components isList="true" count="29">
+            <Text45 Ref="115" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanBreak>True</CanBreak>
+              <ClientRectangle>0,6,19,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>724bd97ed89844bcac408b3c33932008</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text45</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Der/die Unterzeichnende bestätigt mit seiner/ihrer Unterschrift folgende Punkte:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text45>
+            <Text48 Ref="116" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9,10.2,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>d20ba29f801446f7a0243410eb5a2336</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text48</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Unterschrift:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text48>
+            <Text49 Ref="117" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,10.2,6.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>2f50b45567fb435bad4403b959cb8271</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text49</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text49>
+            <Text47 Ref="118" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,10.2,5.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>e25d79bc867d4223b19c56555cad5815</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text47</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>{v_datum_empfaenger}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text47>
+            <Text46 Ref="119" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,10.2,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>8d35b332508c4709ac020e09ba40a52a</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text46</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Ort / Datum:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text46>
+            <Text51 Ref="120" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.4,11.6,5.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>4023df0f4b504249a8367b175c3982a5</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text51</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>{v_datum_vertreter}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text51>
+            <Text50 Ref="121" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,11.6,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>055c1107715b4573b061377efbe1a63a</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text50</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Ort / Datum:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text50>
+            <Text59 Ref="122" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanBreak>True</CanBreak>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0.2,6.6,18.8,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>5f79546f473e445689894964c32cf985</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text59</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Für den Fall, dass mein(e) Tier(e) nicht binnen zwei Wochen nach dem vereinbarten Endtermin der Pensionsdauer abgeholt wird, übereigne ich es dem {v_tierheim_dativ}. Für die dadurch entstehenden Kosten bzw. für die nicht gedeckten Pensionskosten und weitere Auslagen übernehme ich die volle Haftung.</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text59>
+            <Text41 Ref="123" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,10.6,6.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,6</Font>
+              <Guid>3e282f37a7b34f27b4fc755e76bb3a24</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text41</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>EINGESEHEN UND VERSTANDEN
+Der/die Eigentümer/in:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text41>
+            <Text26 Ref="124" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9,11.6,3.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>3cc33b9611f24f1b8da40e4c17b98942</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Unterschrift:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text26>
+            <Text27 Ref="125" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,11.6,6.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>011962b4720b4231b311a78d3d312ff2</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text27>
+            <Text28 Ref="126" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,12,6.4,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,6</Font>
+              <Guid>050712af49b74b45b3eea4b36eda99c9</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Der/die Vertreter/in {v_tierheim_dativ}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text28>
+            <Text40 Ref="127" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanBreak>True</CanBreak>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0.2,7.8,18.8,1.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>55840c518deb4294813046a976517e70</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Ich bestätige die Gültigkeit der abgegebenen Impfausweise und dass mein(e) Tier(e) frei von inneren und äusseren Parasiten ist. Das beiliegende Tierschutzhaus-Reglement habe ich zur Kenntnis genommen. Im Besonderen erkenne ich an, dass das Tierschutzhaus keine Haftung übernimmt für Schäden, die mein(e) Tier(e) während seinem Aufenthalt im Tierschutzhaus erleiden könnte. Die Haftung des Tierschutzhauses wird ausschliesslich auf Vorsatz und grobe Fahrlässigkeit beschränkt. Die Kosten für notfallmässige tierärztliche Hilfe werden mir zusätzlich in Rechnung gestellt.</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text40>
+            <Text25 Ref="128" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.2,6.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9,Bold</Font>
+              <Guid>79586e817a19427ba5b82ad2cce5a98d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Kostenzusammenfassung:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text25>
+            <Text29 Ref="129" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.8,6.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>58eef605b8854a009df35b18a36cf7fd</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Zwischentotal Pensionsleistungen (ohne MwSt.)</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text29>
+            <Text31 Ref="130" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.4,6.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>f6059003024b4f4cbc06bd69d3ae33bf</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Zwischentotal Zusatzleistungen (ohne MwSt.)</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text31>
+            <Text32 Ref="131" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2,6.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>6ec24bba000a4a8ebee58db772c5e386</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Rabatt {v_kosten_zwt_rabatt_titelzusatz}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text32>
+            <Text33 Ref="132" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.6,6.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>acd80068719e461c88b79f6f9fbc4879</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Zu zahlender Gesamtbetrag exkl. MwSt.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text33>
+            <Text36 Ref="133" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,4,6.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>3a2968bca0364292a950ed40e471cbcb</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Anzahlung</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text36>
+            <Text37 Ref="134" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,4.6,6.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>77be46dc297844a6bcb4824727304b42</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Zahlungsart</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text37>
+            <Text39 Ref="135" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Double;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.4,2.6,4.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold</Font>
+              <Guid>b0a3bed54ec1445e8b9c2551e2361151</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text39</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Fr.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text39>
+            <Text42 Ref="136" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.4,2,4.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>1627170354134c17bd7e77bf7c50a671</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text42</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Fr.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text42>
+            <Text43 Ref="137" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.4,1.4,4.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>d45cbdb3d1de4451a874e020baa1b6f5</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text43</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Fr.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text43>
+            <Text44 Ref="138" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.4,0.8,4.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>368f40db4d024d699a7032941472266f</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text44</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Fr.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text44>
+            <Text53 Ref="139" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.4,4,4.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>9e841943861d4e77acdf5954354cdafa</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text53</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <Text>Fr.</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="140" type="CurrencyFormat" isKey="true">
+                <GroupSeparator>'</GroupSeparator>
+                <NegativePattern>2</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>Fr.</Symbol>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text53>
+            <Text54 Ref="141" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>14.4,4.6,4.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>5f89da86e7c147abade7cad1763f0f11</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text54</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text54>
+            <HorizontalLinePrimitive4 Ref="142" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,6.8,0.15,0.0254</ClientRectangle>
+              <Color>DarkGray</Color>
+              <EndCap Ref="143" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>177606a886814c4688dc80173ce25eca</Guid>
+              <Name>HorizontalLinePrimitive4</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <StartCap Ref="144" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive4>
+            <HorizontalLinePrimitive5 Ref="145" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,8,0.15,0.0254</ClientRectangle>
+              <Color>DarkGray</Color>
+              <EndCap Ref="146" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>4c2384c6693b4727a1d730e73d773631</Guid>
+              <Name>HorizontalLinePrimitive5</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <StartCap Ref="147" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive5>
+            <HorizontalLinePrimitive1 Ref="148" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0.2,12.9,18.6,0.0254</ClientRectangle>
+              <Color>DimGray</Color>
+              <EndCap Ref="149" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>e2d890e394bc4ce494de2c5aa11b8784</Guid>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="81" />
+              <Parent isRef="114" />
+              <StartCap Ref="150" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>7334b0294a134858a15a0227d9112a55</Guid>
+          <Name>ReportSummaryBand1</Name>
+          <Page isRef="81" />
+          <Parent isRef="81" />
+          <PrintAtBottom>True</PrintAtBottom>
+        </ReportSummaryBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>743f456810004dacbd3b24f0721612f5</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page2</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="151" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page2>
+  </Pages>
+  <PrinterSettings Ref="152" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportAuthor>grischaSoft GmbH</ReportAuthor>
+  <ReportCacheMode>Auto</ReportCacheMode>
+  <ReportChanged>7/3/2017 4:02:18 PM</ReportChanged>
+  <ReportCreated>2/16/2011 6:42:28 PM</ReportCreated>
+  <ReportFile>B:\Repositorys\PetPlus\Projects\Version 4\Desktop\bin\Debug\Berichte\Pensionsverträge\Ferientier_Pensionsvertrag_exklMwSt_Vorlage.mrt</ReportFile>
+  <ReportGuid>b28882813ed84a638ca32dc28d45e298</ReportGuid>
+  <ReportImage isNull="true" />
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2016.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

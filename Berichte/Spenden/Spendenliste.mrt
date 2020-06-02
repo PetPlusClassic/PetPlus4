@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="5">
+      <vw_rep_tier Ref="2" type="DataTableSource" isKey="true">
+        <Alias>vw_rep_tier</Alias>
+        <Columns isList="true" count="16">
+          <value>ID_Tier,System.String</value>
+          <value>Gattungsname,System.String</value>
+          <value>Rassenname,System.String</value>
+          <value>Rufname,System.String</value>
+          <value>Farbenname,System.String</value>
+          <value>Geschlecht,System.String</value>
+          <value>Kastriert,System.Boolean</value>
+          <value>Geburtsdatum,System.String</value>
+          <value>Gewicht,System.Double</value>
+          <value>Chipnummer,System.String</value>
+          <value>Bemerkungen,System.String</value>
+          <value>Depotbezeichnung,System.String</value>
+          <value>Beschreibung,System.String</value>
+          <value>Tierarzt,System.String</value>
+          <value>Notfallkonsultation,System.String</value>
+          <value>Alter,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>vw_rep_tier</Name>
+        <NameInSource>PetPlusSTI.vw_rep_tier</NameInSource>
+      </vw_rep_tier>
+      <tbl_zusatzleistung Ref="3" type="DataTableSource" isKey="true">
+        <Alias>tbl_zusatzleistung</Alias>
+        <Columns isList="true" count="6">
+          <value>ID_Zusatzleistung,System.String</value>
+          <value>IDFS_Pension,System.String</value>
+          <value>Leistungsbezeichnung,System.String</value>
+          <value>Leistungsbeschreibung,System.String</value>
+          <value>Kosten,System.Double</value>
+          <value>Archiv,System.Boolean</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>tbl_zusatzleistung</Name>
+        <NameInSource>PetPlusSTI.tbl_zusatzleistung</NameInSource>
+      </tbl_zusatzleistung>
+      <tbl_pensionsleistungen Ref="4" type="DataTableSource" isKey="true">
+        <Alias>tbl_pensionsleistungen</Alias>
+        <Columns isList="true" count="10">
+          <value>ID_Pensionsleistungen,System.String</value>
+          <value>IDFS_Pension,System.String</value>
+          <value>Leistungstext,System.String</value>
+          <value>Leistungskosten,System.Double</value>
+          <value>IDFS_Tarif,System.String</value>
+          <value>TarifTage,System.Double</value>
+          <value>TarifTagespauschale,System.Double</value>
+          <value>Erstelltam,System.DateTime</value>
+          <value>Erstelltvon,System.String</value>
+          <value>Archiv,System.Boolean</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>tbl_pensionsleistungen</Name>
+        <NameInSource>PetPlusSTI.tbl_pensionsleistungen</NameInSource>
+      </tbl_pensionsleistungen>
+      <vw_rep_statistik_findeltiere Ref="5" type="DataTableSource" isKey="true">
+        <Alias>vw_rep_statistik_findeltiere</Alias>
+        <Columns isList="true" count="13">
+          <value>ID_findeltier,System.String</value>
+          <value>ID_Pension,System.String</value>
+          <value>ID_Tier,System.String</value>
+          <value>ID_Person,System.String</value>
+          <value>Tierbezeichnung,System.String</value>
+          <value>Gattungsname,System.String</value>
+          <value>Pension_von,System.DateTime</value>
+          <value>Pension_bis,System.DateTime</value>
+          <value>Platzierungsdatum,System.DateTime</value>
+          <value>Funddatum,System.DateTime</value>
+          <value>Pensionsstart,System.DateTime</value>
+          <value>Erstelltam,System.DateTime</value>
+          <value>Erstelltvon,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>vw_rep_statistik_findeltiere</Name>
+        <NameInSource>StatFindeltier.vw_rep_statistik_findeltiere</NameInSource>
+      </vw_rep_statistik_findeltiere>
+      <vw_spenden_uebersicht Ref="6" type="DataTableSource" isKey="true">
+        <Alias>vw_spenden_uebersicht</Alias>
+        <Columns isList="true" count="16">
+          <value>id_spenden,System.String</value>
+          <value>Spendenzweck,System.String</value>
+          <value>Konto,System.String</value>
+          <value>Spenderfirma,System.String</value>
+          <value>Spendername,System.String</value>
+          <value>Beitrag,System.Double</value>
+          <value>Währung,System.String</value>
+          <value>Verdankt,System.DateTime</value>
+          <value>Einbezahlt_x0020_am,System.DateTime</value>
+          <value>Einzahlungsinfo_x0020_gesendet,System.DateTime</value>
+          <value>Unsere_x0020_Referenz,System.String</value>
+          <value>Ihre_x0020_Referenz,System.String</value>
+          <value>Erstellt_x0020_am,System.DateTime</value>
+          <value>Erstelt_x0020_von,System.String</value>
+          <value>archiv,System.Boolean</value>
+          <value>idfs_spender,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>vw_spenden_uebersicht</Name>
+        <NameInSource>ListSpenden.vw_spenden_uebersicht</NameInSource>
+      </vw_spenden_uebersicht>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="35">
+      <value>,Gebuehr,Gebuehr,System.String,,False,False</value>
+      <value>,v_vorname,v_vorname,System.String,,False,False</value>
+      <value>,v_nachname,v_nachname,System.String,,False,False</value>
+      <value>,v_strasse,v_strasse,System.String,,False,False</value>
+      <value>,v_ort,v_ort,System.String,,False,False</value>
+      <value>,v_rufname,v_rufname,System.String,,False,False</value>
+      <value>,v_geburtsdatum,v_geburtsdatum,System.String,,False,False</value>
+      <value>,v_rasse,v_rasse,System.String,,False,False</value>
+      <value>,v_geschlecht,v_geschlecht,System.String,,False,False</value>
+      <value>,vf_firma,vf_firma,System.String,,False,False</value>
+      <value>,vf_postfach,vf_postfach,System.String,,False,False</value>
+      <value>,vf_ort,vf_ort,System.String,,False,False</value>
+      <value>,vf_telefon,vf_telefon,System.String,,False,False</value>
+      <value>,vf_fax,vf_fax,System.String,,False,False</value>
+      <value>,vf_mail,vf_mail,System.String,,False,False</value>
+      <value>,vf_bank1,vf_bank1,System.String,,False,False</value>
+      <value>,vf_konto1,vf_konto1,System.String,,False,False</value>
+      <value>,vf_bank2,vf_bank2,System.String,,False,False</value>
+      <value>,vf_konto2,vf_konto2,System.String,,False,False</value>
+      <value>,vf_strasse,vf_strasse,System.String,,False,False</value>
+      <value>,v_rabatt,v_rabatt,System.String,,False,False</value>
+      <value>,v_pensionsstart,v_pensionsstart,System.String,,False,False</value>
+      <value>,v_pensionsende,v_pensionsende,System.String,,False,False</value>
+      <value>,v_kontakt1,v_kontakt1,System.String,,False,False</value>
+      <value>,v_kontakt2,v_kontakt2,System.String,,False,False</value>
+      <value>,v_kontakt3,v_kontakt3,System.String,,False,False</value>
+      <value>,v_gesamttotal,v_gesamttotal,System.String,,False,False</value>
+      <value>,v_logo,v_logo,System.Drawing.Image,,False,False</value>
+      <value>,v_kontakt1_bem,v_kontakt1_bem,System.String,,False,False</value>
+      <value>,v_kontakt2_bem,v_kontakt2_bem,System.String,,False,False</value>
+      <value>,v_kontakt3_bem,v_kontakt3_bem,System.String,,False,False</value>
+      <value>,v_fusszeile1,v_fusszeile1,System.String,,False,False</value>
+      <value>,v_fusszeile2,v_fusszeile2,System.String,,False,False</value>
+      <value>,v_fusszeile3,v_fusszeile3,System.String,,False,False</value>
+      <value>,v_fusszeile4,v_fusszeile4,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="7" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="6">
+        <ReportTitleBand1 Ref="8" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,27.7,2.8</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text1 Ref="9" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Guid>826524b8bc544c65a38662ce29dd8a4d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>Spendenliste</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <logoImage Ref="10" type="Image" isKey="true">
+              <Border>All;DimGray;1;None;False;4;DimGray</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>21.6,0,6,2.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <HorAlignment>Right</HorAlignment>
+              <ImageData>{v_logo}</ImageData>
+              <Name>logoImage</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+            </logoImage>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </ReportTitleBand1>
+        <GroupHeaderBand1 Ref="11" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4,27.7,0.8</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </GroupHeaderBand1>
+        <HeaderBand1 Ref="12" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,5.6,27.7,0.6</ClientRectangle>
+          <Components isList="true" count="8">
+            <Text3 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,5.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>Spendenzweck</Text>
+              <TextBrush>Black</TextBrush>
+            </Text3>
+            <Text5 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.8,0,3.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>Konto</Text>
+              <TextBrush>Black</TextBrush>
+            </Text5>
+            <Text7 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>24.8,0,2.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>Beitrag</Text>
+              <TextBrush>Black</TextBrush>
+            </Text7>
+            <Text9 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22.4,0,2.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>Einbezahlt am</Text>
+              <TextBrush>Black</TextBrush>
+            </Text9>
+            <Text11 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>20.4,0,2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>Verdankt</Text>
+              <TextBrush>Black</TextBrush>
+            </Text11>
+            <Text13 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.4,0,5.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>Spendername</Text>
+              <TextBrush>Black</TextBrush>
+            </Text13>
+            <Text15 Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.6,0,4.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>Spenderfirma</Text>
+              <TextBrush>Black</TextBrush>
+            </Text15>
+            <HorizontalLinePrimitive3 Ref="20" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.6,27.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="21" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive3</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <StartCap Ref="22" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </HeaderBand1>
+        <DataBand1 Ref="23" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,7,27.7,0.6</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text2 Ref="24" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,5.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="7" />
+              <Parent isRef="23" />
+              <Text>{vw_spenden_uebersicht.Spendenzweck}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text2>
+            <Text4 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.8,0,3.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="7" />
+              <Parent isRef="23" />
+              <Text>{vw_spenden_uebersicht.Konto}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text4>
+            <Text6 Ref="26" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>24.8,0,2.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="7" />
+              <Parent isRef="23" />
+              <Text>{vw_spenden_uebersicht.Beitrag} {vw_spenden_uebersicht.Währung}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text6>
+            <Text8 Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22.4,0,2.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="7" />
+              <Parent isRef="23" />
+              <Text>{vw_spenden_uebersicht.Einbezahlt_am}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="28" type="DateFormat" isKey="true">
+                <StringFormat>dd.MM.yy</StringFormat>
+              </TextFormat>
+            </Text8>
+            <Text10 Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>20.4,0,2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="7" />
+              <Parent isRef="23" />
+              <Text>{vw_spenden_uebersicht.Verdankt}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="30" type="BooleanFormat" isKey="true">
+                <FalseDisplay>Nein</FalseDisplay>
+                <NullDisplay> </NullDisplay>
+                <StringFormat />
+                <TrueDisplay>Ja</TrueDisplay>
+              </TextFormat>
+            </Text10>
+            <Text12 Ref="31" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.4,0,5.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="7" />
+              <Parent isRef="23" />
+              <Text>{vw_spenden_uebersicht.Spendername}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text12>
+            <Text14 Ref="32" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.6,0,4.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="7" />
+              <Parent isRef="23" />
+              <Text>{vw_spenden_uebersicht.Spenderfirma}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text14>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>vw_spenden_uebersicht</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <FooterBand1 Ref="33" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,8.4,27.7,0.2</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>FooterBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </FooterBand1>
+        <ReportSummaryBand2 Ref="34" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,9.4,27.7,3.4</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text18 Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>19.8,0.8,7.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="7" />
+              <Parent isRef="34" />
+              <Text>{PageNofM}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text18>
+            <Text16 Ref="36" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Dot;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.8,27.6,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>d48ad221acbf4dc499844b92b0b06c81</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="7" />
+              <Parent isRef="34" />
+              <Text>{v_fusszeile1}
+{v_fusszeile2}
+{v_fusszeile3}
+{v_fusszeile4}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text16>
+            <HorizontalLinePrimitive4 Ref="37" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,1.6,27.6,0.0254</ClientRectangle>
+              <Color>DimGray</Color>
+              <EndCap Ref="38" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>3aded3c8626d4c60993f08a92169c160</Guid>
+              <Name>HorizontalLinePrimitive4</Name>
+              <Page isRef="7" />
+              <Parent isRef="34" />
+              <StartCap Ref="39" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive4>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportSummaryBand2</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <PrintAtBottom>True</PrintAtBottom>
+        </ReportSummaryBand2>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>3b173a0778014237b2212e335c112a87</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21</PageHeight>
+      <PageWidth>29.7</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="40" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,9,Bold</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="41" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>5/26/2011 7:44:21 PM</ReportChanged>
+  <ReportCreated>2/15/2011 8:45:16 PM</ReportCreated>
+  <ReportFile>D:\01 Projekte\09 PetPlus_V13_Develop\PetPlusV19\PetPlus\Reports\Spendenliste.mrt</ReportFile>
+  <ReportGuid>0a899d2b84a844af9e31961e92d81171</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2010.3.900</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

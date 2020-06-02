@@ -1,0 +1,769 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="2">
+      <Table0 Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Table0</Alias>
+        <Columns isList="true" count="10">
+          <value>ID_Reg_Ferientier,System.String</value>
+          <value>Rufname,System.String</value>
+          <value>Laufnummer,System.String</value>
+          <value>BoxBezeichnung,System.String</value>
+          <value>Von,System.DateTime</value>
+          <value>Bis,System.DateTime</value>
+          <value>Fixdatum,System.DateTime</value>
+          <value>Ausnahmedatum,System.DateTime</value>
+          <value>Gattungsname,System.String</value>
+          <value>Archiv,System.Boolean</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table0</Name>
+        <NameInSource>Table0</NameInSource>
+      </Table0>
+      <Table1 Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Table1</Alias>
+        <Columns isList="true" count="10">
+          <value>ID_Reg_Ferientier,System.String</value>
+          <value>Rufname,System.String</value>
+          <value>Laufnummer,System.String</value>
+          <value>BoxBezeichnung,System.String</value>
+          <value>Von,System.DateTime</value>
+          <value>Bis,System.DateTime</value>
+          <value>Fixdatum,System.DateTime</value>
+          <value>Ausnahmedatum,System.DateTime</value>
+          <value>Gattungsname,System.String</value>
+          <value>Archiv,System.Boolean</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table1</Name>
+        <NameInSource>Table1</NameInSource>
+      </Table1>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="1">
+      <value>,v_logo,v_logo,System.Drawing.Image,iVBORw0KGgoAAAANSUhEUgAAAWwAAAB6CAYAAACbZ2mLAAAABGdBTUEAALGPC_x002F_xhBQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAC14SURBVHhe7Z15_x002F_HVjucYPUjgkZSw0kiEkZSqpaJREqVAqddKhSFSUZiGnQ8iUqGhOUVJKaSJj9VNxFBk7SZPEKZqc63rt9X7u372v9Qxr2Gvt_x002F_a4_x002F_vry_x002F_Z93X_x002F_dxrr7WfvdYz3M_x002B__x002F_3XPPPQMDAwMDU4AsHOgna6zxkBvAPT3mYyLmFZ2N5wyvCQH7Nzh9V_x002F_xLxaeA7eVO2wT_x002F_ALeBa8A3wPvB88AyKoaB2UAWDvQTfBl_x002F_C9SXty98SMT8MGfjOdVrQsC_x002B_Lw32bSo_x002B_BWznnLZN_x002F_g98DKynYiljpCl4vrKJAd0Ozs99hM1_x002F_OJscjhH_x002B_djXHj_x002F_fHRzbLGJuC1ynbFKB9ofNFNlC2TSMLB_x002F_oJboo7gPqS9oUPiJhjDfYHvSYE7N_x002F_p9F1xg4pPAds5p50E_x002F_wInguVUTB6jIwcrmxjQvcv4_x002B_GeJzVnGJpfrhL_x002F_jzfFb_x002F_PGRzerGpuBWsLiyDwHNYuDnIx_x002B_Wpyj7ppGFA_x002F_1E3CR9410i5liDPaYJQXun74o5FZ_x002B_Ctk47Sa4Cq6u4LE7zBmUTAzp7bf5UYmMb7N_x002B_A7wguAnMGngO7A88X_x002F_vh0W_x002F_j7uT8_x002B_snmssbFsoexDQPMU56Pgycq_x002B_aWThQP_x002F_ADbGsu0H6yP4i7liDvZ_x002F_XhIB9Xxrs76r4FLD9idNOmmvByiq2Amf_x002F_SmUTA7ojjA_x002F_5BoLybxmbsTGPXOjD_x002B_LusxGYbY_x002F_NP8_x002B_9DlX0IaD5l9HeZfz9W2TeNLBzoH7ghlgYfAAeD14GXgueDpwP_x002B_6j8e8EkixDtAcYN5_x002B_KVWGstmgHWR54LdwF7gQHAY2FrE_x002F_Sig6it4ldeEgP2RTm_x002F_5KVBxV8Ge67MAP_x002B_tdwKsB_x002B_9F3VfEpYBsaLH4xUPWXsSl4JngN_x002B_Ai4CSi_x002F_nnNVbATH2MdrbV_x002B_s7GJA90Hj42clNnyCLmzGxjxygQ_x002F_bYH_x002B_rxGZnY_x002F_M58_x002B__x002B_rlX0ZsOcA_x002B_t0j7dyIwtfQYA80C26qfc0N5rlcaeoCv2xkVH0FOytdGbC3jYLnO0rTNYgr1GCvqzSpQM8_x002B_Vc4O4Q_x002B_u8m_x002B_Rg4kof4Cz217ZxYDuGOPjohKbi43NkcomB_x002F_iwDfYXS2z2NDb84b3d_x002F_J3c0MKWDyaFjj_x002F_cc_x002B_bvRyhN08jCgdkEN9UB5gbztNLYwW_x002B_swX6m0pUB_x002B_1CDfbbSdA3iCjXYD1OaXOBnefBd41dxQYnWN9iVBtCgs43neSU2c8Yma_x002F_xCAR_x002B_fNv5kFwvKDzI2TwCnm78PVxoP7O4Dbh5pOJ2SbyVzo79JI9cxhiwcmE1wU4X6f7_x002B_kNHWB31iDvbnSlQH7U5ze8gWl6RrEFWqwH6Q0VaAvwNkPqp6CNYRuNWezibdJATrb3VD2tPszY_x002F_MWZZMDfNhBzONKbNiVWNhwTGUn8_x002F_cvlcYDuxcZzVGjsitNWXCMoClk4cBsgpuKiyuKG8zzaaWpC_x002F_zGGuwq84WVH1J7EKsNEBdnQ6h4ybJKUxX4C3V7kd2Fxg8MV_x002B_qmge5s46Psadf_x002B_eFWajWKBj3ONvwUNqbA51djwyZjjQXeasugPFGy_x002B_b_x002B_zXGpXZc3mA17SBLByYTXBThboTTlGausAvB0NVfQXRKWcW2Ica7BOUpmsQ159cnAvxtnWBz5UA52DL_x002B_sARQrO_x002B_s1nT26QAnR1QPLrExjZylWajWODD1im7WFD_x002B_5dHxv5qyz4zKSLBbBMc3MbZfN_x002B_X2XCaywlQWDswmuKlC3QlZC1hSgV_x002F_OslD1FSQt7CiA_x002F_RlOb2nlHOqCuMoa7L8o_x002B_7rA7y9cPZbThb1_x002F_C2KfL2fC5GIbsPf5ekZ1sf_x002B_3sOGqR_x002F_afpzC2anLk7zJQ_x002B_DuoxOaC0fGbTBlXKxa6YLcIjn_x002F_c2O5gyheeb1HWNrJwYDbBjXVacYMJ3qs0dYHfYIPt7WNAE1opV3sQqw0QV1mDLReX1AV_x002B_z3P1WM4S9k92Nk3wdl_x002F_PqK7St40IY1NGR_x002F_7mjI3sYkE5F97w_x002B_MKZUPg31zX8dVRO5FgKylcBfxvZ3AiWMMeGBnugPXBjhRq7A5WmLvAbarCzGyxoitdbxVuVpmsQV1kjlby8PQf4DV3nsWRbKONcfmvDeKtgu2LKGs_x002B__x002F_G5scNirxd52xkXP6UV4MxM6bi46_x002F_vzAqJ_x002F_9tjxmbdxubeU_x002F_w_x002B_Pv3xTFb3iaycGA2wY31teIGE_x002B_yjNHWBX98YWGTuhxDQ2D5LT_x002B_1BrDZAXHZ1neUXyr4u8Hu_x002B_q8dykrC3syYqP_x002F_VDa7s79hXHOdhXHCfMC_x002F_OKROTgLMrtgO4rxHHOUy8_x002B__x002F_0_x002B_4Yy8ZlRMuQFrMHb8fKBp7LpiZNxMEf_x002F_NHaoHelreJLByYTXBjhRq7sZu9CeCXCxVUfST7CROaC50PS9aqyUkh4iyYU_x002F_Z1gd_x002F_rXT2WA4Q9G8Ti_x002B_M3_x002B_eCrQ2i4G1Xiuao6TDb1NLvDB7ISFv13EcQ7CFsfnZfvD3_x002B_wWKVYuks3ccfu5zGvsR8eHBnugPXBj2QEazwuVpi7wa59iPFcoTQho5pwPy8uUpksQk3_x002B_qtHxfaeoAn75R9DxJaDhgWBy_x002F_3h9PxfggqsFe29nUWmwC_x002F_eLO39hKTpStZ46PjdOgzE5FnDdbBH_x002F__x002F_2Bwb6_x002B_NGWfED1crgsUIWDswmuLHmRjeY4tlKUxf4tU8pHpmsJwQ0Vzsflkp5nNsEMXGGg4qVyNwXdYDPvV0dFnZZ3E9obI6ZOX88Bejub3yQHYWNn_x002B_JZa7EJ9P6zVQ22HUNRycleZo5fY8qfaMp_x002F_ZDXGpjjeyuCxQhYOzCa4sey0K48cha8L_x002F_IYakOzl8NCEziFrmfskQEwqF3PB2IyNOsDfkiA0pe_x002F_EEp1dCZj9I0qgW9n4IKrxtFnzyP29TQ7Q_x002B_wU_x002F_TxM2doXiWJcZyrik33aLLNiIAP_x002B_3Wfn2EDouVS_x002B_ODw32QPPgxvpfc5N5Wsk2Br_x002F_2ddtzjtKEgOZ3zodlIknkc0BMofSyja4uhT9mclT1EA68LVihJ3QfNnaVcspA589zW2Gzo7Xxx3OBjw2sPzB2_x002F_VHGzJbFcdnth3I7GM_x002B_3DTuV749gbFEMyuzT_x002F_dBgDzQPbyxzk3nkl7ku8BtK6Xqm0oSAJnQOE0lxmQNi2tDFaGlsKT18MWNf2WwUMra9VgGO2VV_x002F_VRtsv_x002F_hGNZ62e6x2vy98bGn8kS2FDdP_x002B_Fsef4Y_x002B_PbF5lbJi73P7wyYyCKH_x002B_gsRka7IHmwY1lX_x002F_08D1aausCvncfqyW6woAktu87KSzIJENPGLkZLIysz4WcPUDwRKtjvX7qiFMe_x002B_amyz33oIdH6_x002B__x002F_abCxr5t_x002F_cEfzwU_x002B_mBfc1jn2g40yu0pxK398ZMPG184P_x002F_8Po_x002F_7zXHlWisW8UQ4M90DzmBlO0krwGfkP5S8bmBIeAPefUKj8FE0lxmQNiCi0cGsvrkQP03BwitEiGsAsp_x002B_EOG48XSbVKpXx06bsBr61WNp33b_x002B_hVgoxfiMYADlfwMuWHGks6f3ZigrE7uKF96vADHbBKpgtCmD4yvsLtd2bSBLByYPXBT_x002B_VH8eXj7poDvD_x002F_m6DLkb8IZmXBD2xfIHoi02VnGFgMYPtFmyl9JDsxxgX_x002F_AXwT_x002B_A8lvwayBXCFpgc4XRVG2wX258kHWEjR3crIJvsPlmYY8_x002F_0h4f2RTL0ol8WiY49lpjV_x002F_A8ZUtwbF4XkD_x002F_eFrJwYPbATcVcyfZmtLQ2jxS_x002B_Q9n1svKXwJ5bNCk_x002F_k2I7FVcIaEILhxYuYsG_x002F_OdDF3bi5uOmjgFuhMX_x002F_5ewB3cvksYNdGqEvIws0MxnJfK2BnZ958XNnEgG4f44OMve2g7GRnk8PYPYoyP6Ct6rRjHmxZ5x0vwDHOcrFjAPxMSndVx7GhwR5oD9xU9hXO8zulaQL4tjuCeGSCoDJgHzqHSfBEFVcIaOy0Ms_x002B_8dAD4285oqMotgFnwShsbD2yfA_x002F_jDQh6nbGJAt5bxQdTMisc5mxzGfixR9mhno_x002B_q0x_x002B_c9oXtwfFtjG3ybwvEVjO3E5v_x002F_LwoHZAzfVOkB9wUkrSYgIfIf6WLNyf8A_x002B_dA6T4DEqrhDQhBYOzVsNiL_x002B_XAHZ1XSp86maCfXYRLGV9DswWsnBg9sAXObTzS_x002F_YS8VTg2w76eHIb7NhmCG2TtdkCgUb1jRaM7U6Osi1AqNuD_x002B_wrOAWYtZJ8wB95W8X4GZhNZODB74Ev9JKAaACJ3uG4C_x002B_A4la8pKOAX70IwLLnBgf3mbZO8qAs1_x002B_QMVL5Ks0ykN9vTspTVXgjwmQilkZRG4UEAM6rugsfKyobEKwXsApkLuANwL23xNuefYC8HClU8DWnk8dFlxv_x002F_H8pV56L6qqxxx_x002F_oj5chCwdmD9wUoTSnreyYTuDbzkDw5DbYfuqYZU5pugZxhTY_x002B_HltKPdJwcLWYC_x002B_xhH3VjUzDhy3fZPFTZxYDODlwmz6_x002B_H7TMAF_x002B_7cMdKGYB2HguCaAWNfl_x002B_1H_x002F_kIPCiks8GPi8zO25O48Clk4MHvgpuDgiL1JLI3mtLDAdyj3x1g6zBCw383pLd9Tmq5BXJztoeIlpUvpcYwDh0pDPqw0VYAv32BX_x002B_jGAzl5nuZ_x002B_jBTYbgYuMxsO0qWVdQ8ySx9WIY28DKOMbg9JUYcH1wf_x002F_5o6KOpzIvTw_x002F__x002B_9tNTkzcPkYUDswduitDg1xeVpgngu_x002B_xJkWSNrsN_x002B_T6e3fENpugZxfcTFaZmXf9mCY0wderGx9TSSNwV_x002B_7LJsEpxJUQZ0NsfLIcqmAMd5L95l7Am7zpgojItlFmQUxP_x002F_5GXC63dPAUcCnJfg6mNfdgL_x002B_56cDrAevgfHU2tnxCLrB7gv5oVFZAWz7YsFuGYw_x002B_rjXz6h53tgNV5ngWo2RUwjnldRPjbN9h72_x002B_MhZOHA7MGbwt0klsZyWnjgO7QcPrfBZt_x002B_m8kNae0uoA_x002B_Li_x002F_GkVLwnmPuFxULY4hln5as8IgQ87l_x002F_nvyiYFaG1jWvrEiGOvNHaEmy3IHB8e2HEqnV1qTthoL9xnMQZsTzTapHsGdk0nrfIN9u7KTiELB2YP3BRvcTeJ5WSlqQv8Mt2nqq_x002F_gqUpXBuxD_x002F_cGnKU3XIC6bp8OzIJVnCNjwyVJpyWFKkwN82Aa7ck4Mao0f_x002B_cSIcs7ysTlPLgErKNsQ0HAxUeGDvFnZKWDLweNCN7aLjAJ29u30bmWTA3w81PgjyQ8usnBg9sBN4W9ySyNJiDzwyyciVV9B1ms97EP9wY316zYJ4uL8aBUvieY_x002B_gQ2XopelxWXCoujS8xDQ2wb7RmWTgvFBXi6OMw8MuyAKG05PzJ5NQqCjL7tTzJ3gQcrWAzu78W5SLhvY2Qa7dqIn_x002B_ODMkMIfSf4eyMKB2QM3BXNh2JvEMm9rpKaAX39jerZQujJgb_x002F_M2e1r50akL4grNkklKVgU7n_x002B_TIcjlI7hLwQGvfvK5SNjGgY7_x002B_xjWnsiRFlfobPc71NDtAz8ZXtLkp6yoad3XX_x002F_KGXjgR37xAtN5T0vC_x002B_DDfy82UXYKWTgwe_x002B_CmONXdJJbsJEQpwK9PMO8J9uF6YG93AfG8R2m6BnGFZskkPRUS2IZ2vH_x002B_j0qQAre1mulzZxIDO98mqnV_x002F_OMcflllu5wI_x002F_tbrpE2XhgZzeiTrrvYWffQq5VNjnAh_x002F_9erK3sFLJwYPbATREa_x002F_EruA8wBfrlqT9VXkNtgf8npLW9Vmq5BXFzQo_x002B_IlyVPoYPtIYHclt_x002F_wFJC8ssUB3hPFTdfMC3yf7BHd8GWBnhexrj1cFfuyiJD5tRxc2weYHRvMmZeOB3YFGM6dscoAPv_x002B_p4wWyUFGThwOyBm8I_x002B_4XiyloinAr_x002B_hxTrkEUpXBuzt05GnlXOoC_x002B_KyifE9SytNGbAP7d5zntLEgM52lX1Z2cSAzud4WdcdtxvakvXt8arAj99xJmUQd87Y76VsPLCzbyE_x002F_UDY5wIdfdbysslPIwoHZAzdFqLEb25y0CeB33nQoQdaGA7D_x002F_odNbxjZK7RrExCXNKtYFePsY0NAfp8FJf2BssC8GNHaeOH9cONsjF79Kcd5qSfztp_x002F_JV7nO3wA_x002F_7sa3f6OAdbK4x9kkrbWF3iNFw4wWbIz2EvCdRzrnahT8UjduUIQsHZg_x002F_cGHP2JnFkLRFPhX5dPZ6sbclgf63TW3ZVmi5BTH4nccu_x002F_lCYGdKEVq1yktLLSlQF7O82tKeZ19eBvO7B5mz1WB_x002F_hayfglz1F2FtjYMYWk6XSwY_x002B_Nr60nloyX_x002B_uPCmsLlT2ZQhCwdmD9wYvzQ3iWdHpakL_x002F_Pqk9p6sZdCw_x002F_73TW7IW4UwCxMR8zSpWUmfOMxeLKJ8kayd22Nv0t9z0gANsuZwCbAy_x002B_wbZdCjfZY3WAL_x002B_bgtvWmPGHzjaCwT12wc5LRcExiLhHZR45yJrMq_x002F_P1e2ZQhCwdmD9wYjS0RTwV_x002B_3_x002B_7q8eQ22KFdwWUipS5BTJu7GC11Gmz2GYc23U3eGQe25xvdocomBnQvND7IYu74_x002F_uZYY7sbwZcf1B7blswDGztwOy_x002F_HRxmws7vK115kBh_x002F_2zTMrF70sHJg9cGOEciy31WD_x002F_l6vHk7MrCheQKB8FWypdlyAm7uSiYiW1FmBAH_x002F_psbwKlu6RbYMd53IWu0vRO6OZ1fYnjzKmx8Di4v7epAvzYNzj_x002B_gN1X2RXgODeIsHEkzVKCnZ0_x002B_WHu_x002B_P3zwraTw9zNlU4YsHJgtcFMsb24QRVsNdmihC0y0TgH7Nb3ekTVFcBIgplB2wT8oTSrQM0UnU60q3_x002B_RYpfPAjjlJCk2l_x002B_dzQ2Tw1d4jjft5xtK85BfixiZyiOd1h4_x002B_eLJ_x002B_0gBDub0z1rH1IFfNg3zx8qmzJk4cBsgZvCz5P1ZG8umwL82ldJT1aiIdgzHafyU5A1RXASIKbQHo21t2WDj92dTwvfqKIrSWHzG6OZt8dkKtDZLo_x002B_xNweUMeveb42NHIzLAT6YM9zO7Y6mKIWN_x002F_9FPXWn6U6N5m7LJAT4qz32XhQOzBW6K0PZgpJFUnR74DSU_x002B_yuoSgP3WTu_x002F_JmnEyCRBTaN50Ew02G0Kbn8NzJViQqrQMHGfe6cK_x002B_0mwh6Oyg4q9LbI42Nuy_x002B_eKSySwV6m1eG_x002F_dLR2TGwWc9oSNI9A7sbjab2fH_x002F_4OMH4O0fZlCELB2YL3BRPNTeIoq0GO7Q9WG6DHZrORtj9QJsQHJ1nf6tiL1DMengbYCPEfmI2NJz6xqRB3J_x002B_SSfeTtnSCXWg6WCMbH8PPNs6v551KR3DM9_x002B_lWbbC5t2ThQ54Xyvl0a5_x002B_ILwDBPucyoOP9bPOIJOXCgd2mRkOSBr1hZ2eW1F6zAB921fEXlE0ZsnBgtsBNsZO5QRRtNdj2VdKTlUQH9n7xRZck7e0Iu9OcznKN0lQBvkJvMsxHvl6JzmdT3FnZxYDO7kF5tbIhOOZT_x002F_H4FJK_x002F_yI7BnY337SE_x002F_4FpG0YhR2zzQ6ktpgW81uyiYH_x002B_Pim8ZeVi14WDswWuCn2MDeIoq0Gm7MVVH0k6wkT9qHNbCfJP1R8CtjaFKCeOaWpAnyxyys0C4j5M8Zm5KDMZ42rNPgM3eeNj9LzwjGmRf2EsSVcH8BpgcHVjzi_x002B_KuAbi53ayVWHOZvzvsRoSbTBho3ff7H2AD18_x002F_MT4O07ZlCELB2YL3BR2UEgxL1lPU8CvfZX0ZD1hwj6Uz3uS_x002F_FHFp4BtqEtoTmmqAn_x002B_hAV7yOqHxA7k7eJsUoGNXUeHjUmVTgOPshlF5zW8FnwTskuI0QHZhcasuzqg4D_x002F_icLJeCNVQdZcCe234t9OGPK2DH3eBtvYyl2EVfwR8v_x002F_lAzFQRjfKnw_x002B_WtQ_x002B_LsKKD8WLm5awDxHA7MJLvR7gb3pPK1MiRP1WOaUpgzYH_x002B_P0XXG9ik8BW34ZlQ_x002B_Sdf4x4I8DaqGFRX8GazrNVuY4qfSmBR13jil8JM16gB0HkUN7VpbB2SZs1Mc24I0BzUEjHwvwxxWwW99qKvAa4TO0bV6Iv8xzNDCb4EJzAI05FMqQfZx1gE8udFF1FXxV6cqAPQe2lJ9Jkxw3bPmEpXyQSpnxQsDnsa4Oz4ec_x002F_WaAT4IFlX64oeM_x002B_i4WPrIUlsOdAIAd3LwMqfSy7epiw6XTAjRwqDVQSaLkT_x002F_cLzVTYe2K1rNRXY1vljAi9ll8KZ84IbGBgY6BI0SquARwAuv18DVG6gZxFZODBQl_x002F_eutP5yYGPwPLA3OBwcDz4GPg_x002F_OGvHZUdmHwWFgX7ALeBp4OMh_x002B_9R0YmFVk4SThFxKcAPilTaGVVXlloL5lXP1tUjRa_x002B_4DtwOoqpj6CWDcC_x002B_4FPgqvBv8A9DfB3cA04BxwBdgOPAckNOWz5earP23KA0nYN4lrHxVlG8q4lBdC81fnoK4132U0rsnCS4GK8AqgvahnfU37aAvU9wNU_x002F_aX4NeNPuAJZUMXYBYlkcPB2cBG4GKvY2_x002B_aSKSwFbPskrH5YzlbZrENdTXJxlZP_x002B_4QzPnfPSVrM2aZxlZOClwIfh0fa25MCnwyS1rOk8dUFfXDbblVnAgyFps0CSo_x002B_8HgYHAdUDFOiuQlvbBNabCzFjBMCsSV2mBnZ8CDZloa7OEJe4QsnBS4ELlP1wUTe31FXX1qsAv4RLu9irctUN8a4ETwN6BimjTJe_x002B_vBNqXBPkZpuwZxJTXYXpcCdFd4Pz2Fc_x002F_DkOSxqyMJJgItQ5em6ICslYR1QVx8b7AIO5M1LFt808M8_x002B__x002F_PeBvwIVQ1f8j4pXAduUBrtS8v62QVzPdnEqKuXWhu4G56evdPZG2Tdk4STARaj6dF3waOW3aVBPnxtscoKKuwnge2vQdNfHnwG7dthY_x002F_Hz0f_x002F_79D6Dsy7hFxayAbUqDfZDSdg3ier6LU1Fp2y3opqHB_x002F_qeKfVFFFrYNLkLK03VslkGl3TFyQT0pDTZnRbBRyOUr4DvgUvBboHynsK_x002B_KvSrwtwQ4BNSZ6XEb_x002B_Bp4B_x002B_DUvg1A8EkJx1cEm4OXgXeDM8CvgPJ_x002F_l_x002F_KhgC0_x002F_a_x002B_XD8nql7RrEldJgZ_x002B_1aUgBdSoPNe9TftzkU93gZFwL2pZNfAsb0J1D8gDe2ae8sIAvbBhch9nTNxpyzD9SxgtKsYE2CelZ29Sr2V9pc4Ic_x002F_DvyCcnofn0RVXYq7wdrKZy7wc39w7shvLreAYwGfzIPJfHKAr4eAF4KjAX8ci_x002F_qSsrTBjg2HjVPRys7xdUFcPG8VryW5P98CHRtG5W8hXjNJUP9SYHl1bFFFFrYJLkDK0zUb9C1dmWITVUeToI6HuToVeyltHeBzBXCcqSNG7Wlp8LESqDJz4DKwK5jIqjTU81DwH_x002B_Df1XEP7Pikr_x002B_K2tLJNWl0QV0rX4blKGwO6WIN9t9INdIcsbBPcBClP12zUFwPXj8rK_x002B_C9VR5OgjpQGu7WnM_x002F_hm98A_x002F_TV1lsPui8jZZ0LKx_x002F_unIVyq8Vjsqf30CMfLVW8VvmZfzoS8grpQG_x002B_3NKGwO6WINda6PggeaRhW2BGyDl6XoXY8_x002F_ZCcqmgNPbknfergL8pzTYOyltU8A_x002F_5z2rej3vUPoY0C0LLjd_x002B_YvAHhH3MU5HnAXGmNNibKW3XIK43uDgVH1HaGMKPp9Jg5kB7yMK2wA0Qe1q4CixsgPHv9cyxMraydTQN_x002F_Kc02I3sAl0G_x002F_POHjjMqVN2WC5U_x002B_BDR8k_x002F_mi8RHjRvBE5auvIN7vmvjL6OXiDMSV0mAfqbQxhB_x002F_PtUo30B2ysA1w8VOerl8idD92Np4TvaZJ4H9DV5_x002B_ilR1bLKjj9a5OxV0g640D9m82_x002B_hi8Ftk5K7oGMaf0y8_x002F_LFd0XEFfK21WlGVPCj2dO6Qa6Qxa2AS5_x002B_7On6SjDW2KDsTcZG8TvQWo4N_x002B_H6sqauMjZW2SVDHmq7OMpL7sWHLc0tduXg_x002B_yF7_x002B_3AcQd0qDnbS_x002F_36RBXO9ycSqyd_x002F_KGhrOBlC9L9hvbQLvIwqbBhU95upaj9CjnlK7YfOBnKW0TwHdKg72u0jYN6kmZq7250npgx7nWqf3WPwTLKT_x002F_TAGJPabBbXTFaFcTFDIUqXsseShsCmpT1Bd9W2oHukIVNgwsfe7rmq3bpFwbHvm1sFacrXRPA9xauLsXDlLZpUM_x002F_Frl7FNkrrgd1rnK4Mzq1eVfmYFhB_x002F_7GHhb0rXBxDbMS5WxYuUNgQ0KQ32WUo70B2ysElw0Ss_x002F_XRfgOOfcKl3BHSBpEUUu8JuSfGcFpW0a1BP74SJPU1oLbJYGbIiV3sI3m6crH9MEziG2oq_x002B_309cQG1Prqpgt2TnioWEyL_x002B_XL8hmlHegOWdgkuOixp2u_x002B_bgdfR3GcTwNczaf0BQunAzYJ_x002F_KY02EspbdOgnpTpadEuEdikzDwg_x002F_6300wbO43_x002F_deXluVro_x002B_gNi4O4_x002B_K2ZI96A1NyuynXqacXZSRhU2BC35fwGlg6mYoSOp_x002F_ht2ZTufJ2tQ1Ffhlkn5V30K8pi1QFwdmZQyGYK5wHGff9U3Gvgw_x002B_gU9tv7UF5xFbIHKN0vUBxHa2i1WRvXkuNCmzn3qZcnZRRhY2BS74a90N4LlY6RSwjeVUYLKYlZW2DvAZS74zkddp1MOGltP2VAwF_x002F_wdibyvcuUZpPb3MrVEFnEvsc_x002B_vt9DXElvJWtZbShoCG_x002B_20qX5bWVxIP5CELmwAX_x002B_34g9iSXPLsDtkwEc7vRKhrNWkfg8yWuDs9vlK5pUM8mrl7FN5XWApvYmwphn_x002B__x002F_MbH7rzk1xgdL1AcTGPC0qZsuDlTYENCldfRPJiDmQjixsAlzsWD9p9pcEmlOdD89lSlcH_x002B_Iz1wd_x002B_gdE2Det7j6lW8RWkLcJxzb2NjAWQ_x002F_pZ9GcC7cgEGdo_x002B_VbStsHEFtKfpfsjHbQbOt8KN6ktAPdIQvrggudMguhykBJyk3W6Jxo_x002B_NvL_x002B_fdcoXRNgjo4FpAyq_x002B_OhSl_x002B_A4y9y9gruLDMTfdcE5zLV09cQWzRntdekAF1Knu19lHagO2RhXXCh3_x002B_guvOc7ShcDOvbjchdx5bOg0a2e4C_x002F_2pvAjpWsS1JGyfDy6KS1sTnAaxZeVdlrB_x002B_aRMX_x002F_uU0vYBxMaVvCrmgjuVLgZ0L3Z_x002B_FDMzjjEryMI64CIz89vvzUVXVM69Ae2RzpeHTySNrVqDr7cb34pKPz6pwP9jAAcTVd2WlOl8P3EaxcuUdlrB_x002B_aRMXztVafsAYrvTxeq5VeliQBfr6iNjuX0GukUW1gEX_x002B_UB30T3nKV0q0D_x002F_e_x002B_VNsrbRVgK9YLodvKF0TwPfqgNsmqXotn1B6C2zYf52y5VfjM226BOeTklrgg0rbB0SsnuuULgZ0sa4_x002B_0stNHRZlZGFVcIHZXxh7uk7KdRECPuw2UYqTla4K8HWU8_x002B_1ppf8TfplaNqWx5p6HKyofFthsYzRlzFw6TZzT49w5Kg5T2q5BXHxbVfFaKk1JhC5l8dRTlXagO2RhVXCBY0_x002B_jlbYy8sAPN3ZV_x002F_gs4_x002F_a_x002B_R1YfwE8vl0Gj_x002F_J_x002F_wtDvYGsVdh8hewhfLjgd2eRldGazlZugLnlDJ97XDAh42_x002B_8Qig4rV8X513DOhiXX1kqvKeLwrIwirg4vIGi60oq_x002F_10TeDnkc6vYmelzQV_x002B_YrkcGlm_x002B_Cz_x002B_cCcI53ymrGQnToibnkIAtGyXlx_x002F_I2pZ1mcE7RlapTTtX9HFPStmavoBxoF1lYBVzc2HZejc4_x002B_gL9Y5rovKV0u8PMJ59dzrLPnrISNQDQZFWxWA1zBeTKIzQaw3Aay_x002B_ulh_x002F_zmjL2NXpZ1mcE4p09emmUpdctB90PnpC5eoeAfuRRbmgg95RRB7hW80yT_x002F_87eP8e_x002F_4Oon27MeDjLONTcZSz52fxR8ABPs5Y_x002B_QH4EvgsOAOcAy4FtFH_x002B_YnwPZKdzheYi46OMRt6A_x002B_gTOKbZSddr5uDrvGNAd6_x002F_z0hdYG8WcBWZgLPuTY6_x002F_YfAH_x002F_Rm_x002B_R0oOqy7K3izQE_x002B_vuZ8esaW76Islg62Cr8BrwaVNh2GLiWJ_x002F_0Q2YpgkOKeU6WvTzCnqvGNAl5K2tQsq7QC_x002F_qCALc8AHzNd6Dn6pD79rar9ewUcs_x002B_c5Yvy_x002F_KOHB4ibGpA_x002F_u0mURrGV9PDtBfP_x002F_IXYiIbMUwSnFPK9LVpptKUROg_x002B_5fz0hQ_x002B_reAfuRRbmgA_x002B_YT7vqg_x002B_8La6u4U4Ge3RfKb4HcTw_x002F_lTNb0T2OXCruWvgneCTZQvqsAXylL2yeyEcMkwTnF9gSddg5X5x0Dui87P33hCBXvwL3IwlTw4XJj2NRNXLui1lJ16GNdCXsqHcGx45yth_x002F_3s_x002B_4PdAWczcFVepS6PGPAbm8FDVlHaaQbn9G53jgrOSebgZN84Cah4LVV3TE9J29oFb1XxDtyLLEwFH_x002B_5H3IfdR5jitXIjCO11xpeiNN8Cjq0AYhvnHqi0TYN6uMBG1W_x002B_ZxS6RlDfAXp434kpZ3HKA0saAjjs9KX8FXADH_x002F_v9Js56Kd_x002B_BeZGEK_x002B_GAfBbhpgLrYfWNbdQ4pQBubbhfcABXH_x002B_fSsdAVMrp_x002B_dgD4X1HGNqbOMDZV2msE5neLOUfEQpe0axBVbIEZkl1wM6H7u_x002F_Hhaz0I5kI8sTAEX9NPuAis4BY2vXm2SktDoNHUOKUAbyx8d20B4MXCBsVdwc93GElYp4D9llkjyhhLTAs7pM_x002B_4cFQ9Q2q5BXIe6OBWVMupBF9vncpgP3UNkYQxczA1ALJFQI8vQY6AeznuO9aMz292ySh8CGq4_x002B_VP4sz1VaC2z4ecXeRl6ttE0B_x002F__x002B_e5_x002B_hSvVdppBuf0FXeOivspbdcgrpTunJcqbQzoYmMarWahHKiGLIyBixlbTEKepLRtgLpS4sl_x002B_EoHmQc6HIilVLOw_x002B_4HQefoFWVdomgO8TTV1lzMQu6RacE9_x002F_C1LkuxGv6AmKL7bBEKmXUE348jawUHmgWWRgCF3Izd2EVE_x002F_11Rn0cUVdxWL6ttCGgScmlnNpgM_x002F_PazUan_x002B_ILSNgF8p0xv_x002B_67STjM4p1hX0B1K1wcQ2yddrIrsbixoUrIAflZpB7pFFobAhfyGu7CKZyhtW6C_x002B_JUFscJBdOFmzAWCfkks5eck9bHd0WsWOSlsX_x002B_nX1KNh1tITSTys4n2vN_x002B_SluU7o_x002B_gNhS3hyrbLW3qvOhaCSp2UCzyMIycBFTUlVerLRtg3pT_x002B_vsOVtoyYP9kp1dkZTSDfaxPlYNB2ZuqxoDPlC8p2UrppxWcD5f0q_x002F_MsmMgmylVAbN9ysSoer7QhoEnJdnm00g50iywsAxeRiYzUxbV0sksF6k15Gr5GacuA_x002F_XZOr3i00pYBe3azxJbyn6S0dYHflKl9M9WPjfOJJSXLuicmCWKLzS4iGyltCGhSvivvV9qBbpGFClzA57gLqrgCtDo9LQTqTpm6tqXSKmCbkumtSua8g5wPxZOVtg7wmbLQ6UbQymrLLnDnpqi0Y8skYGwuVkWV_x002B_29r50NRaQXlQLvIQg8uHucS_x002F_9hczDI63bQT9acMrCU_x002F_vcI2Jeve6kobAhpOF7zK_x002B_FBwYUMju_x002B_YUwN8LjP8QOyj9tIHz4KYa6vwsFyltH0Bssf53kr3oB5qUN8f9lHagW2ShBxdvZ3cxFWxgOn0yQ_x002F_0PBrGES5w_x002B_l9QQwo55PpQPS6VFF9CljAe8T2mrAn9LgzuM_x002F_zLOV_x002F_ppA_x002B_fBTYzV_x002B_Vl6O98YscVmFZHs_x002B_w_x002B_aFzsfiv9U2oFukYUWXLglQOxpkFRacdU0iCNlgUhwOXkB7FK2Uaq8Sg7a05wvD5NDNbpcHP5SlmqTysv5_x002B_wLOYR13ToqzlbYPILaUhF1VGuw9nA9FL77PA_x002F_ORhRZeOHchFez3vI_x002F_STxrE8XITVxlfVVoP7FJmntRJLLUK4IbBym_x002F_BZaCxqXbwtbHxHYLjEVM9xQ_x002F_xP96cTxmt7HrfBIiNP9gqZsuSShsCmpSkUq1MLx2ohywswEVjX2tK4vveLGlGLMuB2CwMLhOPriqETfRp1GtygY_x002F_YVmek0f5E_x002B_Pu681_x002F_GVG_x002F_Ki_x002F_i3ceej6OUOJ4iLb7Yq3nl4XQrQMde69Gd4ttIOdIssLMBFe727iAomxu9VLgbEk7Kbxv5Ka4HN553Gc7fS5QAf9wF8mlX_x002B_C7ig5eFKXwX4SlmtSviEt6nyMQ0g9pRB1l4uEEFcTM2r4p2H16UAXcqbY_x002F_aCnIH2kYUEF4zLV2OLDkil9I5tgphSRsF_x002F_orQW2MQWLvxJ6XKBn62cX8XXlbYq8Jey7JnwB3kq82Qj7pS_x002B_2r422ClpESrdf9B93PlRNLpp9kAzyEKCC_x002F_Y2dwEVTHKenQWvbRATl6qn7EoeXKWI4z9y9p5GGmwCXynpandX2irAF1c_x002B_cnNkVY_x002F_nf8Bqyk_x002B_fQcz7mXMo43il7RrEtaGLU1G1weYu_x002F_sqfZeY2ZJ4FZCEu1gNBygh1b7fzQWwpsyGCG5ji_x002B_A3O3tNkg70GiPW9s4FdSemrAF87Gd8xuPPOo5SfvoJ4U7YHq7SJbdsgrie6OBW_x002F_U9oY0DFPvfJnmcq3qllHFuJivd9dPAUb9F4mfieI7Zkm1jJuBaWj7Dj2Z2OruEXpqgJ_x002F_KYNBn1LaqsDf0c5_x002F_CL61TM2iGsSa0lfb1wb72S5ORaU8KNClbPoxcxsyzwJjBbhQq4G_x002F_mgtXxiFe2ycQH0fZY_x002F_spku0DemVvaTRxEPxxYQunSKq6LM9R_x002B_irAF8_x002F_zq8Z3Ctwc9oHKX59AjB8zMZfxbqXtGsT1IhenomqDnbIgZ2mlHeiWsQJcqJRE90yos6LX9g3EmHIuZ5RoV3J2isYzvcHnbq4OBTcWbmzsAL6WAeePfKfCp23O511G_x002B_WwL1MdZNRykjXYNweZMoGK39DJnBuJ6lYtTcaXSxoAuutrVawb6wbw_x002F_cKFSN9adioxuiPOpLm4F92wce_x002F_1D2drGpow2Gmzmbbnc1FHGMUpfFfhjo32u8Z8KG_x002B_7DwTrKb13gd3GwLtgbcLCs6KZaRdlbYMO9Mn28nqyUu5MCcaWkRchOXAUNf_x002F_CUL8vtSjvQPfP_x002B_wIVKmb_x002F_M7pKpmDGAOPllT_x002B_kW2UtoN3c2iqu8rgngNyXPCDdk2ELpqwJ_x002F_nF2T8lZSxpWAjff2YGVVRwholgdM_x002F_cnuAI6j8KlfPQ0mbToAu9gsH9K7aakEcR3i4lRUabC5B6ryZeG8f65wzoFrNvjG5TkAMMVDwfsAxxaOA_x002B_yy4vRSbtTAa81VvVeDX4HGH4ZmgYX_x002F_wAfEL0psY11ygnXQdxBvSkrRsU0XUJYy6NNaak74PtvVpfgZuK_x002F_S1wE_x002B_dwexPNIp8MfyUvA5cDLgF5UNEfe35L_x002B_5ZyG_x002F_rPyipk4xJD9QcXtg90unU_x002F_S1wWaDpuK1ZCeugmYt56OvDA22YOE_x002F_8AGd4z4wBXcnX9M66DuI97km_x002F_hDzNiLA37u644o2G_x002B_z1QcoP6DuVvi7w_x002B_3CQkkirCz6qYvbALuVHoJc7xSOulLfdKg32E5yPvnKFin9RZ8F_x002F_8OE8yX1YZUzdPm_x002B_IeSmQ8rR4qNO9zh1XtJr8Hv5j2fwI_x002B__x002B_BbW_x002B_QA35yrnZKtcZK8WcXqgV3KeEwvs9IhrpTxhPOUNgQ0z3A_x002B__x002B_sr3VPyLOgv_x002B_gw_x002F_n_x002B__x002B_7DUvBpby3vYBpA3GeY8yiDU50WZt7Dv99ujpVxoa2naeA_x002F_dRD4QtBaLnL6BsyJntInPAmic8Fh8_x002B_9OU0ZfG_x002B_xLXJyK7EyD0KTkwu4DX1HxL_x002B_rwAqZs_x002F_UU_x002B_oxxMA4j9pe5cyliYAxr_x002F_PsodU7Se_x002F_B51pPTBk72VvmlQD1_x002B_pjwe3jertgrVVbBbYPMRpyniB0ncN4vqFi1NRpcHe0_x002F_noK40uEJsVeAE59YmrFmNsoBxMA4idmc_x002F_Yn6nOy3Kc0bBRUjaW1p8CUMeagDlbVP0Wzs2OTnVrCtTF1LuczXIY4JN3yptAFZiAjEm4_x002B_AP6SrAJiL5NwObRQH1Onu2UvmsQF7cHU_x002F_FaTlbaENBw5oby1TeOVPEv6sjCgYFc8AXjKs1NwWsAG1empr0YcIoWv4B3AdsQc_x002B_MG_x002F_ogyRwlf_x002F_zlb5ARwMOCALxvm5VVdAwOLJvf82_x002F_8DAQziFxzDzrkAAAAASUVORK5CYII_x003D_,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="9">
+        <ReportTitleBand1 Ref="5" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,27.7,3</ClientRectangle>
+          <Components isList="true" count="3">
+            <Image1 Ref="6" type="Image" isKey="true">
+              <AspectRatio>True</AspectRatio>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22.8,0,4.8,3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Guid>570f241b880c459c850f4efd7bcd931d</Guid>
+              <ImageData>{v_logo}</ImageData>
+              <Name>Image1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Stretch>True</Stretch>
+            </Image1>
+            <Text1 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1,15.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Guid>a64a5cae31104dce8680adbd082fa702</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>Ferientiere die Heute in die Pension kommen</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Text3 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.2,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Guid>a7d6782783ee4bd4a77c58b66dd92962</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>HEUTE REIN</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>f5e634f53a5743db910c9899b326f600</Guid>
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </ReportTitleBand1>
+        <GroupHeaderBand1 Ref="9" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.2,27.7,1.2</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text4 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,9.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="9" />
+              <Text>{Table0.Gattungsname}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text4>
+          </Components>
+          <Condition>{Table0.Gattungsname}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </GroupHeaderBand1>
+        <HeaderTable0 Ref="11" type="HeaderBand" isKey="true">
+          <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6.2,27.7,0.8</ClientRectangle>
+          <Components isList="true" count="7">
+            <HeaderTable0_Rufname Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,7.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>ecefcf96c14c4f88a55d813793689140</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderTable0_Rufname</Name>
+              <Page isRef="4" />
+              <Parent isRef="11" />
+              <Text>Rufname</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderTable0_Rufname>
+            <HeaderTable0_Laufnummer Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.8,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>609aef40b9a94e66b14e6a4db6c1f2bb</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderTable0_Laufnummer</Name>
+              <Page isRef="4" />
+              <Parent isRef="11" />
+              <Text>Laufnummer</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderTable0_Laufnummer>
+            <HeaderTable0_BoxBezeichnung Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.8,0,4.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>390bd4f6df1143f8af1775645f70dfa6</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderTable0_BoxBezeichnung</Name>
+              <Page isRef="4" />
+              <Parent isRef="11" />
+              <Text>Box</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderTable0_BoxBezeichnung>
+            <HeaderTable0_Von Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>0989af9f13654bd88624adb2d8777f2b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderTable0_Von</Name>
+              <Page isRef="4" />
+              <Parent isRef="11" />
+              <Text>Von</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderTable0_Von>
+            <HeaderTable0_Bis Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>d3a14344c2134cfcbfcf4546deab774e</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderTable0_Bis</Name>
+              <Page isRef="4" />
+              <Parent isRef="11" />
+              <Text>Bis</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderTable0_Bis>
+            <HeaderTable0_Fixdatum Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>21,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>19071896c6874063943f704d096ad66e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderTable0_Fixdatum</Name>
+              <Page isRef="4" />
+              <Parent isRef="11" />
+              <Text>Fixdatum</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderTable0_Fixdatum>
+            <HeaderTable0_Ausnahmedatum Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>24,0,3.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>44c942ce04a941e5b8f1eaf1d6ac8ecd</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderTable0_Ausnahmedatum</Name>
+              <Page isRef="4" />
+              <Parent isRef="11" />
+              <Text>Ausnahmedatum</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderTable0_Ausnahmedatum>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>57303a9380064546b6f2a6a55f2cf8c8</Guid>
+          <Name>HeaderTable0</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </HeaderTable0>
+        <DataTable0 Ref="19" type="DataBand" isKey="true">
+          <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,7.8,27.7,0.6</ClientRectangle>
+          <Components isList="true" count="7">
+            <DataTable0_Rufname Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,7.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>2a3783127ca84718b82ca8b2a9751d38</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataTable0_Rufname</Name>
+              <Page isRef="4" />
+              <Parent isRef="19" />
+              <Text>{Table0.Rufname}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataTable0_Rufname>
+            <DataTable0_Laufnummer Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>7.8,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>7dfa234df8e944a38e3ed6002853a146</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataTable0_Laufnummer</Name>
+              <Page isRef="4" />
+              <Parent isRef="19" />
+              <Text>{Table0.Laufnummer}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataTable0_Laufnummer>
+            <DataTable0_BoxBezeichnung Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>10.8,0,4.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>4ce8dcb89eda446697d0ebb8f296a3d2</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataTable0_BoxBezeichnung</Name>
+              <Page isRef="4" />
+              <Parent isRef="19" />
+              <Text>{Table0.BoxBezeichnung}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataTable0_BoxBezeichnung>
+            <DataTable0_Von Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>15,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>8d45dee3ffab44e78e7e46ea734b7d57</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataTable0_Von</Name>
+              <Page isRef="4" />
+              <Parent isRef="19" />
+              <Text>{Table0.Von}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="24" type="DateFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataTable0_Von>
+            <DataTable0_Bis Ref="25" type="Text" isKey="true">
+              <Brush>[216:216:216]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>18,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>d7acae574c514f83ae67dd58968c6431</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataTable0_Bis</Name>
+              <Page isRef="4" />
+              <Parent isRef="19" />
+              <Text>{Table0.Bis}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="26" type="DateFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataTable0_Bis>
+            <DataTable0_Fixdatum Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>21,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>33d9c1073d7c4f3eb886d3e8882580a3</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataTable0_Fixdatum</Name>
+              <Page isRef="4" />
+              <Parent isRef="19" />
+              <Text>{Table0.Fixdatum}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="28" type="DateFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataTable0_Fixdatum>
+            <DataTable0_Ausnahmedatum Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>24,0,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>58a0fa6197ed4f008750c77fbe0e05ad</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataTable0_Ausnahmedatum</Name>
+              <Page isRef="4" />
+              <Parent isRef="19" />
+              <Text>{Table0.Ausnahmedatum}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="30" type="DateFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataTable0_Ausnahmedatum>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Table0</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Guid>aca7e21ab4b04a48a6f84b4f23731a9c</Guid>
+          <Name>DataTable0</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="2">
+            <value>ASC</value>
+            <value>Rufname</value>
+          </Sort>
+        </DataTable0>
+        <GroupFooterBand1 Ref="31" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,9.2,27.7,0.8</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </GroupFooterBand1>
+        <FooterBand1 Ref="32" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,10.8,27.7,1.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text2 Ref="33" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.8,4.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14,Bold</Font>
+              <Guid>775fa4e0419747f082beaaf347458379</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="32" />
+              <Text>HEUTE RAUS</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>41fb353d8aa94f35a1361c39fffc3e83</Guid>
+          <Name>FooterBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </FooterBand1>
+        <GroupHeaderBand2 Ref="34" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,13.4,27.7,1.2</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text5 Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,9.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,12,Bold</Font>
+              <Guid>190743909fa041548d6d92204f1904c3</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="34" />
+              <Text>{Table1.Gattungsname}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+            </Text5>
+          </Components>
+          <Condition>{Table1.Gattungsname}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </GroupHeaderBand2>
+        <HeaderTable1 Ref="36" type="HeaderBand" isKey="true">
+          <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,15.4,27.7,0.8</ClientRectangle>
+          <Components isList="true" count="7">
+            <HeaderTable1_Rufname Ref="37" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,7.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>783c89fdc2184c71990b845a48b53109</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderTable1_Rufname</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>Rufname</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderTable1_Rufname>
+            <HeaderTable1_Laufnummer Ref="38" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.8,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>13966cce8254456dbecb74dee494c02f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderTable1_Laufnummer</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>Laufnummer</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderTable1_Laufnummer>
+            <HeaderTable1_BoxBezeichnung Ref="39" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.8,0,4.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>017dc88ef008427fb8c4c1233dfd0fb8</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderTable1_BoxBezeichnung</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>Box</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderTable1_BoxBezeichnung>
+            <HeaderTable1_Von Ref="40" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>15,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>64c13195b23b473599073b3f9bad3c59</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderTable1_Von</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>Von</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderTable1_Von>
+            <HeaderTable1_Bis Ref="41" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>1f3ac8f8cd894dd0a6f82818f1747e19</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderTable1_Bis</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>Bis</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderTable1_Bis>
+            <HeaderTable1_Fixdatum Ref="42" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>21,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>f3d54721cc8d40b191b9ab89df761c11</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderTable1_Fixdatum</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>Fixdatum</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderTable1_Fixdatum>
+            <HeaderTable1_Ausnahmedatum Ref="43" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>24,0,3.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Guid>4999e83d0f784b4fb0df74407aebbb93</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderTable1_Ausnahmedatum</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>Ausnahmedatum</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderTable1_Ausnahmedatum>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>1344b6c038d642ac8c6a4b53a6f72327</Guid>
+          <Name>HeaderTable1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </HeaderTable1>
+        <DataTable1 Ref="44" type="DataBand" isKey="true">
+          <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,17,27.7,0.6</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text6 Ref="45" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,7.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>99d19e1f725d4bcda4fa32063ca2af54</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="4" />
+              <Parent isRef="44" />
+              <Text>{Table1.Rufname}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text7 Ref="46" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>7.8,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>d5239aa187f94309b5eddb3ca37de231</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="4" />
+              <Parent isRef="44" />
+              <Text>{Table1.Laufnummer}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text8 Ref="47" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>10.8,0,4.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>c736610a23f24d70b2288fda2b0ea9a1</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="44" />
+              <Text>{Table1.BoxBezeichnung}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text11 Ref="48" type="Text" isKey="true">
+              <Brush>[216:216:216]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>15,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>c3dc99e34f0e4b1eb454846926eb7298</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="4" />
+              <Parent isRef="44" />
+              <Text>{Table1.Von}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="49" type="DateFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text12 Ref="50" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>18,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>1e92d53e9fd543e4b160ab671929438a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="4" />
+              <Parent isRef="44" />
+              <Text>{Table1.Bis}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="51" type="DateFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text13 Ref="52" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>21,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>6fc997cf09494ba68e39ca0e892214f7</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="4" />
+              <Parent isRef="44" />
+              <Text>{Table1.Fixdatum}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="53" type="DateFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text14 Ref="54" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>24,0,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>3c16ca62d31b40839e32049383735b3e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="4" />
+              <Parent isRef="44" />
+              <Text>{Table1.Ausnahmedatum}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="55" type="DateFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>Table1</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Guid>d690f72a9ad84d2daa469cb12603fefd</Guid>
+          <Name>DataTable1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataTable1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>1d4a86f4e40c46e183704e6de6ffac2a</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21</PageHeight>
+      <PageWidth>29.7</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="56" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="57" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>11/18/2014 8:37:18 AM</ReportChanged>
+  <ReportCreated>8/14/2014 9:28:15 PM</ReportCreated>
+  <ReportFile>C:\Support\Code_PetPlus_V4\PetPlusWinForms\bin\Debug\Berichte\Generator\Ferientiere-HEUTE-ankommend-oder-gehend.mrt</ReportFile>
+  <ReportGuid>9fbf133d744e4feaa6960646294fa5a1</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2014.1.1900</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

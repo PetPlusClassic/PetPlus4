@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <Personen Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Personen</Alias>
+        <Columns isList="true" count="10">
+          <value>Anrede,System.String</value>
+          <value>Nachname,System.String</value>
+          <value>Strasse,System.String</value>
+          <value>Plz,System.String</value>
+          <value>Ort,System.String</value>
+          <value>Mitgliederart,System.String</value>
+          <value>Spendendatum,System.DateTime</value>
+          <value>Spendenbetrag,System.Single</value>
+          <value>Vorname,System.String</value>
+          <value>Firma,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Personen</Name>
+        <NameInSource>Personen</NameInSource>
+      </Personen>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="48">
+      <value>,Gebuehr,Gebuehr,,System.String,,False,False,False,False</value>
+      <value>,v_vorname,v_vorname,,System.String,,False,False,False,False</value>
+      <value>,v_nachname,v_nachname,,System.String,,False,False,False,False</value>
+      <value>,v_strasse,v_strasse,,System.String,,False,False,False,False</value>
+      <value>,v_ort,v_ort,,System.String,,False,False,False,False</value>
+      <value>,v_rufname,v_rufname,,System.String,,False,False,False,False</value>
+      <value>,v_geburtsdatum,v_geburtsdatum,,System.String,,False,False,False,False</value>
+      <value>,v_rasse,v_rasse,,System.String,,False,False,False,False</value>
+      <value>,v_geschlecht,v_geschlecht,,System.String,,False,False,False,False</value>
+      <value>,vf_firma,vf_firma,,System.String,,False,False,False,False</value>
+      <value>,vf_postfach,vf_postfach,,System.String,,False,False,False,False</value>
+      <value>,vf_ort,vf_ort,,System.String,,False,False,False,False</value>
+      <value>,vf_telefon,vf_telefon,,System.String,,False,False,False,False</value>
+      <value>,vf_fax,vf_fax,,System.String,,False,False,False,False</value>
+      <value>,vf_mail,vf_mail,,System.String,,False,False,False,False</value>
+      <value>,vf_bank1,vf_bank1,,System.String,,False,False,False,False</value>
+      <value>,vf_konto1,vf_konto1,,System.String,,False,False,False,False</value>
+      <value>,vf_bank2,vf_bank2,,System.String,,False,False,False,False</value>
+      <value>,vf_konto2,vf_konto2,,System.String,,False,False,False,False</value>
+      <value>,vf_strasse,vf_strasse,,System.String,,False,False,False,False</value>
+      <value>,v_rabatt,v_rabatt,,System.String,,False,False,False,False</value>
+      <value>,v_pensionsstart,v_pensionsstart,,System.String,,False,False,False,False</value>
+      <value>,v_pensionsende,v_pensionsende,,System.String,,False,False,False,False</value>
+      <value>,v_kontakt1,v_kontakt1,,System.String,,False,False,False,False</value>
+      <value>,v_kontakt2,v_kontakt2,,System.String,,False,False,False,False</value>
+      <value>,v_kontakt3,v_kontakt3,,System.String,,False,False,False,False</value>
+      <value>,v_gesamttotal,v_gesamttotal,,System.String,,False,False,False,False</value>
+      <value>,v_logo,v_logo,,System.Drawing.Image,,False,False,False,False</value>
+      <value>,v_kontakt1_bem,v_kontakt1_bem,,System.String,,False,False,False,False</value>
+      <value>,v_kontakt2_bem,v_kontakt2_bem,,System.String,,False,False,False,False</value>
+      <value>,v_kontakt3_bem,v_kontakt3_bem,,System.String,,False,False,False,False</value>
+      <value>,v_fusszeile1,v_fusszeile1,,System.String,,False,False,False,False</value>
+      <value>,v_fusszeile2,v_fusszeile2,,System.String,,False,False,False,False</value>
+      <value>,v_fusszeile3,v_fusszeile3,,System.String,,False,False,False,False</value>
+      <value>,v_fusszeile4,v_fusszeile4,,System.String,,False,False,False,False</value>
+      <value>Tierheim,Name_Genitiv,Name_Genitiv,,System.String,Zürcher_x0020_Tierschutzes,False,False,False,False</value>
+      <value>Tierheim,Name,Name,,System.String,Zürcher_x0020_Tierschutz,False,False,False,False</value>
+      <value>Tierheim,Strasse,Strasse,,System.String,Zürichbergstrasse_x0020_263,False,False,False,False</value>
+      <value>Tierheim,PlzOrt,PlzOrt,,System.String,_x0038_044_x0020_Zürich,False,False,False,False</value>
+      <value>Tierheim,Nummer,Nummer,,System.String,,False,False,False,False</value>
+      <value>Tierheim,Fusszeile1,Fusszeile1,,System.String,Zürcher_x0020_Tierschutz,False,False,False,False</value>
+      <value>Tierheim,Fusszeile2,Fusszeile2,,System.String,Zürichbergstrasse_x0020_263_x002C__x0020_8044_x0020_Zürich,False,False,False,False</value>
+      <value>Tierheim,Fusszeile3,Fusszeile3,,System.String,T._x0020_044_x0020_261_x0020_97_x0020_14_x0020__x007C__x0020_info_x0040_zuerchertierschutz.ch_x0020__x007C__x0020_www.zuerchertierschutz.ch,False,False,False,False</value>
+      <value>Tierheim,Fusszeile4,Fusszeile4,,System.String,Spenden:_x0020_PC-Konto_x0020_80-2311-7,False,False,False,False</value>
+      <value>Tierheim,Gerichtsstand,Gerichtsstand,,System.String,Zürich,False,False,False,False</value>
+      <value>Tierheim,Briefabsender,Briefabsender,,System.String,Jonas_x0020_Rodenkirch,False,False,False,False</value>
+      <value>Tierheim,Briefabsender_Funktion,Briefabsender_Funktion,,System.String,Mitarbeiterin_x0020_Geschäftsleitung,False,False,False,False</value>
+      <value>Tierheim,Logo,Logo,,System.Drawing.Image,iVBORw0KGgoAAAANSUhEUgAAAM4AAAAzCAYAAADfEzcDAAAABGdBTUEAALGPC_x002F_xhBQAAAAlwSFlzAAAOvAAADrwBlbxySQAAF8tJREFUeF7tXWl0Vdd1VtI0bdI26WpX65W2P5q2q6tObcdjbGMwGNvxPMVT7DSebcwoITQPSIDBIEDGZhAIhNAAaECAJJDQPM8DwiBAIDFIAiQQIDSgCbG7v33vfXrv6Y2Sldj4fmttnt4995x77n37O_x002F_vsffa5uJAOHTqchk4cHTrGAJ04Om55dHV3U_x002B_3BWioqKaHi0lJqaW2lmzdvqqVjg04cHbccrnZ2Uk5ePoVtCqdZc_x002B_dRWUUFlZSW0VfrN9DZs81Ud_x002B_iQEKfp1Gk69PXXVFZeQUl7kulAZqacN3zjhtqSdejE0XFL4evDhykiMor6_x002B_vroiy_x002B__x002F_oqPHjpNfQKCUNTe3UEPDCbY_x002B_B6mnp0eOmaO3t5f2px_x002B_guPgEq_x002B_cAOnF0fKMYGBygyqoqysnNo6rqapkenW1uVksnBqn79tO_x002B_tHS2KOuppqaGPLx95Tiue_x002B_bsWcrNL6D6_x002B_no5FhG5TSyLp68vJSTuIr_x002F_AhZRfWEinTp_x002B_WcmMkp6ZSQVGR_x002B_s0UOnF0fGNIYQWe576AQnmkBzAd6u_x002F_vp7KycoqO3S7_x002B_xTeN8M0RNN_x002F_DS_x002F_4uKi6hMypJd_x002B__x002F_ZK59rN4TJ5zx3d_x002F_lcuz6Mli5fQYuWLiP_x002F_hUG0cNFi8vYPIB8WkChk1WrKY6KdO39ezj_x002F_R2MjTuD3ytzF04uj4RrDmq7W0wMubNm7eQpnZ2dTc0qqWjKC5pYWnQenUeu6cemRsKC4ppYysLFrg7UNXrl6ltvZ22pOcLGWxO3bI54ULF_x002B_Q67Rcv0hImibefP_x002B_2Mi6f0jAzy5alb0OIlIsFLPjP8DRIFBi_x002B_Scz19_x002F_Sh8S4S0dZyndxUVlfK3Bp04OsaNtAMZ5OnjyyN4MLm6e1BBoeXpjYZGHsVPnDipfnMcp9iZb2o6Re9_x002B__x002B_JEQAEhjfwTI5anhVSYRsI6tyoULbUyQhfLd3dNLiCEWxogwtgTnwAK582AwODhIcQkJNDw8LO0BOnF0jBtePDpDKdeFbZTvNxyISkEJnQkJR8XGSsQLCn3s_x002B_HGZTh09dkzK9qWlyScUHVgZ_x002B_oVYDXxHn2BFUE8TS0SxJqiLQeH69T4mT6K0D_x002B_jE0TEunD5zhqdoPqKkyfv2UU3tQbrWdU0ttY8mdsrtEW1LZKQosYYYno51d3dTTU0tdV7rlGPwZTx46paYlMTTthTyYyKDJBppjMmA7wF8HH2GVcLUTRMcQx3j83F8995kibZp0ImjY1wor6yU0R2SmLSbzrNv4SyycnJ4RL_x002B_ufjMFfBW0vTF8M306Zy61sz8DbNi4iYYGhyh0zZfyPb_x002B_g0ODga_x002B_QwVn58R5kHWw9YSAQwdnF_x002F_EURITt0npNizdy8l7Eqiz1eEyPROIxDqgpSYYiKUDejE0TEuYJqEqUx4xFZZ9xgYGFRLLAPTrCNqaNgY23fGUWenYj00IKx9_x002F_HiD_x002B_k2pO3uemyxwAos_x002F_W0a_x002B_TIaQVaG0gx1_x002F__x002F_6BgUXJj0uBvEMrLx492xsfTiZMnHZoiIqq2jAkEa4N2ECxoOHGC_x002F_TnF6ujE0TEuRMXEikXYErmNsnNzeZrWpZaMBki2fOUqVkZ2unlET0hMkoVKDbAqqD_x002F_EzngQK_x002B_u26BjatGUL1dcfVc8gKiurkJA3cOJko5AWlgGk0ciiCSwMylN4CjnWFBtYJvhvuMeq6hram5Iix3Xi6BgXVqwOFcXFVCZ2x071qGVgxAegxJc6OpgUETTXbT7tZZ_x002F_k5k0lYrU9Lo5W8_x002F_RLU3QEERB6jk9MlHUihKIR6QrbtEnK5zMBzQkDKwNiRm6LlojYeAHygTgIThQVF8sxnTg6xgUov49_x002F_oESygMamJtrBBAlj64E8MGMgJ8wcyBfz9ld8pKqaGvYxdtF8D09xxs1x5coVioyKlqkXplC4prkjD6cf6ztVNbVqrfEj_x002F_UCG9Al_x002B_1MG6OjmmE0fHuIDMADdWqvXsrGNFHn4BfBj4CJcvX1bPUhAWHq7_x002B_NRrrwsJkAXXRZ0vFekH5Pw9ZyW1cUc9AZkCxhKARQQNhzEkDMqH_x002B_pUsdao1vBriPOa5ulI8QOPtZgE4cHePC9d7rMnWCEuOztlaJOlnC1m1RNMBEs4TYnTtp5tx5EmGDZVn9xRoZ5REBy8rOUc8i8mFyrFi1Wlb5NcJoUa8Nm6wTc7xA3_x002F_LzCw2BDZ04OsaFkvJyUW4oMiwOsouHhoZMVtk19PcPUP3REUdfA_x002F_bHIPsAUTkof7ma3pKbly_x002B_EgMDvwfoQrA5yy4xJs8DTlw4cyJI6EwX4UoVFxZJ9DejEmSB09Q1SS0cvnb9ynZov9bCzqxbcYsCUDI44Ik_x002F_xibsk6lReqfgyFy9ekvCvhgttbSar7wDWb4KYdIjOaShjMiKDGUDWMoiD9jEVw_x002F_RNszZBiz6jwICllFeeRcPUT10DHSym08PrQ13UN9TL0kMDNyyvFTkCZFyvWbtWghqATpwJwqKEr8nl_x002B_W30wze2k8tvI_x002B_jc5V615NYD0vPh3MPPqWYHf3j4pmwey8nJpTYmizGwuKgBUzAvXyU1BuTDVA7h6bhEhVxR0THyebKxUawarIthirZoKQUFLSP_x002F_9BdpUeWz5FfwOHnlT6UVFb_x002B_XOho88x6lgMKnyDd_x002F_OoXXzVePOg_x002B_3BR587SXqN504E4aF8YfI5emt5PJqLLk8Fk7n2PLcqui82ilTmZWrQ8U5x8hsaX8LAAuDnZnAB5_x002F_MkE_x002B_QoburS6Zpq0LXkKv7AiEgALJgYRQWB39rliY4eBn5ZjxLPsVTyJsJA_x002F_HIfYSWlb0m9TTMzb6PvJg87rkP0fqamepR54DgALIWKquq1SM6cSYMwbA4z0bSD15ni_x002F_P4Zpmy3cpAFAwEQJDAPzBIPargKhPLOMKWnJJKn32_x002B_nFx5FMdWZmD9RiVB9NjxBgoICqa5893peEOD5LHhb5BGk0A_x002F_Jk3a80Ia34LpbFWm0ILcSeSW_x002F_QAtKX1J2tHgmvMA_x002B_eRPE1JtqJ2tHnUOWDtCxM8YOnEmCN834oA0GnGwNwdBguraWkrclUSFhUUSKdOA1BUsZsJCIUoGDAwMSNpOX7_x002B_SSbB2_x002F_Qaa7eome3i08DOsjZdPAKXm7ib34vsMpAmteo_x002B_ij_x002F_hTxCFPSjj2udTX8E0QJ5Dv65AaFNCgE8cJXO0ZoCvdAzR0Y3TEyBzmxBkYsp9q_x002F_11GRdFB8vFWcsVgMRBKxo5MS4iK2U6p_x002B__x002F_fL3wgt4_x002F_zeXmVg2b0nhYqKSiQqh0ADAgPwLdAufKHoCPg_x002F_QzQn624hjitbmUPtuVLXEoyJs_x002B_mgm3rUORhnRWsQ4pQ2XKTfrSygh_x002F_0zaBLLIwHOyX_x002F_PSxGHUMO69Aa622O_x002F_xXMtCa4JeW5ZHiWVm_x002B_5Pv2vBfil7wCed3ltfph4dQf_x002F_gDQrYWcd9P_x002B_Bw3x_x002F_2y6Df_x002B_I5_x002B_GJaQe7iNnlicQ_x002F__x002F_6yW766ds76Scs_x002F__x002F_BeIk0LyqKwjAYathIuMyHOS9FyvcmBmRb7YyxyDyyzNlfSqfZutbURhKYeo3s80yzWtSXaMw7ZW2_x002B_1zxqu9rXRruMhMkKH1c61K5vq5tH62lnkE_x002F_MWBQctFwXfn5Yuqf8HMk3DxFW11bIJ7dPZcw1bqZElgK0JKenJdGn4FJ1ra6XY2Di2QBFCKpBGggKByym63p_x002F_W1n7ClmayEAf_x002B_S0jF29zXOdJnc2jE8WYJKn6ONte5S5_x002B__x002F_rPqIDl8sUM9yHi4r_x002B_EHCeUUEyOXFqLHJI2EmP4ZrZDW5PLnF8rm25AXuw9RN9P76kb3pLtM3K2XPRNLtrkqCnYbuvkHF_x002B_X4qYnRbtgTXYaW2hdMXu_x002B_m_x002F_5iQr9_x002F_EC13klmlx_x002B_F6PIKyxoh8v_x002B_mokUUzDaETYmjkaeUf2wJXy_x002F_aP9Is2nG8Ccby8f2bDXhun_x002F_zhzi1tdE403mE5mbdS245v5FR2lHxLJxEvikvsnKvkGkVXsWEZMwO9m1aW89RZVkdfbUthOL2R8l1SsrKaMbsOZSdo1gLWJyN4RHkudCT1mX4Ug_x002B_108LgkSgafIzG_x002B_hZaUvEC_x002B_zMPC2k0AXlgeb6o_x002B_kDaMoZGHJwH8mj9nZV5FxW1mobGnYGLyzQmDSuf_x002F_LhQQk057IlaR_x002B_ox8YzHMI_x002F_oWnJ5zkhpLNU3F60Pr3Efpmxkp1BpUSJTOMaKBytmjCfZEhhGdZxjqV1L8jIrMZPBGtJrz7Hi8nWhaGgXArK8pCof6mv9xXEmt3esaW7UKOJY6oc14etJHSb4g2aWcWZ4hdI3S_x002F_XsidbuU1tpxqbReWOAX8EThtEcioYQryPikT_x002B_JVha9TwG_x002B_S0XRQR7N7_x002F_GYv5AWbHmDPDKnkaefD91gWgDIa0OYefnKlYaFxba2i7R61TryWuJOwYuXirVBRC30y7VSHlj4tKF_x002F_mqCfiJp9Wf2xnGMMY_x002B_L45D9m6O_x002F_crHuopDVJPct5uGAEkofJivCTt_x002B_PoZ3_x002B_Mp7_x002F_9P9vy83fi6S_x002F_f3DGiPDaIgx8Mbf6djXZRjmsb2vttBKWx8gK2iCPWSFXsv3hju_x002F_TLUvvm8lMecf_x002F_qLcuZvHWnr5DLEzyic7_x002B_lLyAGW7TbPtwlU50nFmfTL2ftVQgES6Re32XaJvqYrYEGk6kat4X7t_x002F_UMNPn5OwlKHbTJz8Oc4AuiaqTMUl1b8vfvJoz0le8Jx8xxrf8SfZrxK4MyBhT_x002B_loKLn6egomftin_x002F_hk5RwejGFLF8r0ytZa0HoOGA5BUR_x002B_TD5lk8inZAr5xL1O_x002F_htm06U_x002B_ZUp_x002B_k6f4WPxEOBvbDbCvBsmePn7KCzXg33j7BdCw6lcuK32dyfMU92_x002B_qUT_x002B_fkr5uPOgq5xhDIw5I41vwuOF_x002B_vPKmUvl50xmMM3CBUsgPxaNYTOEpusFOWdf1QZsCfLihTEZEqWuLOEzM1su9dH1gyGJbkBt4ePmnpA9Sh_x002F_u0t7JF2rJJHJ7WyfmsxE8vVUy_x002B_pfYtSWfvgJxvjh_x002F_gWmxRtHZ_x002F_9OZ2SqsZ_x002F_VaWprYu8Qllmsh9_x002F_CGf775NWXsATIjDz6Dh_x002F_DXqY3_x002F_MUl_x002B_MBbjDfZ_x002F_BquGZGANtXOO_x002B_W6prS4BffLxbGQiYyBhozNHec4ZmZ_x002F_1aFHI_x002B_T9XyzvI5_x002F_MP2D_x002F_XaFazOD7PTjgRLxaHnKRYWKVcEKKQpeEzErfBuCk3xIFdvNyopHRlosL6DbGoEC2CFhHhc39s3kOrqR_x002F_LfhoYHqLnrmEwn0U9MKQvO7pRtCAM3Rvb2aDAEB9hKwQ8DlP720I2bQ_x002F_J9LBghDn_x002F_urlCU1RHIlIH9IqlrizhsFXr77Xcwqfys9EHri0PE4VFezudR_x002B_fnP89SjY8eiRFZ2rQ_x002F_s0yAQYC9V5uWQfCGMedTMhDiPb6b2ztE_x002F_qjUgICI_x002B_Ee7bjDjjwb98nGQgzo94xmCOi73NNEclDnyG4tZdaolzwLQLmQDB_x002F_iHkt_x002F_8F8ilSrMP8nAdpS52yCa2goJhmzJpNi5cuo4zMLOpVt05jjQfbBoICl1PwZ4vJPekpymo1Td68eL3FpJ8lrbvVktEwEIf9mrDaOerR8cOEOIlmES1b_x002B_JTnyI4S55o64tnCzuLTytQLCsPtadE1hywOE_x002B_fF5fnq0bFDRnhWKrkeT9fOXrL_x002B_ClR7MCeOM_x002B_s4d04UcT4ZsTiOEMeWQtpDbk4Befp7kXc5HHn2LdiBx3TOGA0NDZK8iUwBbIlGAAABhVUha8k_x002F_5l3yyXuMvIsmy_x002B_KmMdp7z5gSvMU6wY2JM9Z1HEv41hAn89B5_x002B_o_x002F_ZeyXU_x002B_kv_x002B_zD_x002B_i5DjZJM6jm7iMr8FlUwIzZfpU03TZtpy6TBeujlZirM8gUCJ95ina1IVKkuFY8acgzrHWTqpu7LB8n2Zy5mIP_x002F_TP7aTIwWCFOe89Zmp2pKKR7zkO0r3E9k_x002B_kstXY12JRz3Sdl6mOOXeVh5J7_x002F_oKrg91PF_x002B_VS1xBR4cSCSQbEwilfWAjtPBpF73kNSd2bmHXSlbyTnTSeOA7BJHFYqQ0ABioYwrT1hJUbfnlF9Ig0pVS0SlJC2_x002B_JpbshvVkrFhIolT3dRB_x002F__x002F_QBkwAWGoEMS_x002F_dpSZgw0h8rxLk_x002B_2C3BAcWRVsiDhUZ7MivzTnHW0xqVtBkNyU1rZHqGtnBO_x002F_5Djz_x002B_BoRynNU_x002F_2Yedn30cH2bLVEJ45DsEWcd9aWSr9Rjms5KjIlY0V6dWWh2hJRZF6jXEvKmUA5h02zep3FRBJHSKCWG9_x002B_Xo2KNOMCSkldknUQjj6MC4sw4cDtVXhj5jWKPsNWQNZfHaGb6nepRx9DWc1pIibZhrUpbR97frBPHAdgiDiChYZwDgQWyJ9yO9Attct80xJeckWcgZdxWHH8fDyaKOGv2HzP0U9rma4y6R2tix_x002B_IACEljLWde9r2isFBMewL_x002F_BUrslTdFwr0a4o8tE6sF4szKuEs2uDmKxqu1staCdmFxqi4ob_x002B_sEdOI4AHvEAXIOX6DVKUdpFQs_x002B_rcmGjAaavih7hDzct9bLikKfbu_x002B_R73L8hW309hrlbSZjxUQRZ9aWypFny_x002B_0jheaLfZbv11g2Z5_x002B_kn70TL6SxRRwNSEcpbI5nSbApFedSaXnZm0IeWCkotIbi1iRW7PtV5b_x002B_XjvH0y1HAv9KmebMz76Lz3U1qiU4ch_x002B_AIcZzBwrhDI31jhT6nEgeQa2EaB_x002B_HnMR5MFHFmC3HU525kMR3Bv9mJqo0VWB_x002F_xyHtEiDOXp1caOq630syMO_x002B_S4Z95kWlH_x002B_llpiHwtyJsn0D0pvTEbgW0ecXc4Qx4l1nG8TcbxjD1olzgdY1NWU_x002F_cUoumP_x002B_PrXEOjCa768Z_x002F_V9a_x002F_KmIM6SmJjmCX9hZxxkr1tXMsEgcYFHxi5L6DyXH1OvAKfsDUnidmzrFU9Z_x002B_ttcHqyUKvmXE2UrJVaMVwBrm4Af8DhLHf4epxWntGNnSjO0CeB6GSB0r_x002F_u2uqVazDLximIR8fy7Tw_x002B_l_x002F_XFMo_x002F_eBIhsGEEWezEXG4XWcwsRZnshAHDr0xTl6pkYgayiAId_x002B_86vkItNcXg8IAoN3wakALpNHP4_x002F_H6zdwU4RRwu14iz8eBc9ej44WIIwfIDhaN9n1ca3e2536Ygxf8f31fWBKTun4k4yBS_x002B_3S3VYh8tyf3e6XTbhzzqGvXbfEU_x002F_puCUQga_x002B_ppyDnDRW3sfZN_x002F_LfcZCW7T5Cb4YWS1a0oW8QrvMr7ouGiSLOvIiqkWf7cjTdw_x002F_eFtS9L92ssSBYFWaRNG8T5svojWlP1oSRMOiLramZSYNHTouRQUISQzRFdHygpMhp5kCaD82PrgyjnbAxlnY6krYe8xbpomc84D4QrOzf6xYTOEAepQ7gWZGHRM9Jf9Duk4g9UZ2Mfjz24KIuIqpJgNMIP5oioyif1_x002F_kzEmYxcMVasUX2zJRpp_x002B_BOKbQl_x002B_O_x002B_pE2eUcXBs_x002B_DwjE54tgW4LWDsp48HnIzzSLeaKIk1bbKs_x002F_b8Jshp838Hq2JVof7bo04C_x002F_ImyUo9LIijAqWEEqPeGgup_x002F_QAsCaZqIJdiTaYKSUAiCOoq5HtMymCZUk4qGdHmcIY4IIpGRrSv9RkBh7GmFAEu4qtghMUPAEVxVNQfQX4IM_x002B_JIBi8UGudNC5ekxLECSintvBBFd7qb_x002B_hxY3cd00aRfjgiUiPu1KmX0W_x002F_M1JJaeUc4DcTGggCBQZAj_x002B_Rjs8ZUL5e0b7hzRIEAJ1cR4_x002F_H2de1vG_x002F_7FvhfuW6FoIU2FRneC5jETWJ1RI886eITwLldUag_x002B_Fg8RSaBNaQ1bZToGiwL6oBEmhWCUmv7atxzHqbaNuuZG21MHG3RFRauuMX6vhpkPszKvEPIY9xfWMBxbSvAPwhV3vYRT71exSgKQtgWeeWRqkSWiOMJiyP_x002B_D5_x002F_zxBbZcjxWyAiPa6nTEmNMD85i5Y4y6Zs9geL8O09JYy1sPjMHfB4Q4Me_x002F_5ykOSASSQtj6YFvFa6sKLe7SBIITNF_x002B_Kr_x002F_mkkiHuKH7NllUGMtw3t2EJ87ZWs9VQfgfze7QneAY_x002F_trKtAhnMYkHypzskUHoo_x002F_PqaWdTSpfwPabZwpe_x002B_CrO945T8qfgeCABBYAb_x002F_CJ_x002B_hAU7j4OraAxVFZ4_x002B_Hrw1rZsjhAW_x002F_cpCmP_x002F_RguZa_x002F_XGk4s35ncOuMOqWAkO3IoA_x002B_SsbO6jiZIdVsuhwDp19F6n52lEm3HHqHXT8f3H7NmDMxHHdyk6qEXHs7WPXoeNWgl3ivLuuVKYkb4QWGeSPX5XQf2I_x002F_Ps_x002F_BhTjsL_x002B_jQ8X2CXeIIMbRIkrFopFGjSjp0fJ9glzjYny_x002F_RHTUYYCIgDTu_x002B_r68eyTLWoeP7ALvEEXJgNV1bw9AE4WaWl1aMf_x002B_elDh3fNdglztXeAUk56ezFCy40GRjX2owOHd9tEP0_x002F_8ZMH_x002F_nXTEpsAAAAASUVORK5CYII_x003D_,True,False,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <PageFooterBand1 Ref="4" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,318.64,190.2,14</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </PageFooterBand1>
+        <ReportTitleBand1 Ref="5" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4,190.2,34</ClientRectangle>
+          <Components isList="true" count="1">
+            <Image3 Ref="6" type="Image" isKey="true">
+              <AspectRatio>True</AspectRatio>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>88,0,101,34</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Guid>f6316bb0171f4a52832d7388658523d2</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Image3</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+              <Stretch>True</Stretch>
+              <VertAlignment>Center</VertAlignment>
+            </Image3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </ReportTitleBand1>
+        <HeaderBand1 Ref="7" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,46,190.2,2</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </HeaderBand1>
+        <DataBand2 Ref="8" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,56,190.2,164</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text9 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8,30,116,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12</Font>
+              <Guid>3d53ede9e1834f63897af7adbda96e89</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>Muttenz, {Format("{0:d. MMMM yyyy}", Today)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text9>
+            <Text8 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8,4,116,22</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12</Font>
+              <Guid>235ae5e74f3c403b97e2ab901bc761ff</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>{IIF(Personen.Firma=="",Personen.Anrede,"")}
+{IIF(Personen.Firma!="",Personen.Firma,Personen.Vorname)} {IIF(Personen.Firma=="",Personen.Nachname,"")}
+{Personen.Strasse}
+{Personen.Plz} {Personen.Ort}
+
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text8>
+            <Text1 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8,40,116,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,14,Bold</Font>
+              <Guid>b836ddbf2cd145c3b5de22c843a5742c</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>Ein herzliches Dankeschön!</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Text2 Ref="12" type="Text" isKey="true">
+              <AllowHtmlTags>True</AllowHtmlTags>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>8,50,180,74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12</Font>
+              <Guid>8269381218e34600ae80af5a2adbf48b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>{IIF(Personen.Firma!="","Sehr geehrte Damen und Herren","")}
+{Switch(Personen.Anrede.Contains("Herr"),"Sehr geehrter",Personen.Anrede.Contains("Frau"),"Sehr geehrte",
+Personen.Anrede.Contains("Familie"),"Sehr geehrte")} {IIF(Personen.Firma=="",Personen.Anrede,"")} {IIF(Personen.Firma=="",Personen.Nachname,"")} 
+&lt;br&gt;&lt;br&gt;
+Der Musterhausen Tierschutz ist für seine Tätigkeiten auf dem Gebiet des Tierschutzes - vor allem zum Wohl herrenloser und pflegebedürftiger Tiere - 
+auf Spenden angewiesen. Wir freuen uns sehr, dass Sie unsere Anliegen teilen und uns in unseren Bemühungen unterstützen.
+&lt;br&gt;&lt;br&gt;
+Am {Format("{0:d. MMMM yyyy}", Personen.Spendendatum)} durfte der Musterhausen Tierschutz Ihre Spende entgegennehmen.&lt;br&gt;&lt;br&gt;
+&lt;text-align="center"&gt;Für den Betrag von &lt;b&gt;CHF {Format("{0:#.00}",Personen.Spendenbetrag)}&lt;/b&gt; danken wir Ihnen herzlich!&lt;/text-align&gt;
+&lt;br&gt;&lt;br&gt;
+Als gemeinnützige Organisation ist der xyz steuerbefreit, Ihre Spende kann bei den Steuern abgesetzt werden. 
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+Freundliche Grüsse
+
+
+
+
+</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <TextQuality>Wysiwyg</TextQuality>
+              <Type>Expression</Type>
+            </Text2>
+            <Text3 Ref="13" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8,130,90,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12,Bold</Font>
+              <Guid>b02e944ae88147db885d6858467ccf2c</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>{Name}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text4 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8,142,76,18</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12</Font>
+              <Guid>fbe193f2e53445249bdea2aec1acb480</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>{Briefabsender}
+{Briefabsender_Funktion}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Personen</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+        <ReportSummaryBand1 Ref="15" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,228,190.2,4</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>ReportSummaryBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </ReportSummaryBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>3b173a0778014237b2212e335c112a87</Guid>
+      <Margins>9.9,9.9,9.9,9.9</Margins>
+      <Name>Page1</Name>
+      <PageHeight>297</PageHeight>
+      <PageWidth>210</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="16" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,9,Bold</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="17" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>6/2/2020 2:20:54 PM</ReportChanged>
+  <ReportCreated>2/15/2011 8:45:16 PM</ReportCreated>
+  <ReportFile>C:\Users\jonas\source\repos\PetPlusClientServer\PetPlusWinforms\PetPlusWinforms\bin\Release\Berichte\Spenden\Verdankungsbrief.mrt</ReportFile>
+  <ReportGuid>6c698f54ed8544a98133ff92f35e16d5</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Millimeters</ReportUnit>
+  <ReportVersion>2016.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

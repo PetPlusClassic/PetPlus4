@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <Statistik Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Statistik</Alias>
+        <Columns isList="true" count="13">
+          <value>Rubrik,System.String</value>
+          <value>Gattung,System.String</value>
+          <value>Anzahl,System.Int32</value>
+          <value>Tage,System.Double</value>
+          <value>Eintritte,System.Int32</value>
+          <value>Euthanasiert,System.Double</value>
+          <value>Monat,System.Int32</value>
+          <value>Platziert,System.Int32</value>
+          <value>Rückgabe,System.Int32</value>
+          <value>Besitzübernahme,System.Int32</value>
+          <value>Gestorben,System.Int32</value>
+          <value>Freigelassen,System.Int32</value>
+          <value>Sonstiges,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Statistik</Name>
+        <NameInSource>Statistik</NameInSource>
+      </Statistik>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <Text1 Ref="4" type="Text" isKey="true">
+          <Brush>[0:255:255:255]</Brush>
+          <ClientRectangle>0,0.2,6.8,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,14</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>PetPlus Statistikbericht</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text1>
+        <Text2 Ref="5" type="Text" isKey="true">
+          <Border>None;[69:69:69];1;Solid;False;4;Black</Border>
+          <Brush>[0:255:255:255]</Brush>
+          <ClientRectangle>24.8,0.2,15,1</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>- Zahlen ab {Today} sind als Prognose zu betrachten.
+- Die Zahlen sind abhängig vom erfassten Datenzustand
+- Pflegetage von euthanisierten Tiere sind von der Statistik ausgeschlossen, da es kein euthanisiert Datum gibt.</Text>
+          <TextBrush>[19:19:19]</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text2>
+        <CrossTab1 Ref="6" type="Stimulsoft.Report.CrossTab.StiCrossTab" isKey="true">
+          <Brush>Transparent</Brush>
+          <CanBreak>True</CanBreak>
+          <ClientRectangle>0,1.8,40,26.6</ClientRectangle>
+          <Components isList="true" count="29">
+            <CrossTab1_ColTotal1 Ref="7" type="CrossColumnTotal" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[219:219:219]</Brush>
+              <ClientRectangle>5.45,0.45,1,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>2cb24370e65a4a05b90df7298d1cb735</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,5,0,0</Margins>
+              <Name>CrossTab1_ColTotal1</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>Total</Text>
+              <TextBrush>Black</TextBrush>
+            </CrossTab1_ColTotal1>
+            <CrossTab1_RowTotal1 Ref="8" type="CrossRowTotal" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[219:219:219]</Brush>
+              <ClientRectangle>0,5.3,3.6,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>450c631052604537a781b0949f1ca013</Guid>
+              <HorAlignment>Left</HorAlignment>
+              <Margins>5,0,0,0</Margins>
+              <Name>CrossTab1_RowTotal1</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>Total</Text>
+              <TextBrush>Black</TextBrush>
+            </CrossTab1_RowTotal1>
+            <CrossTab1_Row1_Title Ref="9" type="CrossTitle" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[195:214:155]</Brush>
+              <ClientRectangle>0,0.45,3.6,0.8</ClientRectangle>
+              <Font>Arial,8</Font>
+              <Guid>84691c1ccaf644c1a9b5f22330d136a7</Guid>
+              <HorAlignment>Left</HorAlignment>
+              <Margins>5,0,0,0</Margins>
+              <Name>CrossTab1_Row1_Title</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>Gattung</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <TypeOfComponent>Row:CrossTab1_Row1</TypeOfComponent>
+            </CrossTab1_Row1_Title>
+            <CrossTab1_LeftTitle Ref="10" type="CrossTitle" isKey="true">
+              <Border>None;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0,0,3.6,0.4</ClientRectangle>
+              <Font>Arial,8</Font>
+              <Guid>97b3e7b4b9f74765b5e308681fd80fe2</Guid>
+              <HorAlignment>Left</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>CrossTab1_LeftTitle</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>[19:19:19]</TextBrush>
+              <Type>Expression</Type>
+              <TypeOfComponent>LeftTitle</TypeOfComponent>
+            </CrossTab1_LeftTitle>
+            <CrossTab1_ColTotal2 Ref="11" type="CrossColumnTotal" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[219:219:219]</Brush>
+              <ClientRectangle>4.65,0.85,0.8,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>d671f13954254858ab0a2bbcdb96d314</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CrossTab1_ColTotal2</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>Total</Text>
+              <TextBrush>Black</TextBrush>
+            </CrossTab1_ColTotal2>
+            <CrossTab1_SumHeader1 Ref="12" type="Stimulsoft.Report.CrossTab.StiCrossSummaryHeader" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[235:241:221]</Brush>
+              <ClientRectangle>1.4,1.3,2.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>53b4c61b55984a07a420456a3a47c135</Guid>
+              <HorAlignment>Left</HorAlignment>
+              <Margins>5,5,0,0</Margins>
+              <Name>CrossTab1_SumHeader1</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>1. Anzahl</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <Type>Expression</Type>
+            </CrossTab1_SumHeader1>
+            <CrossTab1_SumHeader2 Ref="13" type="Stimulsoft.Report.CrossTab.StiCrossSummaryHeader" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[235:241:221]</Brush>
+              <ClientRectangle>1.4,1.7,2.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>edbd423b8ecf4cb988c8436bbbbd5158</Guid>
+              <HorAlignment>Left</HorAlignment>
+              <Margins>5,5,0,0</Margins>
+              <Name>CrossTab1_SumHeader2</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>2. Tage</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <Type>Expression</Type>
+            </CrossTab1_SumHeader2>
+            <CrossTab1_SumHeader3 Ref="14" type="Stimulsoft.Report.CrossTab.StiCrossSummaryHeader" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[235:241:221]</Brush>
+              <ClientRectangle>1.4,2.1,2.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>b3e952d26b7846d7ad51d488c27b4c81</Guid>
+              <HorAlignment>Left</HorAlignment>
+              <Margins>5,5,0,0</Margins>
+              <Name>CrossTab1_SumHeader3</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>3. Eintritte</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <Type>Expression</Type>
+            </CrossTab1_SumHeader3>
+            <CrossTab1_SumHeader4 Ref="15" type="Stimulsoft.Report.CrossTab.StiCrossSummaryHeader" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[235:241:221]</Brush>
+              <ClientRectangle>1.4,2.5,2.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>de3956868be946b89d561211ebacbed0</Guid>
+              <HorAlignment>Left</HorAlignment>
+              <Margins>5,5,0,0</Margins>
+              <Name>CrossTab1_SumHeader4</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>4. Euthanisiert</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <Type>Expression</Type>
+            </CrossTab1_SumHeader4>
+            <CrossTab1_SumHeader5 Ref="16" type="Stimulsoft.Report.CrossTab.StiCrossSummaryHeader" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[235:241:221]</Brush>
+              <ClientRectangle>1.4,2.9,2.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>2a84327f77e44a79b76e96a7789fd34d</Guid>
+              <HorAlignment>Left</HorAlignment>
+              <Margins>5,5,0,0</Margins>
+              <Name>CrossTab1_SumHeader5</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>5. Gestorben</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <Type>Expression</Type>
+            </CrossTab1_SumHeader5>
+            <CrossTab1_SumHeader6 Ref="17" type="Stimulsoft.Report.CrossTab.StiCrossSummaryHeader" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[235:241:221]</Brush>
+              <ClientRectangle>1.4,3.3,2.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>d2890a07fbae4217a454537329c7e405</Guid>
+              <HorAlignment>Left</HorAlignment>
+              <Margins>5,5,0,0</Margins>
+              <Name>CrossTab1_SumHeader6</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>6. Rückgabe</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <Type>Expression</Type>
+            </CrossTab1_SumHeader6>
+            <CrossTab1_SumHeader7 Ref="18" type="Stimulsoft.Report.CrossTab.StiCrossSummaryHeader" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[235:241:221]</Brush>
+              <ClientRectangle>1.4,3.7,2.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>43bbdbe3586347da987ee285cf4c21a1</Guid>
+              <HorAlignment>Left</HorAlignment>
+              <Margins>5,5,0,0</Margins>
+              <Name>CrossTab1_SumHeader7</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>7. Platziert</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <Type>Expression</Type>
+            </CrossTab1_SumHeader7>
+            <CrossTab1_SumHeader8 Ref="19" type="Stimulsoft.Report.CrossTab.StiCrossSummaryHeader" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[235:241:221]</Brush>
+              <ClientRectangle>1.4,4.1,2.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>be5a5a6a4bd94338b7288a1be6cc48bc</Guid>
+              <HorAlignment>Left</HorAlignment>
+              <Margins>5,5,0,0</Margins>
+              <Name>CrossTab1_SumHeader8</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>8. Freigelassen</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <Type>Expression</Type>
+            </CrossTab1_SumHeader8>
+            <CrossTab1_SumHeader9 Ref="20" type="Stimulsoft.Report.CrossTab.StiCrossSummaryHeader" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[235:241:221]</Brush>
+              <ClientRectangle>1.4,4.5,2.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>ea72c6b9ff464f39a599714669fa1e51</Guid>
+              <HorAlignment>Left</HorAlignment>
+              <Margins>5,5,0,0</Margins>
+              <Name>CrossTab1_SumHeader9</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>9. Besitzübernahme</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <Type>Expression</Type>
+            </CrossTab1_SumHeader9>
+            <CrossTab1_SumHeader10 Ref="21" type="Stimulsoft.Report.CrossTab.StiCrossSummaryHeader" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[235:241:221]</Brush>
+              <ClientRectangle>1.4,4.9,2.2,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>826c234e80fd4e12bd0fd63a0b9887bb</Guid>
+              <HorAlignment>Left</HorAlignment>
+              <Margins>5,5,0,0</Margins>
+              <Name>CrossTab1_SumHeader10</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>10. Sonstiges</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <Type>Expression</Type>
+            </CrossTab1_SumHeader10>
+            <CrossTab1_RightTitle Ref="22" type="CrossTitle" isKey="true">
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>DarkGray</Brush>
+              <ClientRectangle>3.65,0,2.8,0.4</ClientRectangle>
+              <Font>Arial,8</Font>
+              <Guid>5e6be4b655b945e4a32d3a35a5e5591a</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CrossTab1_RightTitle</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>Rubrik, Monat</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <TypeOfComponent>RightTitle</TypeOfComponent>
+            </CrossTab1_RightTitle>
+            <CrossTab1_Row1 Ref="23" type="CrossRow" isKey="true">
+              <Alias>Gattung</Alias>
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[235:241:221]</Brush>
+              <ClientRectangle>0,1.3,1.4,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DisplayValue>{Statistik.Gattung}</DisplayValue>
+              <Font>Arial,8</Font>
+              <Guid>2f83853329694d8dbdc9a3bb43e282b2</Guid>
+              <HorAlignment>Left</HorAlignment>
+              <Margins>5,0,0,0</Margins>
+              <Name>CrossTab1_Row1</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>Gattung</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <TotalGuid>450c631052604537a781b0949f1ca013</TotalGuid>
+              <Value>{Statistik.Gattung}</Value>
+            </CrossTab1_Row1>
+            <CrossTab1_Column1 Ref="24" type="CrossColumn" isKey="true">
+              <Alias>Rubrik</Alias>
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[219:229:241]</Brush>
+              <ClientRectangle>3.65,0.45,1.8,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DisplayValue>{Statistik.Rubrik}</DisplayValue>
+              <Font>Arial,8</Font>
+              <Guid>198418a7e61740a5ba89190bf2dd87de</Guid>
+              <Margins>5,0,0,0</Margins>
+              <Name>CrossTab1_Column1</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>Rubrik</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <TotalGuid>2cb24370e65a4a05b90df7298d1cb735</TotalGuid>
+              <Value>{Statistik.Rubrik}</Value>
+            </CrossTab1_Column1>
+            <CrossTab1_Column2 Ref="25" type="CrossColumn" isKey="true">
+              <Alias>Monat</Alias>
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>DarkGray</Brush>
+              <ClientRectangle>3.65,0.85,1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DisplayValue>{Statistik.Monat}</DisplayValue>
+              <Font>Arial,8</Font>
+              <Guid>4c56b8e80386447a86cb396397aae7ec</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CrossTab1_Column2</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>Monat</Text>
+              <TextBrush>[19:19:19]</TextBrush>
+              <TotalGuid>d671f13954254858ab0a2bbcdb96d314</TotalGuid>
+              <Value>{Statistik.Monat}</Value>
+            </CrossTab1_Column2>
+            <CrossTab1_Sum1 Ref="26" type="CrossSummary" isKey="true">
+              <Alias>Anzahl</Alias>
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[255:255:255]</Brush>
+              <ClientRectangle>3.65,1.3,1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>28d4cdbbbb9b4e0c8523f40e10bc6600</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CrossTab1_Sum1</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>0</Text>
+              <TextBrush>Black</TextBrush>
+              <Value>{Statistik.Anzahl}</Value>
+            </CrossTab1_Sum1>
+            <CrossTab1_Sum2 Ref="27" type="CrossSummary" isKey="true">
+              <Alias>Tage</Alias>
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[255:255:255]</Brush>
+              <ClientRectangle>3.65,1.7,1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>9b7e2b2348c84345be042c7c30b21743</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CrossTab1_Sum2</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>0</Text>
+              <TextBrush>Black</TextBrush>
+              <Value>{Statistik.Tage}</Value>
+            </CrossTab1_Sum2>
+            <CrossTab1_Sum3 Ref="28" type="CrossSummary" isKey="true">
+              <Alias>Eintritte</Alias>
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[255:255:255]</Brush>
+              <ClientRectangle>3.65,2.1,1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>535c21d0e1b44b199ec839828a75081c</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CrossTab1_Sum3</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>0</Text>
+              <TextBrush>Black</TextBrush>
+              <Value>{Statistik.Eintritte}</Value>
+            </CrossTab1_Sum3>
+            <CrossTab1_Sum4 Ref="29" type="CrossSummary" isKey="true">
+              <Alias>Euthanasiert</Alias>
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[255:255:255]</Brush>
+              <ClientRectangle>3.65,2.5,1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>28b8ec3be4644d0db2ebd0b8b8dc49a9</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CrossTab1_Sum4</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>0</Text>
+              <TextBrush>Black</TextBrush>
+              <Value>{Statistik.Euthanasiert}</Value>
+            </CrossTab1_Sum4>
+            <CrossTab1_Sum5 Ref="30" type="CrossSummary" isKey="true">
+              <Alias>Gestorben</Alias>
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[255:255:255]</Brush>
+              <ClientRectangle>3.65,2.9,1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>9f8b2f0ff5fb45b0ad6d554ab74ce745</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CrossTab1_Sum5</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>0</Text>
+              <TextBrush>Black</TextBrush>
+              <Value>{Statistik.Gestorben}</Value>
+            </CrossTab1_Sum5>
+            <CrossTab1_Sum6 Ref="31" type="CrossSummary" isKey="true">
+              <Alias>Rückgabe</Alias>
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[255:255:255]</Brush>
+              <ClientRectangle>3.65,3.3,1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>6be5eb2b52d04b14a801584c9d73cf4d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CrossTab1_Sum6</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>0</Text>
+              <TextBrush>Black</TextBrush>
+              <Value>{Statistik.Rückgabe}</Value>
+            </CrossTab1_Sum6>
+            <CrossTab1_Sum7 Ref="32" type="CrossSummary" isKey="true">
+              <Alias>Platziert</Alias>
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[255:255:255]</Brush>
+              <ClientRectangle>3.65,3.7,1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>b2ecbd2a9af2484c8883e7f2ff91f201</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CrossTab1_Sum7</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>0</Text>
+              <TextBrush>Black</TextBrush>
+              <Value>{Statistik.Platziert}</Value>
+            </CrossTab1_Sum7>
+            <CrossTab1_Sum8 Ref="33" type="CrossSummary" isKey="true">
+              <Alias>Freigelassen</Alias>
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[255:255:255]</Brush>
+              <ClientRectangle>3.65,4.1,1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>9230fdce70294702ae2394784e3b582f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CrossTab1_Sum8</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>0</Text>
+              <TextBrush>Black</TextBrush>
+              <Value>{Statistik.Freigelassen}</Value>
+            </CrossTab1_Sum8>
+            <CrossTab1_Sum9 Ref="34" type="CrossSummary" isKey="true">
+              <Alias>Besitzübernahme</Alias>
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[255:255:255]</Brush>
+              <ClientRectangle>3.65,4.5,1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>7301aa3ca7024277b86279c05244ff8e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CrossTab1_Sum9</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>0</Text>
+              <TextBrush>Black</TextBrush>
+              <Value>{Statistik.Besitzübernahme}</Value>
+            </CrossTab1_Sum9>
+            <CrossTab1_Sum10 Ref="35" type="CrossSummary" isKey="true">
+              <Alias>Sonstiges</Alias>
+              <Border>All;[69:69:69];1;Solid;False;4;Black</Border>
+              <Brush>[255:255:255]</Brush>
+              <ClientRectangle>3.65,4.9,1,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>bf1dbc2c2b9943e4a54119c19e66fc74</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>CrossTab1_Sum10</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Restrictions>AllowMove, AllowResize, AllowSelect, AllowChange</Restrictions>
+              <Text>0</Text>
+              <TextBrush>Black</TextBrush>
+              <Value>{Statistik.Sonstiges}</Value>
+            </CrossTab1_Sum10>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <CrossTabStyleIndex>1</CrossTabStyleIndex>
+          <DataSourceName>Statistik</DataSourceName>
+          <EmptyValue />
+          <Filters isList="true" count="0" />
+          <HorAlignment>Left</HorAlignment>
+          <KeepCrossTabTogether>True</KeepCrossTabTogether>
+          <Name>CrossTab1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </CrossTab1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>1d4a86f4e40c46e183704e6de6ffac2a</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>80</PageHeight>
+      <PageWidth>42</PageWidth>
+      <PaperSize>A3</PaperSize>
+      <PrintHeadersFootersFromPreviousPage>True</PrintHeadersFootersFromPreviousPage>
+      <Report isRef="0" />
+      <UnlimitedHeight>True</UnlimitedHeight>
+      <Watermark Ref="36" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="37" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>11/5/2017 1:17:43 PM</ReportChanged>
+  <ReportCreated>8/14/2014 9:28:15 PM</ReportCreated>
+  <ReportFile>B:\_Projekte\Git Repositorys\Projects\Version 4\Desktop\bin\Debug\Berichte\Auswertungen\Statistik.mrt</ReportFile>
+  <ReportGuid>fd8d1fd185a045f9a57049331dd5b252</ReportGuid>
+  <ReportImage isNull="true" />
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2016.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

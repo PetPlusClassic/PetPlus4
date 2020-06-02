@@ -1,0 +1,857 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="7">
+      <Verzichtungen Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Verzichtungen</Alias>
+        <Columns isList="true" count="16">
+          <value>Datum,System.DateTime</value>
+          <value>Nummer,System.String</value>
+          <value>Beschreibung,System.String</value>
+          <value>Einnahme,System.Single</value>
+          <value>Ausgabe,System.Single</value>
+          <value>Konto,System.String</value>
+          <value>Code,System.String</value>
+          <value>Rubrik,System.String</value>
+          <value>Tier,System.String</value>
+          <value>Gattung,System.String</value>
+          <value>Monatsname,System.String</value>
+          <value>Bezahlart,System.String</value>
+          <value>Jahr,System.Int32</value>
+          <value>Aufenthaltstage,System.Int32</value>
+          <value>RabatteCHF,System.Single</value>
+          <value>Leistungstext,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Verzichtungen</Name>
+        <NameInSource>Auswertung.Verzichtungen</NameInSource>
+      </Verzichtungen>
+      <Beschlagnahmung Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Beschlagnahmung</Alias>
+        <Columns isList="true" count="16">
+          <value>Datum,System.DateTime</value>
+          <value>Nummer,System.String</value>
+          <value>Beschreibung,System.String</value>
+          <value>Einnahme,System.Single</value>
+          <value>Ausgabe,System.Single</value>
+          <value>Konto,System.String</value>
+          <value>Code,System.String</value>
+          <value>Rubrik,System.String</value>
+          <value>Tier,System.String</value>
+          <value>Gattung,System.String</value>
+          <value>Monatsname,System.String</value>
+          <value>Bezahlart,System.String</value>
+          <value>Jahr,System.Int32</value>
+          <value>Aufenthaltstage,System.Int32</value>
+          <value>RabatteCHF,System.Single</value>
+          <value>Leistungstext,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Beschlagnahmung</Name>
+        <NameInSource>Auswertung.Beschlagnahmung</NameInSource>
+      </Beschlagnahmung>
+      <Platzierungen Ref="4" type="DataTableSource" isKey="true">
+        <Alias>Platzierungen</Alias>
+        <Columns isList="true" count="16">
+          <value>Datum,System.DateTime</value>
+          <value>Nummer,System.String</value>
+          <value>Beschreibung,System.String</value>
+          <value>Einnahme,System.Single</value>
+          <value>Ausgabe,System.Single</value>
+          <value>Konto,System.String</value>
+          <value>Code,System.String</value>
+          <value>Rubrik,System.String</value>
+          <value>Tier,System.String</value>
+          <value>Gattung,System.String</value>
+          <value>Monatsname,System.String</value>
+          <value>Bezahlart,System.String</value>
+          <value>Jahr,System.Int32</value>
+          <value>Aufenthaltstage,System.Int32</value>
+          <value>RabatteCHF,System.Single</value>
+          <value>Leistungstext,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Platzierungen</Name>
+        <NameInSource>Auswertung.Platzierungen</NameInSource>
+      </Platzierungen>
+      <Ferientiere Ref="5" type="DataTableSource" isKey="true">
+        <Alias>Ferientiere</Alias>
+        <Columns isList="true" count="16">
+          <value>Datum,System.DateTime</value>
+          <value>Nummer,System.String</value>
+          <value>Beschreibung,System.String</value>
+          <value>Einnahme,System.Single</value>
+          <value>Ausgabe,System.Single</value>
+          <value>Konto,System.String</value>
+          <value>Code,System.String</value>
+          <value>Rubrik,System.String</value>
+          <value>Tier,System.String</value>
+          <value>Gattung,System.String</value>
+          <value>Monatsname,System.String</value>
+          <value>Bezahlart,System.String</value>
+          <value>Jahr,System.Int32</value>
+          <value>Aufenthaltstage,System.Int32</value>
+          <value>RabatteCHF,System.Single</value>
+          <value>Leistungstext,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Ferientiere</Name>
+        <NameInSource>Auswertung.Ferientiere</NameInSource>
+      </Ferientiere>
+      <Ferientiere_Leistungen Ref="6" type="DataTableSource" isKey="true">
+        <Alias>Ferientiere-Leistungen</Alias>
+        <Columns isList="true" count="16">
+          <value>Datum,System.DateTime</value>
+          <value>Nummer,System.String</value>
+          <value>Beschreibung,System.String</value>
+          <value>Einnahme,System.Single</value>
+          <value>Ausgabe,System.Single</value>
+          <value>Konto,System.String</value>
+          <value>Code,System.String</value>
+          <value>Rubrik,System.String</value>
+          <value>Tier,System.String</value>
+          <value>Gattung,System.String</value>
+          <value>Monatsname,System.String</value>
+          <value>Bezahlart,System.String</value>
+          <value>Jahr,System.Int32</value>
+          <value>Aufenthaltstage,System.Int32</value>
+          <value>RabatteCHF,System.Single</value>
+          <value>Leistungstext,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Ferientiere-Leistungen</Name>
+        <NameInSource>Auswertung.Ferientiere-Leistungen</NameInSource>
+      </Ferientiere_Leistungen>
+      <Ferientiere_Zusatzleistungen Ref="7" type="DataTableSource" isKey="true">
+        <Alias>Ferientiere-Zusatzleistungen</Alias>
+        <Columns isList="true" count="16">
+          <value>Datum,System.DateTime</value>
+          <value>Nummer,System.String</value>
+          <value>Beschreibung,System.String</value>
+          <value>Einnahme,System.Single</value>
+          <value>Ausgabe,System.Single</value>
+          <value>Konto,System.String</value>
+          <value>Code,System.String</value>
+          <value>Rubrik,System.String</value>
+          <value>Tier,System.String</value>
+          <value>Gattung,System.String</value>
+          <value>Monatsname,System.String</value>
+          <value>Bezahlart,System.String</value>
+          <value>Jahr,System.Int32</value>
+          <value>Aufenthaltstage,System.Int32</value>
+          <value>RabatteCHF,System.Single</value>
+          <value>Leistungstext,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Ferientiere-Zusatzleistungen</Name>
+        <NameInSource>Auswertung.Ferientiere-Zusatzleistungen</NameInSource>
+      </Ferientiere_Zusatzleistungen>
+      <Findelanzeigen Ref="8" type="DataTableSource" isKey="true">
+        <Alias>Findelanzeigen</Alias>
+        <Columns isList="true" count="16">
+          <value>Datum,System.DateTime</value>
+          <value>Nummer,System.String</value>
+          <value>Beschreibung,System.String</value>
+          <value>Einnahme,System.Single</value>
+          <value>Ausgabe,System.Single</value>
+          <value>Konto,System.String</value>
+          <value>Code,System.String</value>
+          <value>Rubrik,System.String</value>
+          <value>Tier,System.String</value>
+          <value>Gattung,System.String</value>
+          <value>Monatsname,System.String</value>
+          <value>Bezahlart,System.String</value>
+          <value>Jahr,System.Int32</value>
+          <value>Aufenthaltstage,System.Int32</value>
+          <value>RabatteCHF,System.Single</value>
+          <value>Leistungstext,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Findelanzeigen</Name>
+        <NameInSource>Auswertung.Findelanzeigen</NameInSource>
+      </Findelanzeigen>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="9" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="12">
+        <ReportTitleBand1 Ref="10" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,3.4</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text9 Ref="11" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0,0,18,1.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,12,Bold</Font>
+              <Guid>baf6b47219dd4c7b9264dc9ae591cec6</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="9" />
+              <Parent isRef="10" />
+              <Text>PETPLUS
+
+STATISTIK / AUSWERTUNG MIT EINNAHMEN
+</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text9>
+            <Text10 Ref="12" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0,1.8,13,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,10</Font>
+              <Guid>c40b9e1b50da4fe8bdf2beea9e4eef1f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="9" />
+              <Parent isRef="10" />
+              <Text>Gruppiert nach Monat und Mitarbeiter-Code</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+            </Text10>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>721d6a4f844243d5a7328896bbac69e7</Guid>
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </ReportTitleBand1>
+        <GroupHeaderBand1 Ref="13" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.6,19,2.4</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text24 Ref="14" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>16.4,1,2.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,8,Bold</Font>
+              <Guid>9d9850b28b8341fe97aa9f60bf59a5f3</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="9" />
+              <Parent isRef="13" />
+              <Text>TOTAL</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text7 Ref="15" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>16.4,0.2,2.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9,Bold</Font>
+              <Guid>ae2624a726c3411a8e676ae84e9a0c5d</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="9" />
+              <Parent isRef="13" />
+              <Text>EINNAHMEN</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text27 Ref="16" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0,0.2,10.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,10,Bold</Font>
+              <Guid>ac7592593bf74b77936f2eb9aca672a7</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="9" />
+              <Parent isRef="13" />
+              <Text>VERZICHTUNGEN</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <Text22 Ref="17" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>16.4,1.4,2.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9,Bold</Font>
+              <Guid>3f12c2ea3f9e4d4f85dac46d0bfa10df</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="9" />
+              <Parent isRef="13" />
+              <Text>{Sum(GroupHeaderBand1,Verzichtungen.Einnahme)}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextFormat Ref="18" type="CurrencyFormat" isKey="true">
+                <GroupSeparator>'</GroupSeparator>
+                <NegativePattern>2</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>CHF</Symbol>
+              </TextFormat>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </GroupHeaderBand1>
+        <GroupHeaderBand2 Ref="19" type="GroupHeaderBand" isKey="true">
+          <Border>Bottom;[165:165:165];1;Solid;False;4;Black</Border>
+          <Brush>[165:165:165]</Brush>
+          <ClientRectangle>0,7.8,19,0.8</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text1 Ref="20" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0.2,0,1.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9,Bold</Font>
+              <Guid>9f9e86628c9c4e66b5e35f9577217aec</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="9" />
+              <Parent isRef="19" />
+              <Text>MONAT:</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text2 Ref="21" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>1.6,0,2.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9,Bold</Font>
+              <Guid>038436df6fef4deabd2ec10f4f308550</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="9" />
+              <Parent isRef="19" />
+              <Text>{Verzichtungen.Monatsname}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text33 Ref="22" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>16.4,0,2.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9,Bold</Font>
+              <Guid>491fef27243441b0bfcafaa6a0d8a411</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="9" />
+              <Parent isRef="19" />
+              <Text>{Sum(GroupHeaderBand1,Verzichtungen.Einnahme)}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextFormat Ref="23" type="CurrencyFormat" isKey="true">
+                <GroupSeparator>'</GroupSeparator>
+                <NegativePattern>2</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>CHF</Symbol>
+              </TextFormat>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text33>
+          </Components>
+          <Condition>{Verzichtungen.Monatsname}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand2</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </GroupHeaderBand2>
+        <GroupHeaderBand3 Ref="24" type="GroupHeaderBand" isKey="true">
+          <Brush>[191:191:191]</Brush>
+          <ClientRectangle>0,9.4,19,0.6</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text3 Ref="25" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0.2,0,1.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9,Bold</Font>
+              <Guid>8940c026c7e24fcabd67369e5b2d5e9e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="9" />
+              <Parent isRef="24" />
+              <Text>Code:</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text4 Ref="26" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>1.6,0,14.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9</Font>
+              <Guid>5936c69c55d94da0810528b35467f706</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="9" />
+              <Parent isRef="24" />
+              <Text>{Verzichtungen.Code}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text5 Ref="27" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>16.4,0,2.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9,Bold</Font>
+              <Guid>43d6c465dc41423498bb2343e8664368</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="9" />
+              <Parent isRef="24" />
+              <Text>{Sum(GroupHeaderBand2,Verzichtungen.Einnahme)}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextFormat Ref="28" type="CurrencyFormat" isKey="true">
+                <GroupSeparator>'</GroupSeparator>
+                <NegativePattern>2</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>CHF</Symbol>
+              </TextFormat>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+          </Components>
+          <Condition>{Verzichtungen.Code}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand3</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </GroupHeaderBand3>
+        <GroupHeaderBand4 Ref="29" type="GroupHeaderBand" isKey="true">
+          <Brush>[245:245:245]</Brush>
+          <ClientRectangle>0,10.8,19,0.6</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text6 Ref="30" type="Text" isKey="true">
+              <Border>None;[216:216:216];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0.8,0,2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9,Bold</Font>
+              <Guid>f2e4540690b14b8d9fd791ec26df3d79</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="9" />
+              <Parent isRef="29" />
+              <Text>Bezahlart:</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text8 Ref="31" type="Text" isKey="true">
+              <Border>None;[216:216:216];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>2.8,0,9.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9</Font>
+              <Guid>997ed448b9df42a194f677b64f2e6247</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="9" />
+              <Parent isRef="29" />
+              <Text>{Verzichtungen.Bezahlart}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text11 Ref="32" type="Text" isKey="true">
+              <Border>None;[216:216:216];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>12,0,1.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9,Bold</Font>
+              <Guid>c781c516ba864b1cb1c9b4c6ff93e9b0</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="9" />
+              <Parent isRef="29" />
+              <Text>Konto:</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text12 Ref="33" type="Text" isKey="true">
+              <Border>None;[216:216:216];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>13.2,0,3.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9</Font>
+              <Guid>2a3574ffbc984f56b1734ffb0d63bc30</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="9" />
+              <Parent isRef="29" />
+              <Text>{Verzichtungen.Konto}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text13 Ref="34" type="Text" isKey="true">
+              <Border>None;[216:216:216];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>16.4,0,2.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9,Bold</Font>
+              <Guid>811080285ca24582af1674a63cbef770</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="9" />
+              <Parent isRef="29" />
+              <Text>{Sum(GroupHeaderBand4,Verzichtungen.Einnahme)}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextFormat Ref="35" type="CurrencyFormat" isKey="true">
+                <GroupSeparator>'</GroupSeparator>
+                <NegativePattern>2</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>CHF</Symbol>
+              </TextFormat>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+          </Components>
+          <Condition>{Verzichtungen.Bezahlart}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand4</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </GroupHeaderBand4>
+        <GroupHeaderBand5 Ref="36" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,12.2,19,1.4</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text23 Ref="37" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0.8,0,2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9,Bold</Font>
+              <Guid>124a82f9af544d7c8f6f6b7e57c39e32</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="9" />
+              <Parent isRef="36" />
+              <Text>Gattung:</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+            <Text25 Ref="38" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>2.8,0,6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9</Font>
+              <Guid>bb3f784de61b4baa883cbb6faa0d3297</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="9" />
+              <Parent isRef="36" />
+              <Text>{Verzichtungen.Gattung}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+            <Text14 Ref="39" type="Text" isKey="true">
+              <Border>Bottom;[165:165:165];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.8,0.8,4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>71d9939aecff43bc9b87a8b9af18217f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="9" />
+              <Parent isRef="36" />
+              <Text>Vertragsnummer</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text16 Ref="40" type="Text" isKey="true">
+              <Border>Bottom;[165:165:165];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.8,0.8,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>ea1511cb8bf0405b88e7876310c9a40d</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="9" />
+              <Parent isRef="36" />
+              <Text>Tier</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text18 Ref="41" type="Text" isKey="true">
+              <Border>Bottom;[165:165:165];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.4,0.8,8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>f0bef77aa8aa46e8a703ec17a5a150ce</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="9" />
+              <Parent isRef="36" />
+              <Text>Aufenthaltstage</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text26 Ref="42" type="Text" isKey="true">
+              <Border>None;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>16.4,0,2.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Segoe UI,9,Bold</Font>
+              <Guid>527fce277bad4e50a818af067c5e27cb</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,2,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="9" />
+              <Parent isRef="36" />
+              <Text>{Sum(GroupHeaderBand5,Verzichtungen.Einnahme)}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextFormat Ref="43" type="CurrencyFormat" isKey="true">
+                <GroupSeparator>'</GroupSeparator>
+                <NegativePattern>2</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>CHF</Symbol>
+              </TextFormat>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text26>
+            <Text20 Ref="44" type="Text" isKey="true">
+              <Border>Bottom;[165:165:165];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.4,0.8,2.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Guid>4c10dee5dfb547f09753fca4e45fe342</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="9" />
+              <Parent isRef="36" />
+              <Text>Einnahme</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+          </Components>
+          <Condition>{Verzichtungen.Gattung}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand5</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </GroupHeaderBand5>
+        <DataBand1 Ref="45" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,14.4,19,0.6</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text15 Ref="46" type="Text" isKey="true">
+              <Border>None;[165:165:165];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.8,0,4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>e7b6b5529cd3430399c400b1bc88df90</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="9" />
+              <Parent isRef="45" />
+              <Text>{Verzichtungen.Nummer}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text17 Ref="47" type="Text" isKey="true">
+              <Border>None;[165:165:165];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.8,0,3.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>3dbda8398d944da4a53c7a76aee8967e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="9" />
+              <Parent isRef="45" />
+              <Text>{Verzichtungen.Tier}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text19 Ref="48" type="Text" isKey="true">
+              <Border>None;[165:165:165];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.4,0,8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>ee966a1d029b421cb81ea8d95b21fdce</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="9" />
+              <Parent isRef="45" />
+              <Text>{Verzichtungen.Aufenthaltstage}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text21 Ref="49" type="Text" isKey="true">
+              <Border>None;[165:165:165];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.4,0,2.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>1892225fa16749e58b188e9495d5f0b4</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="9" />
+              <Parent isRef="45" />
+              <Text>{Verzichtungen.Einnahme}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="50" type="CurrencyFormat" isKey="true">
+                <GroupSeparator>'</GroupSeparator>
+                <NegativePattern>2</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>CHF</Symbol>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Verzichtungen</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <GroupFooterBand5 Ref="51" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,15.8,19,0.8</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand5</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </GroupFooterBand5>
+        <GroupFooterBand4 Ref="52" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,17.4,19,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand4</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </GroupFooterBand4>
+        <GroupFooterBand3 Ref="53" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,18.2,19,0.4</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand3</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </GroupFooterBand3>
+        <GroupFooterBand2 Ref="54" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,19.4,19,0.4</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand2</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </GroupFooterBand2>
+        <GroupFooterBand1 Ref="55" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,20.6,19,0.6</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand1</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </GroupFooterBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>21e1cd47cf8c48f5986f0eb1b1d36fec</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="56" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="57" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>12/15/2015 9:06:45 AM</ReportChanged>
+  <ReportCreated>8/14/2014 9:28:15 PM</ReportCreated>
+  <ReportFile>C:\Users\appspirity\Google Drive\Appspirity\Produkte\PetPlus\Entwicklung\Entwicklung_PetPlus_Desktop\PetPlus_Desktop\bin\Debug\Berichte\Auswertungen\XTiere01.mrt</ReportFile>
+  <ReportGuid>edc0b4fd07d947a7b49a63ee6f4b0362</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2015.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
