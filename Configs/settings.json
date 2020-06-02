@@ -1,0 +1,25 @@
+{
+  "GlobalConfiguration": [
+    {
+      "activeMode": "Debug",
+      "assemblyLocation" :  "" 
+    }
+  ],
+  "SystemConfiguration": [
+    {
+      "mode": "PRETORIA",
+      "configuration": [
+        {
+          "configurationId": "CLANDB",
+          "configurationValue": "Server=PRETORIA\\VARIA;Database=CHUK_2E74BB6AAC7044349F9C211E045466A8;Trusted_Connection=True;",
+          "memo": "Test-DB Entwicklung"
+        },
+        {
+          "configurationId": "CENTRALDB",
+          "configurationValue": "Server=PRETORIA\\VARIA;Database=CHUK_CENTRAL;Trusted_Connection=True;",
+          "memo": "Test-DB Entwicklung"
+        }
+      ]
+    }
+  ]
+}

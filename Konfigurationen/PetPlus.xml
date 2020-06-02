@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<PetPlus>
+  <Konfiguration>
+    <Datenbankserver>PRETORIA\VARIA</Datenbankserver>
+    <Datenbankname>pp_xx</Datenbankname>
+    <SQLBenutzer></SQLBenutzer>
+    <SQLKennwort></SQLKennwort>
+    <WindowsAuthentifizierung>1</WindowsAuthentifizierung>
+    <DebugModus></DebugModus>
+    <Berichtsvorlagenpfad>%mobilepath%\Berichte</Berichtsvorlagenpfad>
+    <SecurityAuthentification>PetPlus</SecurityAuthentification>
+    <Datenbankpfad></Datenbankpfad>
+    <SMTPServer>smtp.office365.com</SMTPServer>
+    <SMTPAuthID>xx</SMTPAuthID>
+    <SMTPAuthPW>xx</SMTPAuthPW>
+    <SMTPFromAddress>xx</SMTPFromAddress>
+    <SMTPGlobalSubject>Bestaetigung Ihrer Reservation im Tierschutzverein Musterhausen</SMTPGlobalSubject>
+    <SMTPMailbody>xx\Konfigurationen\Mailtext.html</SMTPMailbody>
+    <Kundennummer>0000x</Kundennummer>
+    <MandatoryField_Ferientier_Bezahlart>Ja;Nein</MandatoryField_Ferientier_Bezahlart>
+    <MandatoryField_Verichtstier_Bezahlart>Ja;Nein</MandatoryField_Verichtstier_Bezahlart>
+    <MandatoryField_Platzierung_Bezahlart>Ja;Nein</MandatoryField_Platzierung_Bezahlart>
+    <MandatoryField_Findeltier_Bezahlart>Ja;Nein</MandatoryField_Findeltier_Bezahlart>
+    <MandatoryField_BT_Bezahlart>Ja;Nein</MandatoryField_BT_Bezahlart>
+    <MandatoryField_VKB_Bezahlart>Ja;Nein</MandatoryField_VKB_Bezahlart>
+    <SearchBehaviour>Ja</SearchBehaviour>
+    <UISetting_Platzierung_Haltungsinformation>0</UISetting_Platzierung_Haltungsinformation>
+    <LogPath>D:\xx\xx\</LogPath>
+    <DownloadPath>D:\xx\xx\</DownloadPath>
+    <AllowPersistentLogin>1</AllowPersistentLogin>
+    <ArchivAnimalAfterSuccessPlacement>1</ArchivAnimalAfterSuccessPlacement>
+    <Dashboard_Grafik>0</Dashboard_Grafik>
+    <Platzierung_keine_Archivierung>0</Platzierung_keine_Archivierung>
+    <HistoryPath>D:\xx\xx\History</HistoryPath>
+    <LogoPath>D:\xx\xx\Fotos\txx_logo.png</LogoPath>
+    <PicturePath>D:\xx\xx\Fotos</PicturePath>
+  </Konfiguration>
+  <Lizenzen>
+    <Aufgabenmanagement>23072015</Aufgabenmanagement>
+  </Lizenzen>
+</PetPlus>
